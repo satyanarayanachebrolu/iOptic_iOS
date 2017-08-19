@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="LensAxisTableViewCell" rowHeight="135" id="e0f-bf-daq" customClass="LensAxisTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="135"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="e0f-bf-daq" id="jKY-OM-O2B">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="134.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="axis" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uxD-0x-tdz">
+                        <rect key="frame" x="114" y="20" width="72" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="72" id="lck-5k-Yf2"/>
+                            <constraint firstAttribute="height" constant="25" id="xZZ-bp-lct"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.66666666669999997" blue="0.77647058820000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AYm-3F-9B9">
+                        <rect key="frame" x="85" y="18" width="24" height="28"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="28" id="EPr-Fm-E1z"/>
+                            <constraint firstAttribute="width" constant="24" id="Fvp-iW-cj9"/>
+                        </constraints>
+                        <state key="normal" image="questionmark.png"/>
+                        <connections>
+                            <action selector="axisHelpTapped:" destination="e0f-bf-daq" eventType="touchUpInside" id="3sV-lz-oAn"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="add" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zNZ-g5-QGr">
+                        <rect key="frame" x="236" y="20" width="72" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="edI-Bw-XM5"/>
+                            <constraint firstAttribute="width" constant="72" id="pOF-rA-Vev"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.66666666669999997" blue="0.77647058820000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vkT-cR-1r8">
+                        <rect key="frame" x="207" y="18" width="24" height="28"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="24" id="8ar-SV-Cgf"/>
+                            <constraint firstAttribute="height" constant="28" id="jw9-bt-lwQ"/>
+                        </constraints>
+                        <state key="normal" image="questionmark.png"/>
+                        <connections>
+                            <action selector="addHelpTapped:" destination="e0f-bf-daq" eventType="touchUpInside" id="q9U-bu-jBN"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="left" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QhD-7W-ds4">
+                        <rect key="frame" x="11" y="94" width="67" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="67" id="FIx-Vx-mWg"/>
+                            <constraint firstAttribute="height" constant="21" id="xnf-CI-8dx"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.66666666669999997" blue="0.77647058820000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="right" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xx9-td-6Vp">
+                        <rect key="frame" x="11" y="55" width="67" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="BDA-Fe-cbf"/>
+                            <constraint firstAttribute="width" constant="67" id="d7C-AP-UtY"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.66666666669999997" blue="0.77647058820000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" tag="22222" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mkk-d3-aWt" customClass="RightImagedButton" customModule="iOptic" customModuleProvider="target">
+                        <rect key="frame" x="85" y="93" width="103" height="23"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="103" id="0Zc-yh-1dh"/>
+                            <constraint firstAttribute="height" constant="23" id="GD1-M9-KXD"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <state key="normal" title="select" image="dropdown.png">
+                            <color key="titleColor" red="0.1058823529" green="0.66666666669999997" blue="0.76470588240000004" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="titleShadowColor" red="0.89546513559999996" green="0.89546513559999996" blue="0.89546513559999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="spacing">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="leftAxisTapped:" destination="e0f-bf-daq" eventType="touchUpInside" id="0Ie-IY-uAz"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" tag="22" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gqj-5r-D98" customClass="RightImagedButton" customModule="iOptic" customModuleProvider="target">
+                        <rect key="frame" x="85" y="55" width="103" height="23"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="23" id="7Tw-f0-mLG"/>
+                            <constraint firstAttribute="width" constant="103" id="8Dp-RW-np4"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <state key="normal" title="select" image="dropdown.png">
+                            <color key="titleColor" red="0.1058823529" green="0.66666666669999997" blue="0.76470588240000004" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="titleShadowColor" red="0.89546513559999996" green="0.89546513559999996" blue="0.89546513559999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="spacing">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="rightAxisTapped:" destination="e0f-bf-daq" eventType="touchUpInside" id="OuV-Cu-QI6"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" tag="222" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A1m-hA-4oR" customClass="RightImagedButton" customModule="iOptic" customModuleProvider="target">
+                        <rect key="frame" x="209" y="55" width="103" height="23"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="103" id="c4q-PP-KDj"/>
+                            <constraint firstAttribute="height" constant="23" id="y8h-Nx-3wm"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <state key="normal" title="select" image="dropdown.png">
+                            <color key="titleColor" red="0.1058823529" green="0.66666666669999997" blue="0.76470588240000004" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="titleShadowColor" red="0.89546513559999996" green="0.89546513559999996" blue="0.89546513559999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="spacing">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="rightAddTapped:" destination="e0f-bf-daq" eventType="touchUpInside" id="lgI-iK-0On"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" tag="2222222" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5P6-wj-gz5" customClass="RightImagedButton" customModule="iOptic" customModuleProvider="target">
+                        <rect key="frame" x="209" y="93" width="103" height="23"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="23" id="38f-D5-CYx"/>
+                            <constraint firstAttribute="width" constant="103" id="or0-oT-meA"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <state key="normal" title="select" image="dropdown.png">
+                            <color key="titleColor" red="0.1058823529" green="0.66666666669999997" blue="0.76470588240000004" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="titleShadowColor" red="0.89546513559999996" green="0.89546513559999996" blue="0.89546513559999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="spacing">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="leftAddTapped:" destination="e0f-bf-daq" eventType="touchUpInside" id="DWY-RN-1zg"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="zNZ-g5-QGr" firstAttribute="leading" secondItem="vkT-cR-1r8" secondAttribute="trailing" constant="5" id="0C6-Sw-uAg"/>
+                    <constraint firstItem="QhD-7W-ds4" firstAttribute="top" secondItem="Xx9-td-6Vp" secondAttribute="bottom" constant="18" id="1Co-GH-4Ig"/>
+                    <constraint firstItem="zNZ-g5-QGr" firstAttribute="top" secondItem="jKY-OM-O2B" secondAttribute="topMargin" constant="12" id="2dC-1e-ufn"/>
+                    <constraint firstItem="uxD-0x-tdz" firstAttribute="leading" secondItem="AYm-3F-9B9" secondAttribute="trailing" constant="5" id="5zd-vU-uFr"/>
+                    <constraint firstItem="AYm-3F-9B9" firstAttribute="leading" secondItem="jKY-OM-O2B" secondAttribute="leadingMargin" constant="77" id="8Jp-KK-i2y"/>
+                    <constraint firstItem="gqj-5r-D98" firstAttribute="leading" secondItem="Xx9-td-6Vp" secondAttribute="trailing" constant="7" id="9Ax-Em-4yy"/>
+                    <constraint firstItem="QhD-7W-ds4" firstAttribute="leading" secondItem="jKY-OM-O2B" secondAttribute="leadingMargin" constant="3" id="GWj-1U-Z0I"/>
+                    <constraint firstItem="vkT-cR-1r8" firstAttribute="top" secondItem="jKY-OM-O2B" secondAttribute="topMargin" constant="10" id="HTl-Sd-ZaM"/>
+                    <constraint firstItem="Xx9-td-6Vp" firstAttribute="leading" secondItem="jKY-OM-O2B" secondAttribute="leadingMargin" constant="3" id="KXl-O7-y0w"/>
+                    <constraint firstItem="5P6-wj-gz5" firstAttribute="leading" secondItem="mkk-d3-aWt" secondAttribute="trailing" constant="21" id="Lz2-Bb-TC5"/>
+                    <constraint firstItem="A1m-hA-4oR" firstAttribute="top" secondItem="vkT-cR-1r8" secondAttribute="bottom" constant="9" id="N2q-1o-Hhp"/>
+                    <constraint firstItem="AYm-3F-9B9" firstAttribute="top" secondItem="jKY-OM-O2B" secondAttribute="topMargin" constant="10" id="Q7N-oP-Ll3"/>
+                    <constraint firstItem="gqj-5r-D98" firstAttribute="top" secondItem="AYm-3F-9B9" secondAttribute="bottom" constant="9" id="RGJ-oS-vJw"/>
+                    <constraint firstItem="uxD-0x-tdz" firstAttribute="top" secondItem="jKY-OM-O2B" secondAttribute="topMargin" constant="12" id="SK9-qx-eHA"/>
+                    <constraint firstItem="Xx9-td-6Vp" firstAttribute="top" secondItem="jKY-OM-O2B" secondAttribute="topMargin" constant="47" id="Tk8-25-y0I"/>
+                    <constraint firstItem="mkk-d3-aWt" firstAttribute="leading" secondItem="QhD-7W-ds4" secondAttribute="trailing" constant="7" id="XTb-VF-FWr"/>
+                    <constraint firstItem="mkk-d3-aWt" firstAttribute="top" secondItem="gqj-5r-D98" secondAttribute="bottom" constant="15" id="dg8-Yj-QJx"/>
+                    <constraint firstItem="5P6-wj-gz5" firstAttribute="top" secondItem="A1m-hA-4oR" secondAttribute="bottom" constant="15" id="f1v-GS-uB0"/>
+                    <constraint firstItem="vkT-cR-1r8" firstAttribute="leading" secondItem="uxD-0x-tdz" secondAttribute="trailing" constant="21" id="nTX-ff-3sK"/>
+                    <constraint firstItem="A1m-hA-4oR" firstAttribute="leading" secondItem="gqj-5r-D98" secondAttribute="trailing" constant="21" id="u4m-Bs-OdG"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="lensAddLeftBtn" destination="5P6-wj-gz5" id="ME9-FQ-u2G"/>
+                <outlet property="lensAddRigthBtn" destination="A1m-hA-4oR" id="c7x-4Y-1jR"/>
+                <outlet property="lensAxisLeftBtn" destination="mkk-d3-aWt" id="y2Z-Mg-dtf"/>
+                <outlet property="lensAxisRigthBtn" destination="gqj-5r-D98" id="3jG-bz-DTD"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="278"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="dropdown.png" width="31" height="31"/>
+        <image name="questionmark.png" width="20" height="20"/>
+    </resources>
+</document>
