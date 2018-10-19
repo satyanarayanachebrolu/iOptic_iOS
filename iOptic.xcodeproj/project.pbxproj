@@ -19,18 +19,20 @@
 		7F0A5E691F4349420067D954 /* split.c in Sources */ = {isa = PBXBuildFile; fileRef = 7F0A5E611F4349420067D954 /* split.c */; };
 		7F0A5E6D1F43495E0067D954 /* UIImage+MDQRCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F0A5E6C1F43495E0067D954 /* UIImage+MDQRCode.m */; };
 		7F0ECFC61EE4790A00D98014 /* RightImagedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0ECFC51EE4790A00D98014 /* RightImagedButton.swift */; };
+		7F184AB01F48E29F00CE9480 /* UIImage+animatedGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F184AAF1F48E29F00CE9480 /* UIImage+animatedGIF.m */; };
 		7F2706A81F45FB55006EB681 /* QRCameraSwitchButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F27069E1F45FB55006EB681 /* QRCameraSwitchButton.m */; };
 		7F2706A91F45FB55006EB681 /* QRCodeReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F2706A01F45FB55006EB681 /* QRCodeReader.m */; };
 		7F2706AA1F45FB55006EB681 /* QRCodeReaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F2706A31F45FB55006EB681 /* QRCodeReaderView.m */; };
 		7F2706AB1F45FB55006EB681 /* QRCodeReaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F2706A51F45FB55006EB681 /* QRCodeReaderViewController.m */; };
 		7F2706AC1F45FB55006EB681 /* QRToggleTorchButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F2706A71F45FB55006EB681 /* QRToggleTorchButton.m */; };
-		7F2A9D081F44A43000863807 /* ScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F2A9D071F44A43000863807 /* ScanViewController.m */; };
 		7F5234031EE2F93F00C149E1 /* SkyFloatingLabelTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5234001EE2F93F00C149E1 /* SkyFloatingLabelTextField.swift */; };
 		7F5234041EE2F93F00C149E1 /* SkyFloatingLabelTextFieldWithIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5234011EE2F93F00C149E1 /* SkyFloatingLabelTextFieldWithIcon.swift */; };
 		7F5234051EE2F93F00C149E1 /* UITextField+fixCaretPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5234021EE2F93F00C149E1 /* UITextField+fixCaretPosition.swift */; };
 		7F5234081EE31FE200C149E1 /* LensCategoryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F5234071EE31FE200C149E1 /* LensCategoryTableViewCell.m */; };
 		7F52340C1EE326D000C149E1 /* ContactLensPrescriptionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F52340A1EE326D000C149E1 /* ContactLensPrescriptionTableViewCell.m */; };
 		7F52340D1EE326D000C149E1 /* ContactLensPrescriptionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F52340B1EE326D000C149E1 /* ContactLensPrescriptionTableViewCell.xib */; };
+		7F567EE21F48B7DA0021F4FC /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F567EE11F48B7DA0021F4FC /* AVKit.framework */; };
+		7F567EE41F48B8290021F4FC /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F567EE31F48B8290021F4FC /* AVFoundation.framework */; };
 		7F58B3241F0198CC00F45BD5 /* PrescriptionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F58B3231F0198CC00F45BD5 /* PrescriptionTableViewCell.m */; };
 		7F58B3271F02101300F45BD5 /* PrescriptonDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F58B3261F02101300F45BD5 /* PrescriptonDetailViewController.m */; };
 		7F593DA21F11EDAE00E8AEB9 /* PrescriptionDetailsViewTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F593DA01F11EDAE00E8AEB9 /* PrescriptionDetailsViewTableViewCell.m */; };
@@ -54,13 +56,31 @@
 		7F6D5A8E1EE3ADCA009CCDF5 /* LensTypeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F6D5A8C1EE3ADCA009CCDF5 /* LensTypeTableViewCell.xib */; };
 		7F6D5AD71EE476BD009CCDF5 /* TextImageButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6D5AD51EE476BD009CCDF5 /* TextImageButton.swift */; };
 		7F6D5AD81EE476BD009CCDF5 /* UIEdgeInsets+HorizontalAdjustment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6D5AD61EE476BD009CCDF5 /* UIEdgeInsets+HorizontalAdjustment.swift */; };
+		7F8456F21F48C4FF00751034 /* SwiftyOnboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8456F11F48C4FF00751034 /* SwiftyOnboardVC.swift */; };
+		7F8456F91F48C64C00751034 /* OnBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F8456F71F48C64C00751034 /* OnBoard.storyboard */; };
+		7F8456FB1F48C6C700751034 /* FirstOnBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8456FA1F48C6C700751034 /* FirstOnBoardViewController.swift */; };
+		7F8456FD1F48C6F600751034 /* SecondOnBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8456FC1F48C6F600751034 /* SecondOnBoardViewController.swift */; };
+		7F8456FF1F48C74000751034 /* ThirdOnBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8456FE1F48C74000751034 /* ThirdOnBoardViewController.swift */; };
 		7F88119E1F32354000FE235D /* DatePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F88119D1F32354000FE235D /* DatePickerViewController.m */; };
+		7F8909A71F47DDA2002510A7 /* splash.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 7F8909A61F47DDA2002510A7 /* splash.mp4 */; };
+		7FCA10131F48E55E006EC9EF /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FCA10121F48E55E006EC9EF /* Login.storyboard */; };
+		7FCA10161F48E5A6006EC9EF /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCA10141F48E5A6006EC9EF /* CreateAccountViewController.swift */; };
+		7FCA10171F48E5A6006EC9EF /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCA10151F48E5A6006EC9EF /* ForgotPasswordViewController.swift */; };
+		7FCA10191F48E5CF006EC9EF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCA10181F48E5CF006EC9EF /* LoginViewController.swift */; };
+		7FCA101B1F48E65F006EC9EF /* iOptic.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FCA101A1F48E65F006EC9EF /* iOptic.png */; };
 		7FD036D61F166A420077C417 /* UIView+Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FD036D51F166A420077C417 /* UIView+Toast.m */; };
+		7FE847731F496AEB00F08453 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7FE847721F496AEB00F08453 /* GoogleService-Info.plist */; };
 		7FF59FDB1F13CFEE00C4A815 /* XTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FF59FD91F13CFEE00C4A815 /* XTableViewCell.m */; };
 		7FF59FDC1F13CFEE00C4A815 /* XTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FF59FDA1F13CFEE00C4A815 /* XTableViewCell.xib */; };
 		7FFAE0AD1F02A49000C303FE /* whitetrash.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FFAE0AC1F02A49000C303FE /* whitetrash.png */; };
 		92FBA4271F302442002304CB /* CALayer+XibConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 92FBA4261F302442002304CB /* CALayer+XibConfiguration.m */; };
 		947A493F1B0669F3460EFACE /* Pods_iOptic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA50D9E4446778797030C27F /* Pods_iOptic.framework */; };
+		B106A5241F631A45000D69D6 /* iOpticAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B106A5231F631A45000D69D6 /* iOpticAboutViewController.m */; };
+		B12327AC1F694EE50054F9A4 /* NotesViewTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B12327AA1F694EE50054F9A4 /* NotesViewTableViewCell.m */; };
+		B12327AD1F694EE50054F9A4 /* NotesViewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B12327AB1F694EE50054F9A4 /* NotesViewTableViewCell.xib */; };
+		B12327B01F69AA150054F9A4 /* iOpticTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B12327AF1F69AA150054F9A4 /* iOpticTextViewController.m */; };
+		B12327B21F69B66A0054F9A4 /* TermsAndConditions.rtf in Resources */ = {isa = PBXBuildFile; fileRef = B12327B11F69B66A0054F9A4 /* TermsAndConditions.rtf */; };
+		B12327B41F69BBC60054F9A4 /* PrivacyPolicy.rtf in Resources */ = {isa = PBXBuildFile; fileRef = B12327B31F69BBC60054F9A4 /* PrivacyPolicy.rtf */; };
 		B1396A4E1EE098A300B00CB8 /* default_profile_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B1396A4D1EE098A300B00CB8 /* default_profile_icon.png */; };
 		B140F9431ED3C1B40063D09C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B140F9421ED3C1B40063D09C /* main.m */; };
 		B140F9461ED3C1B40063D09C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B140F9451ED3C1B40063D09C /* AppDelegate.m */; };
@@ -79,8 +99,7 @@
 		B140F98C1ED3CD360063D09C /* prescription_cell_image.png in Resources */ = {isa = PBXBuildFile; fileRef = B140F97F1ED3CD360063D09C /* prescription_cell_image.png */; };
 		B140F98D1ED3CD360063D09C /* questionmark.png in Resources */ = {isa = PBXBuildFile; fileRef = B140F9801ED3CD360063D09C /* questionmark.png */; };
 		B140F98E1ED3CD360063D09C /* unchecked.png in Resources */ = {isa = PBXBuildFile; fileRef = B140F9811ED3CD360063D09C /* unchecked.png */; };
-		B16265F61F462F2F000B05C5 /* Splash_Animation.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B16265F41F462F2F000B05C5 /* Splash_Animation.mp4 */; };
-		B16265F71F462F2F000B05C5 /* splashscreen.png in Resources */ = {isa = PBXBuildFile; fileRef = B16265F51F462F2F000B05C5 /* splashscreen.png */; };
+		B16110511F49CDBE00A3598C /* qr_code.png in Resources */ = {isa = PBXBuildFile; fileRef = B16110501F49CDBE00A3598C /* qr_code.png */; };
 		B17919AD1ED51304007B1F89 /* CreatePrescriptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B17919A61ED51303007B1F89 /* CreatePrescriptionViewController.m */; };
 		B17919AE1ED51304007B1F89 /* MenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B17919A81ED51304007B1F89 /* MenuItem.m */; };
 		B17919AF1ED51304007B1F89 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B17919AA1ED51304007B1F89 /* MenuViewController.m */; };
@@ -92,12 +111,13 @@
 		B17919C41ED5133F007B1F89 /* LGSideMenuSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = B17919BB1ED5133F007B1F89 /* LGSideMenuSegue.m */; };
 		B17919C51ED5133F007B1F89 /* LGSideMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = B17919BD1ED5133F007B1F89 /* LGSideMenuView.m */; };
 		B17919C61ED5133F007B1F89 /* UIViewController+LGSideMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = B17919BF1ED5133F007B1F89 /* UIViewController+LGSideMenuController.m */; };
-		B1AA3AA31F487AF700F31E05 /* iOpticTutorialContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1AA3AA01F487AF700F31E05 /* iOpticTutorialContentViewController.m */; };
-		B1AA3AA41F487AF700F31E05 /* iOpticTutorialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1AA3AA21F487AF700F31E05 /* iOpticTutorialViewController.m */; };
-		B1AA3AA81F487FFF00F31E05 /* 1.gif in Resources */ = {isa = PBXBuildFile; fileRef = B1AA3AA51F487FFF00F31E05 /* 1.gif */; };
-		B1AA3AA91F487FFF00F31E05 /* 2.gif in Resources */ = {isa = PBXBuildFile; fileRef = B1AA3AA61F487FFF00F31E05 /* 2.gif */; };
-		B1AA3AAA1F487FFF00F31E05 /* 3.gif in Resources */ = {isa = PBXBuildFile; fileRef = B1AA3AA71F487FFF00F31E05 /* 3.gif */; };
-		B1AA3AAE1F48806800F31E05 /* UIImage+animatedGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = B1AA3AAD1F48806800F31E05 /* UIImage+animatedGIF.m */; };
+		B1A01C8D1F553B77005E8F87 /* UIViewController+Alerts.m in Sources */ = {isa = PBXBuildFile; fileRef = B1A01C8C1F553B77005E8F87 /* UIViewController+Alerts.m */; };
+		B1A01C8F1F55708D005E8F87 /* loginicon.png in Resources */ = {isa = PBXBuildFile; fileRef = B1A01C8E1F55708D005E8F87 /* loginicon.png */; };
+		B1A01C911F557B94005E8F87 /* logout_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B1A01C901F557B94005E8F87 /* logout_icon.png */; };
+		B1A0B1761F4C07AF0068858C /* 1.mov in Resources */ = {isa = PBXBuildFile; fileRef = B1A0B1751F4C07AF0068858C /* 1.mov */; };
+		B1A0B1781F4C0D270068858C /* 2.mov in Resources */ = {isa = PBXBuildFile; fileRef = B1A0B1771F4C0D270068858C /* 2.mov */; };
+		B1A0B17A1F4C0D300068858C /* 3.mov in Resources */ = {isa = PBXBuildFile; fileRef = B1A0B1791F4C0D300068858C /* 3.mov */; };
+		B1A0B17C1F4C19A10068858C /* OnBoardPlayAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A0B17B1F4C19A10068858C /* OnBoardPlayAnimation.swift */; };
 		B1C0E31D1EE0F0A9005B9DFB /* home_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B1C0E31C1EE0F0A9005B9DFB /* home_icon.png */; };
 		B1C0E31F1EE0F0EA005B9DFB /* help_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B1C0E31E1EE0F0EA005B9DFB /* help_icon.png */; };
 		B1C0E3211EE0F1C3005B9DFB /* about_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B1C0E3201EE0F1C3005B9DFB /* about_icon.png */; };
@@ -107,6 +127,8 @@
 		B1C0E32B1EE24E8F005B9DFB /* PrescriptionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B1C0E32A1EE24E8F005B9DFB /* PrescriptionManager.m */; };
 		B1D7BDDB1ED5246F00B1E2EC /* menu_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B1D7BDDA1ED5246E00B1E2EC /* menu_icon.png */; };
 		B1D7BDDE1ED577DC00B1E2EC /* iOpticLeftMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D7BDDD1ED577DC00B1E2EC /* iOpticLeftMenuViewController.m */; };
+		B1E8AD9A1F60A1B700CB5A91 /* close_icon_white.png in Resources */ = {isa = PBXBuildFile; fileRef = B1E8AD991F60A1B600CB5A91 /* close_icon_white.png */; };
+		B1EFE8171F65D2E6005BE7C8 /* login_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = B1EFE8161F65D2E6005BE7C8 /* login_logo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -133,6 +155,8 @@
 		7F0A5E6B1F43495E0067D954 /* UIImage+MDQRCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+MDQRCode.h"; path = "QR/UIImage+MDQRCode.h"; sourceTree = "<group>"; };
 		7F0A5E6C1F43495E0067D954 /* UIImage+MDQRCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+MDQRCode.m"; path = "QR/UIImage+MDQRCode.m"; sourceTree = "<group>"; };
 		7F0ECFC51EE4790A00D98014 /* RightImagedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RightImagedButton.swift; sourceTree = "<group>"; };
+		7F184AAE1F48E29F00CE9480 /* UIImage+animatedGIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+animatedGIF.h"; sourceTree = "<group>"; };
+		7F184AAF1F48E29F00CE9480 /* UIImage+animatedGIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+animatedGIF.m"; sourceTree = "<group>"; };
 		7F27069D1F45FB55006EB681 /* QRCameraSwitchButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCameraSwitchButton.h; sourceTree = "<group>"; };
 		7F27069E1F45FB55006EB681 /* QRCameraSwitchButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRCameraSwitchButton.m; sourceTree = "<group>"; };
 		7F27069F1F45FB55006EB681 /* QRCodeReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCodeReader.h; sourceTree = "<group>"; };
@@ -144,8 +168,6 @@
 		7F2706A51F45FB55006EB681 /* QRCodeReaderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRCodeReaderViewController.m; sourceTree = "<group>"; };
 		7F2706A61F45FB55006EB681 /* QRToggleTorchButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRToggleTorchButton.h; sourceTree = "<group>"; };
 		7F2706A71F45FB55006EB681 /* QRToggleTorchButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRToggleTorchButton.m; sourceTree = "<group>"; };
-		7F2A9D061F44A43000863807 /* ScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanViewController.h; sourceTree = "<group>"; };
-		7F2A9D071F44A43000863807 /* ScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScanViewController.m; sourceTree = "<group>"; };
 		7F5233FF1EE2F93E00C149E1 /* iOptic-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iOptic-Bridging-Header.h"; sourceTree = "<group>"; };
 		7F5234001EE2F93F00C149E1 /* SkyFloatingLabelTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkyFloatingLabelTextField.swift; sourceTree = "<group>"; };
 		7F5234011EE2F93F00C149E1 /* SkyFloatingLabelTextFieldWithIcon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkyFloatingLabelTextFieldWithIcon.swift; sourceTree = "<group>"; };
@@ -155,6 +177,8 @@
 		7F5234091EE326D000C149E1 /* ContactLensPrescriptionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactLensPrescriptionTableViewCell.h; sourceTree = "<group>"; };
 		7F52340A1EE326D000C149E1 /* ContactLensPrescriptionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactLensPrescriptionTableViewCell.m; sourceTree = "<group>"; };
 		7F52340B1EE326D000C149E1 /* ContactLensPrescriptionTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContactLensPrescriptionTableViewCell.xib; sourceTree = "<group>"; };
+		7F567EE11F48B7DA0021F4FC /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		7F567EE31F48B8290021F4FC /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		7F58B3221F0198CC00F45BD5 /* PrescriptionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrescriptionTableViewCell.h; sourceTree = "<group>"; };
 		7F58B3231F0198CC00F45BD5 /* PrescriptionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrescriptionTableViewCell.m; sourceTree = "<group>"; };
 		7F58B3251F02101300F45BD5 /* PrescriptonDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrescriptonDetailViewController.h; sourceTree = "<group>"; };
@@ -189,10 +213,22 @@
 		7F6D5A8C1EE3ADCA009CCDF5 /* LensTypeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LensTypeTableViewCell.xib; sourceTree = "<group>"; };
 		7F6D5AD51EE476BD009CCDF5 /* TextImageButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextImageButton.swift; sourceTree = "<group>"; };
 		7F6D5AD61EE476BD009CCDF5 /* UIEdgeInsets+HorizontalAdjustment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIEdgeInsets+HorizontalAdjustment.swift"; sourceTree = "<group>"; };
+		7F8456F11F48C4FF00751034 /* SwiftyOnboardVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyOnboardVC.swift; sourceTree = "<group>"; };
+		7F8456F81F48C64C00751034 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = iOptic/Base.lproj/OnBoard.storyboard; sourceTree = "<group>"; };
+		7F8456FA1F48C6C700751034 /* FirstOnBoardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstOnBoardViewController.swift; sourceTree = "<group>"; };
+		7F8456FC1F48C6F600751034 /* SecondOnBoardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondOnBoardViewController.swift; sourceTree = "<group>"; };
+		7F8456FE1F48C74000751034 /* ThirdOnBoardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdOnBoardViewController.swift; sourceTree = "<group>"; };
 		7F88119C1F32354000FE235D /* DatePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatePickerViewController.h; sourceTree = "<group>"; };
 		7F88119D1F32354000FE235D /* DatePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatePickerViewController.m; sourceTree = "<group>"; };
+		7F8909A61F47DDA2002510A7 /* splash.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = splash.mp4; sourceTree = "<group>"; };
+		7FCA10121F48E55E006EC9EF /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		7FCA10141F48E5A6006EC9EF /* CreateAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
+		7FCA10151F48E5A6006EC9EF /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		7FCA10181F48E5CF006EC9EF /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		7FCA101A1F48E65F006EC9EF /* iOptic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iOptic.png; sourceTree = "<group>"; };
 		7FD036D41F166A420077C417 /* UIView+Toast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Toast.h"; sourceTree = "<group>"; };
 		7FD036D51F166A420077C417 /* UIView+Toast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Toast.m"; sourceTree = "<group>"; };
+		7FE847721F496AEB00F08453 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7FF59FD81F13CFEE00C4A815 /* XTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTableViewCell.h; sourceTree = "<group>"; };
 		7FF59FD91F13CFEE00C4A815 /* XTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTableViewCell.m; sourceTree = "<group>"; };
 		7FF59FDA1F13CFEE00C4A815 /* XTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XTableViewCell.xib; sourceTree = "<group>"; };
@@ -200,6 +236,15 @@
 		92FBA4251F302442002304CB /* CALayer+XibConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+XibConfiguration.h"; sourceTree = "<group>"; };
 		92FBA4261F302442002304CB /* CALayer+XibConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+XibConfiguration.m"; sourceTree = "<group>"; };
 		952DC11E0D5DEB93C07BDECF /* Pods-iOptic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOptic.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOptic/Pods-iOptic.release.xcconfig"; sourceTree = "<group>"; };
+		B106A5221F631A45000D69D6 /* iOpticAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iOpticAboutViewController.h; sourceTree = "<group>"; };
+		B106A5231F631A45000D69D6 /* iOpticAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iOpticAboutViewController.m; sourceTree = "<group>"; };
+		B12327A91F694EE50054F9A4 /* NotesViewTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotesViewTableViewCell.h; sourceTree = "<group>"; };
+		B12327AA1F694EE50054F9A4 /* NotesViewTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotesViewTableViewCell.m; sourceTree = "<group>"; };
+		B12327AB1F694EE50054F9A4 /* NotesViewTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NotesViewTableViewCell.xib; sourceTree = "<group>"; };
+		B12327AE1F69AA150054F9A4 /* iOpticTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iOpticTextViewController.h; sourceTree = "<group>"; };
+		B12327AF1F69AA150054F9A4 /* iOpticTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iOpticTextViewController.m; sourceTree = "<group>"; };
+		B12327B11F69B66A0054F9A4 /* TermsAndConditions.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = TermsAndConditions.rtf; sourceTree = SOURCE_ROOT; };
+		B12327B31F69BBC60054F9A4 /* PrivacyPolicy.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = PrivacyPolicy.rtf; sourceTree = SOURCE_ROOT; };
 		B1396A4D1EE098A300B00CB8 /* default_profile_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = default_profile_icon.png; sourceTree = "<group>"; };
 		B140F93E1ED3C1B40063D09C /* iOptic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOptic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B140F9421ED3C1B40063D09C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -222,8 +267,7 @@
 		B140F97F1ED3CD360063D09C /* prescription_cell_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = prescription_cell_image.png; sourceTree = "<group>"; };
 		B140F9801ED3CD360063D09C /* questionmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = questionmark.png; sourceTree = "<group>"; };
 		B140F9811ED3CD360063D09C /* unchecked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = unchecked.png; sourceTree = "<group>"; };
-		B16265F41F462F2F000B05C5 /* Splash_Animation.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Splash_Animation.mp4; sourceTree = "<group>"; };
-		B16265F51F462F2F000B05C5 /* splashscreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splashscreen.png; sourceTree = "<group>"; };
+		B16110501F49CDBE00A3598C /* qr_code.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = qr_code.png; sourceTree = "<group>"; };
 		B17919A51ED51303007B1F89 /* CreatePrescriptionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreatePrescriptionViewController.h; sourceTree = "<group>"; };
 		B17919A61ED51303007B1F89 /* CreatePrescriptionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreatePrescriptionViewController.m; sourceTree = "<group>"; };
 		B17919A71ED51304007B1F89 /* MenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuItem.h; sourceTree = "<group>"; };
@@ -246,15 +290,14 @@
 		B17919BD1ED5133F007B1F89 /* LGSideMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGSideMenuView.m; sourceTree = "<group>"; };
 		B17919BE1ED5133F007B1F89 /* UIViewController+LGSideMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+LGSideMenuController.h"; sourceTree = "<group>"; };
 		B17919BF1ED5133F007B1F89 /* UIViewController+LGSideMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+LGSideMenuController.m"; sourceTree = "<group>"; };
-		B1AA3A9F1F487AF700F31E05 /* iOpticTutorialContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iOpticTutorialContentViewController.h; path = Tutorial/iOpticTutorialContentViewController.h; sourceTree = "<group>"; };
-		B1AA3AA01F487AF700F31E05 /* iOpticTutorialContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = iOpticTutorialContentViewController.m; path = Tutorial/iOpticTutorialContentViewController.m; sourceTree = "<group>"; };
-		B1AA3AA11F487AF700F31E05 /* iOpticTutorialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iOpticTutorialViewController.h; path = Tutorial/iOpticTutorialViewController.h; sourceTree = "<group>"; };
-		B1AA3AA21F487AF700F31E05 /* iOpticTutorialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = iOpticTutorialViewController.m; path = Tutorial/iOpticTutorialViewController.m; sourceTree = "<group>"; };
-		B1AA3AA51F487FFF00F31E05 /* 1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 1.gif; sourceTree = "<group>"; };
-		B1AA3AA61F487FFF00F31E05 /* 2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 2.gif; sourceTree = "<group>"; };
-		B1AA3AA71F487FFF00F31E05 /* 3.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 3.gif; sourceTree = "<group>"; };
-		B1AA3AAC1F48806800F31E05 /* UIImage+animatedGIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+animatedGIF.h"; path = "iOptic/AnimatedGif/UIImage+animatedGIF.h"; sourceTree = "<group>"; };
-		B1AA3AAD1F48806800F31E05 /* UIImage+animatedGIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+animatedGIF.m"; path = "iOptic/AnimatedGif/UIImage+animatedGIF.m"; sourceTree = "<group>"; };
+		B1A01C8B1F553B77005E8F87 /* UIViewController+Alerts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Alerts.h"; sourceTree = "<group>"; };
+		B1A01C8C1F553B77005E8F87 /* UIViewController+Alerts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Alerts.m"; sourceTree = "<group>"; };
+		B1A01C8E1F55708D005E8F87 /* loginicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loginicon.png; sourceTree = SOURCE_ROOT; };
+		B1A01C901F557B94005E8F87 /* logout_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logout_icon.png; sourceTree = SOURCE_ROOT; };
+		B1A0B1751F4C07AF0068858C /* 1.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = 1.mov; sourceTree = "<group>"; };
+		B1A0B1771F4C0D270068858C /* 2.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = 2.mov; sourceTree = "<group>"; };
+		B1A0B1791F4C0D300068858C /* 3.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = 3.mov; sourceTree = "<group>"; };
+		B1A0B17B1F4C19A10068858C /* OnBoardPlayAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnBoardPlayAnimation.swift; sourceTree = "<group>"; };
 		B1C0E31C1EE0F0A9005B9DFB /* home_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home_icon.png; sourceTree = "<group>"; };
 		B1C0E31E1EE0F0EA005B9DFB /* help_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = help_icon.png; sourceTree = "<group>"; };
 		B1C0E3201EE0F1C3005B9DFB /* about_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = about_icon.png; sourceTree = "<group>"; };
@@ -267,6 +310,8 @@
 		B1D7BDDA1ED5246E00B1E2EC /* menu_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu_icon.png; sourceTree = "<group>"; };
 		B1D7BDDC1ED577DC00B1E2EC /* iOpticLeftMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iOpticLeftMenuViewController.h; sourceTree = "<group>"; };
 		B1D7BDDD1ED577DC00B1E2EC /* iOpticLeftMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iOpticLeftMenuViewController.m; sourceTree = "<group>"; };
+		B1E8AD991F60A1B600CB5A91 /* close_icon_white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = close_icon_white.png; sourceTree = "<group>"; };
+		B1EFE8161F65D2E6005BE7C8 /* login_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login_logo.png; sourceTree = SOURCE_ROOT; };
 		FA50D9E4446778797030C27F /* Pods_iOptic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOptic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -275,6 +320,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F567EE41F48B8290021F4FC /* AVFoundation.framework in Frameworks */,
+				7F567EE21F48B7DA0021F4FC /* AVKit.framework in Frameworks */,
 				7F593DA61F11EE7000E8AEB9 /* QuartzCore.framework in Frameworks */,
 				947A493F1B0669F3460EFACE /* Pods_iOptic.framework in Frameworks */,
 			);
@@ -306,6 +353,15 @@
 			name = libqrencode;
 			sourceTree = "<group>";
 		};
+		7F184AAD1F48E29500CE9480 /* AnimatedGif */ = {
+			isa = PBXGroup;
+			children = (
+				7F184AAE1F48E29F00CE9480 /* UIImage+animatedGIF.h */,
+				7F184AAF1F48E29F00CE9480 /* UIImage+animatedGIF.m */,
+			);
+			name = AnimatedGif;
+			sourceTree = "<group>";
+		};
 		7F27069C1F45FB3E006EB681 /* QRSCan */ = {
 			isa = PBXGroup;
 			children = (
@@ -327,8 +383,6 @@
 		7F2A9D051F44A42300863807 /* Scan */ = {
 			isa = PBXGroup;
 			children = (
-				7F2A9D061F44A43000863807 /* ScanViewController.h */,
-				7F2A9D071F44A43000863807 /* ScanViewController.m */,
 			);
 			name = Scan;
 			sourceTree = "<group>";
@@ -347,6 +401,8 @@
 		7F593DA41F11EE7000E8AEB9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7F567EE31F48B8290021F4FC /* AVFoundation.framework */,
+				7F567EE11F48B7DA0021F4FC /* AVKit.framework */,
 				7F593DA51F11EE7000E8AEB9 /* QuartzCore.framework */,
 				FA50D9E4446778797030C27F /* Pods_iOptic.framework */,
 			);
@@ -384,6 +440,9 @@
 				7F6D5A6B1EE3A79E009CCDF5 /* NotesTableViewCell.h */,
 				7F6D5A6C1EE3A79E009CCDF5 /* NotesTableViewCell.m */,
 				7F6D5A6D1EE3A79E009CCDF5 /* NotesTableViewCell.xib */,
+				B12327A91F694EE50054F9A4 /* NotesViewTableViewCell.h */,
+				B12327AA1F694EE50054F9A4 /* NotesViewTableViewCell.m */,
+				B12327AB1F694EE50054F9A4 /* NotesViewTableViewCell.xib */,
 				7F5234061EE31FE200C149E1 /* LensCategoryTableViewCell.h */,
 				7F5234071EE31FE200C149E1 /* LensCategoryTableViewCell.m */,
 				7F5234091EE326D000C149E1 /* ContactLensPrescriptionTableViewCell.h */,
@@ -423,6 +482,44 @@
 			name = DropDownButton;
 			sourceTree = "<group>";
 		};
+		7F8456F01F48C4F400751034 /* OnBoard */ = {
+			isa = PBXGroup;
+			children = (
+				7F184AAD1F48E29500CE9480 /* AnimatedGif */,
+				B1A0B1751F4C07AF0068858C /* 1.mov */,
+				B1A0B1771F4C0D270068858C /* 2.mov */,
+				B1A0B1791F4C0D300068858C /* 3.mov */,
+				7F8456F71F48C64C00751034 /* OnBoard.storyboard */,
+				7F8456F11F48C4FF00751034 /* SwiftyOnboardVC.swift */,
+				B1A0B17B1F4C19A10068858C /* OnBoardPlayAnimation.swift */,
+				7F8456FA1F48C6C700751034 /* FirstOnBoardViewController.swift */,
+				7F8456FC1F48C6F600751034 /* SecondOnBoardViewController.swift */,
+				7F8456FE1F48C74000751034 /* ThirdOnBoardViewController.swift */,
+			);
+			name = OnBoard;
+			sourceTree = "<group>";
+		};
+		7F89099C1F47D69B002510A7 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				7F8909A61F47DDA2002510A7 /* splash.mp4 */,
+			);
+			name = Splash;
+			sourceTree = "<group>";
+		};
+		7FCA10111F48E552006EC9EF /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				7FE847721F496AEB00F08453 /* GoogleService-Info.plist */,
+				7FCA10181F48E5CF006EC9EF /* LoginViewController.swift */,
+				7FCA101A1F48E65F006EC9EF /* iOptic.png */,
+				7FCA10141F48E5A6006EC9EF /* CreateAccountViewController.swift */,
+				7FCA10151F48E5A6006EC9EF /* ForgotPasswordViewController.swift */,
+				7FCA10121F48E55E006EC9EF /* Login.storyboard */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
 		92FBA4241F302402002304CB /* Categories */ = {
 			isa = PBXGroup;
 			children = (
@@ -435,10 +532,16 @@
 		B13B28E61ED9AA05006ACBD4 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B1EFE8161F65D2E6005BE7C8 /* login_logo.png */,
+				B1E8AD991F60A1B600CB5A91 /* close_icon_white.png */,
+				7FFAE0AC1F02A49000C303FE /* whitetrash.png */,
+				B16110501F49CDBE00A3598C /* qr_code.png */,
 				B1C0E3241EE142B5005B9DFB /* close_icon.png */,
+				B1A01C901F557B94005E8F87 /* logout_icon.png */,
 				B1C0E3221EE0F1CE005B9DFB /* settings_icon.png */,
 				B1C0E3201EE0F1C3005B9DFB /* about_icon.png */,
 				B1C0E31E1EE0F0EA005B9DFB /* help_icon.png */,
+				B1A01C8E1F55708D005E8F87 /* loginicon.png */,
 				B1C0E31C1EE0F0A9005B9DFB /* home_icon.png */,
 				B1396A4D1EE098A300B00CB8 /* default_profile_icon.png */,
 				B140F9761ED3CD360063D09C /* add_prescription.png */,
@@ -462,6 +565,8 @@
 			children = (
 				B1D7BDDC1ED577DC00B1E2EC /* iOpticLeftMenuViewController.h */,
 				B1D7BDDD1ED577DC00B1E2EC /* iOpticLeftMenuViewController.m */,
+				B12327AE1F69AA150054F9A4 /* iOpticTextViewController.h */,
+				B12327AF1F69AA150054F9A4 /* iOpticTextViewController.m */,
 			);
 			name = LeftMenu;
 			sourceTree = "<group>";
@@ -469,7 +574,11 @@
 		B140F9351ED3C1B40063D09C = {
 			isa = PBXGroup;
 			children = (
-				B1AA3AAB1F48805600F31E05 /* AnimatedGif */,
+				B1A01C8B1F553B77005E8F87 /* UIViewController+Alerts.h */,
+				B1A01C8C1F553B77005E8F87 /* UIViewController+Alerts.m */,
+				7FCA10111F48E552006EC9EF /* Login */,
+				7F8456F01F48C4F400751034 /* OnBoard */,
+				7F89099C1F47D69B002510A7 /* Splash */,
 				7F27069C1F45FB3E006EB681 /* QRSCan */,
 				7F2A9D051F44A42300863807 /* Scan */,
 				7F0A5E6A1F4349490067D954 /* libqrencode */,
@@ -496,8 +605,6 @@
 		B140F9401ED3C1B40063D09C /* iOptic */ = {
 			isa = PBXGroup;
 			children = (
-				B1AA3A9E1F487A9000F31E05 /* Tutorial */,
-				7FFAE0AC1F02A49000C303FE /* whitetrash.png */,
 				B13B28E61ED9AA05006ACBD4 /* Resources */,
 				B13B28E71ED9AA1F006ACBD4 /* LeftMenu */,
 				7F6D5A701EE3A7B5009CCDF5 /* Prescription */,
@@ -520,15 +627,12 @@
 				7F58B3221F0198CC00F45BD5 /* PrescriptionTableViewCell.h */,
 				7F58B3231F0198CC00F45BD5 /* PrescriptionTableViewCell.m */,
 				B140F94A1ED3C1B40063D09C /* Main.storyboard */,
-				B16265F41F462F2F000B05C5 /* Splash_Animation.mp4 */,
-				B16265F51F462F2F000B05C5 /* splashscreen.png */,
-				B1AA3AA51F487FFF00F31E05 /* 1.gif */,
-				B1AA3AA61F487FFF00F31E05 /* 2.gif */,
-				B1AA3AA71F487FFF00F31E05 /* 3.gif */,
 				B140F94D1ED3C1B40063D09C /* Assets.xcassets */,
 				B140F94F1ED3C1B40063D09C /* LaunchScreen.storyboard */,
 				B140F9521ED3C1B40063D09C /* Info.plist */,
 				B140F9411ED3C1B40063D09C /* Supporting Files */,
+				B106A5221F631A45000D69D6 /* iOpticAboutViewController.h */,
+				B106A5231F631A45000D69D6 /* iOpticAboutViewController.m */,
 			);
 			path = iOptic;
 			sourceTree = "<group>";
@@ -536,6 +640,8 @@
 		B140F9411ED3C1B40063D09C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B12327B31F69BBC60054F9A4 /* PrivacyPolicy.rtf */,
+				B12327B11F69B66A0054F9A4 /* TermsAndConditions.rtf */,
 				B140F9421ED3C1B40063D09C /* main.m */,
 			);
 			name = "Supporting Files";
@@ -563,26 +669,6 @@
 			path = iOptic/LGSideMenuController;
 			sourceTree = "<group>";
 		};
-		B1AA3A9E1F487A9000F31E05 /* Tutorial */ = {
-			isa = PBXGroup;
-			children = (
-				B1AA3A9F1F487AF700F31E05 /* iOpticTutorialContentViewController.h */,
-				B1AA3AA01F487AF700F31E05 /* iOpticTutorialContentViewController.m */,
-				B1AA3AA11F487AF700F31E05 /* iOpticTutorialViewController.h */,
-				B1AA3AA21F487AF700F31E05 /* iOpticTutorialViewController.m */,
-			);
-			name = Tutorial;
-			sourceTree = "<group>";
-		};
-		B1AA3AAB1F48805600F31E05 /* AnimatedGif */ = {
-			isa = PBXGroup;
-			children = (
-				B1AA3AAC1F48806800F31E05 /* UIImage+animatedGIF.h */,
-				B1AA3AAD1F48806800F31E05 /* UIImage+animatedGIF.m */,
-			);
-			name = AnimatedGif;
-			sourceTree = "<group>";
-		};
 		B400FDDF143F995EB9137D77 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -604,6 +690,8 @@
 				B140F93B1ED3C1B40063D09C /* Frameworks */,
 				B140F93C1ED3C1B40063D09C /* Resources */,
 				93BD9501CD0F34E975669B97 /* [CP] Embed Pods Frameworks */,
+				16DAF18A90C465824A9AA220 /* [CP] Copy Pods Resources */,
+				B1F81F041F56AFC800AB8E55 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -625,7 +713,7 @@
 				TargetAttributes = {
 					B140F93D1ED3C1B40063D09C = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = JWDCNYZ922;
+						DevelopmentTeam = YRRKG63BYD;
 						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
@@ -655,43 +743,54 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1C0E3251EE142B5005B9DFB /* close_icon.png in Resources */,
-				B16265F61F462F2F000B05C5 /* Splash_Animation.mp4 in Resources */,
+				B1EFE8171F65D2E6005BE7C8 /* login_logo.png in Resources */,
+				B12327AD1F694EE50054F9A4 /* NotesViewTableViewCell.xib in Resources */,
 				7FFAE0AD1F02A49000C303FE /* whitetrash.png in Resources */,
 				B140F9891ED3CD360063D09C /* icon2.png in Resources */,
+				B16110511F49CDBE00A3598C /* qr_code.png in Resources */,
 				B140F98C1ED3CD360063D09C /* prescription_cell_image.png in Resources */,
 				B140F9841ED3CD360063D09C /* checked.png in Resources */,
 				B1C0E31F1EE0F0EA005B9DFB /* help_icon.png in Resources */,
+				B12327B21F69B66A0054F9A4 /* TermsAndConditions.rtf in Resources */,
 				B140F98E1ED3CD360063D09C /* unchecked.png in Resources */,
+				7F8456F91F48C64C00751034 /* OnBoard.storyboard in Resources */,
 				7F6D5A7A1EE3ACBD009CCDF5 /* LensPowerTableViewCell.xib in Resources */,
 				B140F9511ED3C1B40063D09C /* LaunchScreen.storyboard in Resources */,
 				B1D7BDDB1ED5246F00B1E2EC /* menu_icon.png in Resources */,
+				B12327B41F69BBC60054F9A4 /* PrivacyPolicy.rtf in Resources */,
 				B140F9831ED3CD360063D09C /* add_prescription.png in Resources */,
 				7F6D5A751EE3AC4B009CCDF5 /* PrescriptionTypeTableViewCell.xib in Resources */,
 				7F6D5A891EE3ADAE009CCDF5 /* PupillaryTableViewCell.xib in Resources */,
 				B140F9861ED3CD360063D09C /* dropdown.png in Resources */,
+				7FCA101B1F48E65F006EC9EF /* iOptic.png in Resources */,
 				7F6D5A6F1EE3A79E009CCDF5 /* NotesTableViewCell.xib in Resources */,
 				7F52340D1EE326D000C149E1 /* ContactLensPrescriptionTableViewCell.xib in Resources */,
 				B1396A4E1EE098A300B00CB8 /* default_profile_icon.png in Resources */,
-				B16265F71F462F2F000B05C5 /* splashscreen.png in Resources */,
 				B1C0E3211EE0F1C3005B9DFB /* about_icon.png in Resources */,
+				B1A0B1781F4C0D270068858C /* 2.mov in Resources */,
 				B140F98A1ED3CD360063D09C /* icon3.png in Resources */,
-				B1AA3AA91F487FFF00F31E05 /* 2.gif in Resources */,
+				B1E8AD9A1F60A1B700CB5A91 /* close_icon_white.png in Resources */,
 				7FF59FDC1F13CFEE00C4A815 /* XTableViewCell.xib in Resources */,
 				B1C0E31D1EE0F0A9005B9DFB /* home_icon.png in Resources */,
+				B1A0B17A1F4C0D300068858C /* 3.mov in Resources */,
+				B1A01C8F1F55708D005E8F87 /* loginicon.png in Resources */,
 				7F6D5A841EE3AD87009CCDF5 /* PrismValuesTableViewCell.xib in Resources */,
 				B140F98D1ED3CD360063D09C /* questionmark.png in Resources */,
 				B140F9871ED3CD360063D09C /* icon0.png in Resources */,
+				7F8909A71F47DDA2002510A7 /* splash.mp4 in Resources */,
 				B140F94E1ED3C1B40063D09C /* Assets.xcassets in Resources */,
 				B140F94C1ED3C1B40063D09C /* Main.storyboard in Resources */,
 				7F0A5E521F4347C10067D954 /* QRCodeTableViewCelTableViewCell.xib in Resources */,
 				B140F9881ED3CD360063D09C /* icon1.png in Resources */,
+				B1A0B1761F4C07AF0068858C /* 1.mov in Resources */,
 				B140F98B1ED3CD360063D09C /* info.png in Resources */,
 				7F6D5A8E1EE3ADCA009CCDF5 /* LensTypeTableViewCell.xib in Resources */,
-				B1AA3AAA1F487FFF00F31E05 /* 3.gif in Resources */,
 				7F6D5A7F1EE3ACDF009CCDF5 /* LensAxisTableViewCell.xib in Resources */,
-				B1AA3AA81F487FFF00F31E05 /* 1.gif in Resources */,
 				B1C0E3231EE0F1CE005B9DFB /* settings_icon.png in Resources */,
+				7FCA10131F48E55E006EC9EF /* Login.storyboard in Resources */,
+				7FE847731F496AEB00F08453 /* GoogleService-Info.plist in Resources */,
 				7F593DA31F11EDAE00E8AEB9 /* PrescriptionDetailsViewTableViewCell.xib in Resources */,
+				B1A01C911F557B94005E8F87 /* logout_icon.png in Resources */,
 				7F5972A91F1543F100DE9115 /* YTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -717,6 +816,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		16DAF18A90C465824A9AA220 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-iOptic/Pods-iOptic-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOptic/Pods-iOptic-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		93BD9501CD0F34E975669B97 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -724,16 +841,45 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-iOptic/Pods-iOptic-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/ZXingObjC/ZXingObjC.framework",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZXingObjC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOptic/Pods-iOptic-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		B1F81F041F56AFC800AB8E55 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" 05597054716e938318a5d8ad5d6aa649cbd7e4aa a43991034164ff077b1edf2be47768ef5e07cc0777537f37f9c0c6a1809f7994";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -742,42 +888,49 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FCA10191F48E5CF006EC9EF /* LoginViewController.swift in Sources */,
 				7F5234051EE2F93F00C149E1 /* UITextField+fixCaretPosition.swift in Sources */,
-				7F2A9D081F44A43000863807 /* ScanViewController.m in Sources */,
+				7F8456FB1F48C6C700751034 /* FirstOnBoardViewController.swift in Sources */,
 				7F6D5A741EE3AC4B009CCDF5 /* PrescriptionTypeTableViewCell.m in Sources */,
 				B140F9491ED3C1B40063D09C /* ViewController.m in Sources */,
 				B1D7BDDE1ED577DC00B1E2EC /* iOpticLeftMenuViewController.m in Sources */,
 				7F6D5A7E1EE3ACDF009CCDF5 /* LensAxisTableViewCell.m in Sources */,
 				B17919AF1ED51304007B1F89 /* MenuViewController.m in Sources */,
 				7F2706A81F45FB55006EB681 /* QRCameraSwitchButton.m in Sources */,
-				B1AA3AAE1F48806800F31E05 /* UIImage+animatedGIF.m in Sources */,
 				B17919C11ED5133F007B1F89 /* LGSideMenuController.m in Sources */,
 				7F2706AA1F45FB55006EB681 /* QRCodeReaderView.m in Sources */,
 				7F5234031EE2F93F00C149E1 /* SkyFloatingLabelTextField.swift in Sources */,
 				B140F9461ED3C1B40063D09C /* AppDelegate.m in Sources */,
 				7F0ECFC61EE4790A00D98014 /* RightImagedButton.swift in Sources */,
+				7F184AB01F48E29F00CE9480 /* UIImage+animatedGIF.m in Sources */,
+				B12327AC1F694EE50054F9A4 /* NotesViewTableViewCell.m in Sources */,
 				7FF59FDB1F13CFEE00C4A815 /* XTableViewCell.m in Sources */,
-				B1AA3AA41F487AF700F31E05 /* iOpticTutorialViewController.m in Sources */,
+				B1A0B17C1F4C19A10068858C /* OnBoardPlayAnimation.swift in Sources */,
 				B17919AD1ED51304007B1F89 /* CreatePrescriptionViewController.m in Sources */,
 				7F0A5E691F4349420067D954 /* split.c in Sources */,
 				B17919C21ED5133F007B1F89 /* LGSideMenuGesturesHandler.m in Sources */,
+				B12327B01F69AA150054F9A4 /* iOpticTextViewController.m in Sources */,
+				7FCA10171F48E5A6006EC9EF /* ForgotPasswordViewController.swift in Sources */,
+				B1A01C8D1F553B77005E8F87 /* UIViewController+Alerts.m in Sources */,
 				92FBA4271F302442002304CB /* CALayer+XibConfiguration.m in Sources */,
 				7F6D5A8D1EE3ADCA009CCDF5 /* LensTypeTableViewCell.m in Sources */,
 				7F6D5A831EE3AD87009CCDF5 /* PrismValuesTableViewCell.m in Sources */,
+				7F8456FF1F48C74000751034 /* ThirdOnBoardViewController.swift in Sources */,
 				7F6D5A881EE3ADAE009CCDF5 /* PupillaryTableViewCell.m in Sources */,
 				7F88119E1F32354000FE235D /* DatePickerViewController.m in Sources */,
 				7F593DA21F11EDAE00E8AEB9 /* PrescriptionDetailsViewTableViewCell.m in Sources */,
 				B140F9431ED3C1B40063D09C /* main.m in Sources */,
+				B106A5241F631A45000D69D6 /* iOpticAboutViewController.m in Sources */,
 				B17919B01ED51304007B1F89 /* PickerViewController.m in Sources */,
 				B17919AE1ED51304007B1F89 /* MenuItem.m in Sources */,
 				B17919C51ED5133F007B1F89 /* LGSideMenuView.m in Sources */,
 				7FD036D61F166A420077C417 /* UIView+Toast.m in Sources */,
 				7F0A5E671F4349420067D954 /* qrspec.c in Sources */,
 				7F0A5E681F4349420067D954 /* rscode.c in Sources */,
+				7F8456FD1F48C6F600751034 /* SecondOnBoardViewController.swift in Sources */,
 				7F6D5A6E1EE3A79E009CCDF5 /* NotesTableViewCell.m in Sources */,
 				7F6D5AD71EE476BD009CCDF5 /* TextImageButton.swift in Sources */,
 				7F6D5A791EE3ACBD009CCDF5 /* LensPowerTableViewCell.m in Sources */,
-				B1AA3AA31F487AF700F31E05 /* iOpticTutorialContentViewController.m in Sources */,
 				7F2706AC1F45FB55006EB681 /* QRToggleTorchButton.m in Sources */,
 				7F0A5E651F4349420067D954 /* qrencode.c in Sources */,
 				7F6D5AD81EE476BD009CCDF5 /* UIEdgeInsets+HorizontalAdjustment.swift in Sources */,
@@ -789,9 +942,11 @@
 				B17919C41ED5133F007B1F89 /* LGSideMenuSegue.m in Sources */,
 				7F0A5E511F4347C10067D954 /* QRCodeTableViewCelTableViewCell.m in Sources */,
 				7F5234041EE2F93F00C149E1 /* SkyFloatingLabelTextFieldWithIcon.swift in Sources */,
+				7FCA10161F48E5A6006EC9EF /* CreateAccountViewController.swift in Sources */,
 				7F09FC121F0FF8FB00A6AD47 /* PersonDetailsTableViewCell.m in Sources */,
 				B1C0E32B1EE24E8F005B9DFB /* PrescriptionManager.m in Sources */,
 				B17919C01ED5133F007B1F89 /* LGSideMenuBorderView.m in Sources */,
+				7F8456F21F48C4FF00751034 /* SwiftyOnboardVC.swift in Sources */,
 				7F0A5E661F4349420067D954 /* qrinput.c in Sources */,
 				7F5234081EE31FE200C149E1 /* LensCategoryTableViewCell.m in Sources */,
 				7F58B3241F0198CC00F45BD5 /* PrescriptionTableViewCell.m in Sources */,
@@ -807,6 +962,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		7F8456F71F48C64C00751034 /* OnBoard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7F8456F81F48C64C00751034 /* Base */,
+			);
+			name = OnBoard.storyboard;
+			sourceTree = "<group>";
+		};
 		B140F94A1ED3C1B40063D09C /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -924,13 +1087,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = NO;
-				DEVELOPMENT_TEAM = JWDCNYZ922;
+				DEVELOPMENT_TEAM = YRRKG63BYD;
 				INFOPLIST_FILE = iOptic/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mycompany.iOptic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_OBJC_BRIDGING_HEADER = "iOptic-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -944,13 +1110,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = NO;
-				DEVELOPMENT_TEAM = JWDCNYZ922;
+				DEVELOPMENT_TEAM = YRRKG63BYD;
 				INFOPLIST_FILE = iOptic/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mycompany.iOptic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_OBJC_BRIDGING_HEADER = "iOptic-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;

@@ -10,10 +10,12 @@
 #import "PrescriptionManager.h"
 #import "PrescriptionTableViewCell.h"
 #import "PrescriptonDetailViewController.h"
-#import "ScanViewController.h"
 #import <QuartzCore/QuartzCore.h>
 #import "QRCodeReaderViewController.h"
 #import "QRCodeReader.h"
+#import "CreatePrescriptionViewController.h"
+@import Firebase;
+
 
 
 
@@ -165,6 +167,13 @@
 
 -(IBAction)addPrescriptionAction:(id)sender
 {
+    [FIRAnalytics logEventWithName:@"BTN_CLICK_ADD_PRESP"
+                        parameters:@{
+                                     kFIRParameterItemID:@"BTN_CLICK_ADD_PRESP",
+                                     kFIRParameterItemName:@"Add Prescription",
+                                     kFIRParameterContentType:@"text"
+                                     }];
+
     
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     UINavigationController *navigationController = [storyboard instantiateViewControllerWithIdentifier:@"NavigationController"];
@@ -175,7 +184,14 @@
 }
 
 - (IBAction)CameraBtnPressed:(id)sender {
-    NSLog(@"camera button pressed");
+    
+    [FIRAnalytics logEventWithName:@"BTN_CLICK_QR"
+                        parameters:@{
+                                     kFIRParameterItemID:@"BTN_CLICK_QR",
+                                     kFIRParameterItemName:@"QR CLICKED",
+                                     kFIRParameterContentType:@"text"
+                                     }];
+
     
     if ([QRCodeReader supportsMetadataObjectTypes:@[AVMetadataObjectTypeQRCode]]) {
         static QRCodeReaderViewController *vc = nil;
@@ -200,32 +216,10 @@
         [alert show];
     }
 
-    
-    
-   /* if ([AVCaptureDevice respondsToSelector:@selector(requestAccessForMediaType: completionHandler:)]) {
-        [AVCaptureDevice requestAccessForMediaType:AVMediaTypeVideo completionHandler:^(BOOL granted) {
-            // Will get here on both iOS 7 & 8 even though camera permissions weren't required
-            // until iOS 8. So for iOS 7 permission will always be granted.
-            if (granted) {
-                // Permission has been granted. Use dispatch_async for any UI updating
-                // code because this block may be executed in a thread.
-                dispatch_async(dispatch_get_main_queue(), ^{
-                    
-                    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-                    ScanViewController *scanViewController = [storyboard instantiateViewControllerWithIdentifier:@"ScanViewController"];
-                    [self.navigationController pushViewController:scanViewController animated:YES] ;
-                });
-            } else {
-                // Permission has been denied.
-            }
-        }];
-    } else {
-        // We are on iOS <= 6. Just do what we need to do.
-        //[self doStuff];
-    }*/
-    
-
 }
+
+
+
 #pragma mark - QRCodeReader Delegate Methods
 
 - (void)reader:(QRCodeReaderViewController *)reader didScanResult:(NSString *)result
@@ -233,33 +227,44 @@
     [reader stopScanning];
     
     [self dismissViewControllerAnimated:YES completion:^{
-        NSData *nsdataFromBase64String = [[NSData alloc]
-                                          initWithBase64EncodedString:result options:0];
-        if (nsdataFromBase64String == nil){
-            [self showErrorMessage];
-            return;
-        }
         
-        // Decoded NSString from the NSData
-        NSString *base64Decoded = [[NSString alloc]
-                                   initWithData:nsdataFromBase64String encoding:NSUTF8StringEncoding];
-        NSLog(@"base64Decoded:%@",base64Decoded);
+        NSData *data = [[NSData alloc] initWithBase64EncodedString:result options:NSDataBase64DecodingIgnoreUnknownCharacters];
+        
+        //NSString *base64Decoded = [[NSString alloc]
+                                   //initWithData:data encoding:NSUTF8StringEncoding];
+        //NSLog(@"base64Decoded:%@",base64Decoded);
         NSError *jsonError = nil;
-        NSDictionary *json = [NSJSONSerialization JSONObjectWithData:nsdataFromBase64String
+        NSDictionary *json = [NSJSONSerialization JSONObjectWithData:data
                                                              options:NSJSONReadingMutableContainers
                                                                error:&jsonError];
-        self.selectedPrescriptionName = [[json valueForKey:@"prescriptionInfo"] valueForKey:@"name"];
-        self.currentPrescription = json;
-        NSData *jsonData = [NSJSONSerialization dataWithJSONObject:json                                                               options:NSJSONWritingPrettyPrinted error:&jsonError];
-        self.currentJSON = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
-        if (jsonError == nil){
-            [self performSegueWithIdentifier:@"showPrescprion" sender:self];
-        }else{
-         
-            
+        if(json)
+        {
+            NSData *jsonData = [NSJSONSerialization dataWithJSONObject:json                                                               options:NSJSONWritingPrettyPrinted error:&jsonError];
+            self.currentJSON = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
+            if (jsonError == nil)
+            {
+                UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+                UINavigationController *navigationController = [storyboard instantiateViewControllerWithIdentifier:@"NavigationController"];
+                
+                
+                CreatePrescriptionViewController *viewcontroller =[storyboard instantiateViewControllerWithIdentifier:@"CreatePrescriptionViewController"];
+                viewcontroller.selectedPrescriptionName = [[json valueForKey:@"prescriptionInfo"] valueForKey:@"name"];
+                viewcontroller.selectedPrescriptionDetails = json;
+                
+                [navigationController setViewControllers:@[viewcontroller]];
+                
+                [self presentViewController:navigationController animated:YES completion:nil];
 
+            }
+            else
+            {
+                NSLog(@"unable to read QR JSON data jsonError:%@", jsonError);
+            }
         }
-       
+        else
+        {
+            [self showErrorMessage];
+        }
     }];
 }
 

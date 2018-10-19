@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface YTableViewCell : UITableViewCell
+
+
 @property (weak, nonatomic) IBOutlet UILabel *powerRight;
 @property (weak, nonatomic) IBOutlet UILabel *lensTypeLbl;
 
@@ -22,8 +24,11 @@
 
 
 @property (weak, nonatomic) IBOutlet UILabel *diaRight;
-
 @property (weak, nonatomic) IBOutlet UILabel *diaLeft;
+
+@property (weak, nonatomic) IBOutlet UILabel *diaRightBioView;
+@property (weak, nonatomic) IBOutlet UILabel *diaLeftBioView;
+
 
 @property (weak, nonatomic) IBOutlet UILabel *cylinderRight;
 @property (weak, nonatomic) IBOutlet UILabel *axisLeft;
@@ -32,6 +37,18 @@
 
 
 @property (weak, nonatomic) IBOutlet UILabel *cylinderLeft;
+
+
+@property (weak, nonatomic) IBOutlet UILabel *addRightLbl;
+
+@property (weak, nonatomic) IBOutlet UILabel *addLeftLbl;
+
+
+@property (weak, nonatomic) IBOutlet UIView *bifocalContactsView;//shows dia and add
+@property (weak, nonatomic) IBOutlet UIView *regularContactsView;//shows dia
+@property (weak, nonatomic) IBOutlet UIView *astigmatismView;//shows Cylinder and Axis
+
+
 
 -(void)updateDetails:(NSDictionary*)prescriptionDetails;
 @end

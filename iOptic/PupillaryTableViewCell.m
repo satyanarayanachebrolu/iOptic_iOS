@@ -14,7 +14,6 @@
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code
-    NSLog(@"rightLabel %d",[self.rightLabel isHidden]);
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
@@ -25,15 +24,11 @@
 
 
 - (IBAction)singlePDTapped:(id)sender {
-    [self.pdTitleLabel setText:@"select pd"];
-    [self.rightLabel setHidden:YES];
     [self.delegate pupillarySelected:SINGLE_PD_SELECTED cell:self];
 }
 
 
 - (IBAction)dualPDTapped:(id)sender {
-    [self.pdTitleLabel setText:@"pd"];
-    [self.rightLabel setHidden:NO];
     [self.delegate pupillarySelected:DUAL_PD_SELECTED cell:self];
 
 }
@@ -47,6 +42,12 @@
     [self.delegate leftPDSelected:sender];
     
 }
+
+- (IBAction)showPopupForPupillaryDistance:(id)sender {
+    [self.delegate pupillaryHelpTapped:self];
+    
+}
+
 
 
 

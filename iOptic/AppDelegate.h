@@ -7,10 +7,21 @@
 //
 
 #import <UIKit/UIKit.h>
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+
+@import Firebase;
+@import GoogleSignIn;
+@class SwiftyOnboardVC;
+
+@interface AppDelegate : UIResponder <UIApplicationDelegate, GIDSignInDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
+@property(strong) NSMutableArray *firstGIF;
+@property(strong) NSMutableArray *secondGIF;
+@property(strong) NSMutableArray *thirdGIF;
+@property(strong) SwiftyOnboardVC *walkthough;
 
+-(void)goToMainViewController;
+-(void)showLoginScreen;
 @end
 

@@ -11,6 +11,7 @@
 @interface QRCodeTableViewCelTableViewCell : UITableViewCell
 
 @property (weak, nonatomic) IBOutlet UIImageView *qrCodeImageView;
+@property (weak, nonatomic) IBOutlet UIView *containerForLabels;
 
 -(void)updateQR:(NSString*)json;
 @end

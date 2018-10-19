@@ -22,6 +22,7 @@ typedef enum pdSelectionTypes
 
 - (void)rightPDSelected:(id)sender;
 - (void)leftPDSelected:(id)sender ;
+-(void)pupillaryHelpTapped:(id)sender;
 
 @end
 

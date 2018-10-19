@@ -75,7 +75,12 @@
 @property (weak, nonatomic) IBOutlet UILabel *eightNotes;
 
 @property (weak, nonatomic) IBOutlet UIStackView *dualPDView;
+@property (weak, nonatomic) IBOutlet UIStackView *rightPDView;
 
+@property (weak, nonatomic) IBOutlet UILabel *rightPDStaticLabel;
+@property (weak, nonatomic) IBOutlet UILabel *dualPDStaticLabel;
+@property (weak, nonatomic) IBOutlet UIView *prismBaseView;
+@property (weak, nonatomic) IBOutlet UILabel *otherFeaturesLabel;
 
 
 

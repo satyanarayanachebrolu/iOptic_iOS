@@ -7,14 +7,29 @@
 //
 
 #import "QRCodeTableViewCelTableViewCell.h"
-#import <ZXingObjC/ZXingObjC.h>
 #import "UIImage+MDQRCode.h"
+
+@interface QRCodeTableViewCelTableViewCell()
+@property(nonatomic) NSString *qrJsonString;
+@end
 
 @implementation QRCodeTableViewCelTableViewCell
 
 - (void)awakeFromNib {
     [super awakeFromNib];
-    // Initialization code
+    [self.containerForLabels.layer setCornerRadius:5.0f];
+    
+    [self.containerForLabels.layer setBorderColor:[UIColor lightGrayColor].CGColor];
+    
+    [self.containerForLabels.layer setBorderWidth:1.5f];
+    
+    [self.containerForLabels.layer setShadowColor:[UIColor blackColor].CGColor];
+    
+    [self.containerForLabels.layer setShadowOpacity:0.8];
+    
+    [self.containerForLabels.layer setShadowRadius:3.0];
+    
+    [self.containerForLabels.layer setShadowOffset:CGSizeMake(2.0, 2.0)];
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
@@ -25,26 +40,16 @@
 
 -(void)updateQR:(NSString*)json
 {
-    self.qrCodeImageView.image = [UIImage mdQRCodeForString:json size:self.qrCodeImageView.bounds.size.width fillColor:[UIColor blackColor]];
-    
-   /* NSError *error = nil;
-    ZXMultiFormatWriter *writer = [ZXMultiFormatWriter writer];
-    ZXBitMatrix* result = [writer encode:json
-                                  format:kBarcodeFormatQRCode
-                                   width:400
-                                  height:400
-                                   error:&error];
-    
-    if (result) {
-     //   CGImageRef image = [[ZXImage imageWithMatrix:result] cgimage];
-        UIImage* uiImage = [[UIImage alloc] initWithCGImage:[[ZXImage imageWithMatrix:result] cgimage]];
-        self.qrCodeImageView.image = uiImage;
-        
-        // This CGImageRef image can be placed in a UIImage, NSImage, or written to a file.
-    } else {
-        NSString *errorMessage = [error localizedDescription];
-        NSLog(@"errorMessage:%@",errorMessage);
-    }*/
+    self.qrJsonString = json;
 }
+
+- (void)layoutSubviews
+{
+    [super layoutSubviews];
+    [self.contentView layoutSubviews];
+    float width = self.qrCodeImageView.bounds.size.width;
+    self.qrCodeImageView.image = [UIImage mdQRCodeForString:self.qrJsonString size:width fillColor:[UIColor blackColor]];
+}
+
 
 @end

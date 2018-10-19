@@ -21,4 +21,21 @@
 @property(weak) id <LensTypeTableViewCellDelegate> delegate;
 @property(strong) NSArray *specialGlasses;
 
+@property (weak, nonatomic) IBOutlet UIButton *polyBtn;
+@property (weak, nonatomic) IBOutlet UIButton *singleBtn;
+
+@property (weak, nonatomic) IBOutlet UIButton *antireflctBtn;
+
+@property (weak, nonatomic) IBOutlet UIButton *highIndexBtn;
+
+@property (weak, nonatomic) IBOutlet UIButton *scratchBtn;
+
+@property (weak, nonatomic) IBOutlet UIButton *chromicBtn;
+
+@property (weak, nonatomic) IBOutlet UIButton *brownBtn;
+
+@property (weak, nonatomic) IBOutlet UIButton *UVBtn;
+
+
+
 @end

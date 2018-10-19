@@ -1,7 +1,14 @@
+//
+//  TutorialViewController.h
+//  iOptic
+//
+//  Created by Santhosh on 19/08/17.
+//  Copyright © 2017 mycompany. All rights reserved.
+//
 
 #import <UIKit/UIKit.h>
 
-@interface iOpticTutorialViewController : UIViewController<UIPageViewControllerDataSource>
+@interface TutorialViewController : UIViewController<UIPageViewControllerDataSource>
 
 
 @property (strong, nonatomic) UIPageViewController *pageViewController;

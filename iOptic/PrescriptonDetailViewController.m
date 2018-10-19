@@ -11,9 +11,10 @@
 #import "PrescriptionDetailsViewTableViewCell.h"
 #import "XTableViewCell.h"
 #import "YTableViewCell.h"
-#import "NotesTableViewCell.h"
+#import "NotesViewTableViewCell.h"
 #import "QRCodeTableViewCelTableViewCell.h"
 #import "UIImage+MDQRCode.h"
+@import Firebase;
 
 @interface PrescriptonDetailViewController ()
 @property(nonatomic) NSUInteger numberOfSections;
@@ -35,8 +36,8 @@
     [self.tableView registerNib:[UINib nibWithNibName:@"YTableViewCell"
                                                bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"YTableViewCell"];
     
-    [self.tableView registerNib:[UINib nibWithNibName:@"NotesTableViewCell"
-                                               bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"NotesTableViewCell"];
+    [self.tableView registerNib:[UINib nibWithNibName:@"NotesViewTableViewCell"
+                                               bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"NotesViewTableViewCell"];
     
     [self.tableView registerNib:[UINib nibWithNibName:@"QRCodeTableViewCelTableViewCell"
                                                bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"QRCodeTableViewCelTableViewCell"];
@@ -93,6 +94,13 @@
 }
 
 -(void)deleteThePrescription{
+    [FIRAnalytics logEventWithName:@"BTN_CLICK_DELETE_PRESP"
+                        parameters:@{
+                                     kFIRParameterItemID:@"BTN_CLICK_DELETE_PRESP",
+                                     kFIRParameterItemName:@"Delete Prescription",
+                                     kFIRParameterContentType:@"text"
+                                     }];
+
     NSMutableArray *prescriptions = [[NSUserDefaults standardUserDefaults] objectForKey:@"prescriptions"];
     NSMutableArray *tempArray = [NSMutableArray arrayWithArray:prescriptions];
     if (prescriptions != nil)
@@ -136,6 +144,14 @@
 {
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     UINavigationController *navigationController = [storyboard instantiateViewControllerWithIdentifier:@"NavigationController"];
+    
+    [FIRAnalytics logEventWithName:@"BTN_CLICK_EDIT_PRESP"
+                        parameters:@{
+                                     kFIRParameterItemID:@"BTN_CLICK_EDIT_PRESP",
+                                     kFIRParameterItemName:@"Edit Prescription",
+                                     kFIRParameterContentType:@"text"
+                                     }];
+
     
     CreatePrescriptionViewController *viewcontroller =[storyboard instantiateViewControllerWithIdentifier:@"CreatePrescriptionViewController"];
     viewcontroller.selectedPrescriptionName = self.name;
@@ -182,13 +198,12 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    // my code
     if (indexPath.section == 0){
         return  300.0f;
     }else if((indexPath.section == 1)&&([self.currentPrescriptionDict valueForKey:@"prescriptionGlasses"])){
         return 918.0f;
     }else if((indexPath.section == 1)&&([self.currentPrescriptionDict valueForKey:@"prescriptionContactLens"])){
-        return 718.0f;
+        return 640.0f;
     }else if((indexPath.section == 2)&&([self.currentPrescriptionDict valueForKey:@"prescriptionContactLens"])&&[self.currentPrescriptionDict valueForKey:@"prescriptionGlasses"]){
         return 718.0f;
     }else if((indexPath.section == 2)&&([[self.currentPrescriptionDict valueForKey:@"prescriptionInfo"] valueForKey:@"notes"])){
@@ -209,8 +224,6 @@
             tableViewCell.nameLbl.text = [[self.currentPrescriptionDict valueForKey:@"prescriptionInfo"] valueForKey:@"name"];
             tableViewCell.doctorNameLbl.text = [[self.currentPrescriptionDict valueForKey:@"prescriptionInfo"] valueForKey:@"doctorName"];
             tableViewCell.dateLbl.text = [[self.currentPrescriptionDict valueForKey:@"prescriptionInfo"] valueForKey:@"date"];
-            tableViewCell.dateLbl.text = [self.currentPrescriptionDict valueForKey:@"date"];
-            //[[self.currentPrescriptionDict valueForKey:@"prescriptionInfo"] valueForKey:@"date"];
         }
         return tableViewCell;
     }else if ((indexPath.section == 1)&& ([self.currentPrescriptionDict valueForKey:@"prescriptionGlasses"])){
@@ -238,9 +251,14 @@
     }
      else if ((indexPath.section == 3&&[self.currentPrescriptionDict valueForKey:@"prescriptionGlasses"]&&
         [self.currentPrescriptionDict valueForKey:@"prescriptionContactLens"]&&[[self.currentPrescriptionDict valueForKey:@"prescriptionInfo"] valueForKey:@"notes"]) || (indexPath.section == 2 &&([self.currentPrescriptionDict valueForKey:@"prescriptionGlasses"]||[self.currentPrescriptionDict valueForKey:@"prescriptionContactLens"])&&[[self.currentPrescriptionDict valueForKey:@"prescriptionInfo"] valueForKey:@"notes"])){
-        NotesTableViewCell *tableViewCell = (NotesTableViewCell*)[tableView dequeueReusableCellWithIdentifier:@"NotesTableViewCell" forIndexPath:indexPath];
+        NotesViewTableViewCell *tableViewCell = (NotesViewTableViewCell*)[tableView dequeueReusableCellWithIdentifier:@"NotesViewTableViewCell" forIndexPath:indexPath];
         if ([[self.currentPrescriptionDict valueForKey:@"prescriptionInfo"] valueForKey:@"notes"]){
             [tableViewCell.notesDescLbl setEditable:NO];
+            
+            UIFont *font = [UIFont fontWithName:@"HelveticaNeue-BoldItalic"
+                                               size:17.0f];
+            [tableViewCell.notesLabel setFont:font];
+            [tableViewCell.notesDescLbl setFont:font];
             [tableViewCell.notesDescLbl setText:[[self.currentPrescriptionDict valueForKey:@"prescriptionInfo"] valueForKey:@"notes"]];
         }
         return tableViewCell;
@@ -253,7 +271,6 @@
          NSString *base64Encoded = [nsdata base64EncodedStringWithOptions:0];
          
          
-         NSLog(@"base64Encoded:%@",base64Encoded);
          [tableViewCell updateQR:base64Encoded];
          return tableViewCell;
 

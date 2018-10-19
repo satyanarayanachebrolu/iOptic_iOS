@@ -18,7 +18,7 @@
 
 @interface NotesTableViewCell : UITableViewCell
 
-
+@property (weak, nonatomic) IBOutlet UILabel *notesLabel;
 @property (weak, nonatomic) IBOutlet UITextView *notesDescLbl;
 @property(weak) id <NotesTableViewCellDelegate> delegate;
 

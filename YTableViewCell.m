@@ -36,42 +36,75 @@
 
 -(void)updateDetails:(NSDictionary*)prescriptionDetails
 {
-    
-    self.lensTypeLbl.text = [prescriptionDetails valueForKey:@"Type"];
+    NSString *lensType = [prescriptionDetails valueForKey:@"contactType"];
+
+    self.lensTypeLbl.text = lensType;
     if ([prescriptionDetails valueForKey:@"power"]){
         self.powerLeft.text = [[prescriptionDetails valueForKey:@"power"] valueForKey:@"os"];
         self.powerRight.text = [[prescriptionDetails valueForKey:@"power"] valueForKey:@"od"];
     }
-    if ([prescriptionDetails valueForKey:@"bc"]){
-        self.bcRight.text = [[prescriptionDetails valueForKey:@"bc"] valueForKey:@"os"];
-        self.bcLeft.text = [[prescriptionDetails valueForKey:@"bc"] valueForKey:@"od"];
-    }
     
-    if ([prescriptionDetails valueForKey:@"dia"]){
-        self.diaRight.text = [[prescriptionDetails valueForKey:@"dia"] valueForKey:@"os"];
-        self.diaLeft.text = [[prescriptionDetails valueForKey:@"dia"] valueForKey:@"od"];
-    }else{
-        [self.diaRight setHidden:YES];
-        [self.diaLeft setHidden:YES];
+    
+    if ([prescriptionDetails valueForKey:@"bc"]){
+        self.bcRight.text = [[prescriptionDetails valueForKey:@"bc"] valueForKey:@"od"];
+        self.bcLeft.text = [[prescriptionDetails valueForKey:@"bc"] valueForKey:@"os"];
+    }
+
+    if([lensType isEqualToString:@"Regular Contacts"])
+    {
+        self.regularContactsView.hidden = NO;
+        self.bifocalContactsView.hidden = YES;
+        self.astigmatismView.hidden = YES;
+    }
+    else if([lensType isEqualToString:@"Bifocal Contacts"])
+    {
+        self.bifocalContactsView.hidden = NO;
+        self.regularContactsView.hidden = YES;
+        self.astigmatismView.hidden = YES;
+        
+        self.diaRightBioView.text = [[prescriptionDetails valueForKey:@"dia"] valueForKey:@"od"];
+        self.diaLeftBioView.text = [[prescriptionDetails valueForKey:@"dia"] valueForKey:@"os"];
+        
+        if ([prescriptionDetails valueForKey:@"add"]){
+            if ([[prescriptionDetails valueForKey:@"add"] valueForKey:@"od"]){
+                self.addRightLbl.text = [[prescriptionDetails valueForKey:@"add"] valueForKey:@"od"];
+            }        if ([[prescriptionDetails valueForKey:@"add"] valueForKey:@"os"]){
+                self.addLeftLbl.text = [[prescriptionDetails valueForKey:@"add"] valueForKey:@"os"];
+            }
+        }
+
 
     }
+    else if([lensType isEqualToString:@"Astigmatism"])
+    {
+        self.bifocalContactsView.hidden = YES;
+        self.regularContactsView.hidden = NO;
+        self.astigmatismView.hidden = NO;
+        
+        if ([prescriptionDetails valueForKey:@"axis"]){
+            self.axisRight.text = [[prescriptionDetails valueForKey:@"axis"] valueForKey:@"od"];
+            self.axisLeft.text = [[prescriptionDetails valueForKey:@"axis"] valueForKey:@"os"];
+        }
+        
+        if ([prescriptionDetails valueForKey:@"cylinder"]){
+            self.cylinderRight.text = [[prescriptionDetails valueForKey:@"cylinder"] valueForKey:@"od"];
+            self.cylinderLeft.text = [[prescriptionDetails valueForKey:@"cylinder"] valueForKey:@"os"];
+        }
+
+    }
+    else
+    {
+        NSLog(@"Something went wrong");
+        assert(false);
+    }
     
-    if ([prescriptionDetails valueForKey:@"axis"]){
-        self.axisRight.text = [[prescriptionDetails valueForKey:@"axis"] valueForKey:@"os"];
-        self.axisLeft.text = [[prescriptionDetails valueForKey:@"axis"] valueForKey:@"od"];
-    }else{
-        [self.axisRight setHidden:YES];
-        [self.axisLeft setHidden:YES];
-        
+    
+    if ([prescriptionDetails valueForKey:@"dia"]){
+        self.diaRight.text = [[prescriptionDetails valueForKey:@"dia"] valueForKey:@"od"];
+        self.diaLeft.text = [[prescriptionDetails valueForKey:@"dia"] valueForKey:@"os"];
     }
-    if ([prescriptionDetails valueForKey:@"cylinder"]){
-        self.cylinderRight.text = [[prescriptionDetails valueForKey:@"cylinder"] valueForKey:@"os"];
-        self.cylinderLeft.text = [[prescriptionDetails valueForKey:@"cylinder"] valueForKey:@"od"];
-    }else{
-        [self.cylinderRight setHidden:YES];
-        [self.cylinderLeft setHidden:YES];
-        
-    }
+    
+    
     
 }
 @end

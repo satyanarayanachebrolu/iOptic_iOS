@@ -15,6 +15,9 @@
     [super awakeFromNib];
     // Initialization code
     self.notesDescLbl.delegate = self;
+    
+    self.notesDescLbl.text = @"enter any notes here (optional)";
+    self.notesDescLbl.textColor = [UIColor lightGrayColor]; //optional
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
@@ -34,4 +37,28 @@
     
     return YES;
 }
+
+- (void)textViewDidBeginEditing:(UITextView *)textView
+{
+    if ([textView.text isEqualToString:@"enter any notes here (optional)"]) {
+        textView.text = @"";
+        textView.textColor = [UIColor blackColor]; //optional
+    }
+    [textView becomeFirstResponder];
+}
+
+
+- (void)textViewDidEndEditing:(UITextView *)textView
+{
+    if ([textView.text isEqualToString:@""]) {
+        textView.text = @"enter any notes here (optional)";
+        textView.textColor = [UIColor lightGrayColor]; //optional
+    }
+    else
+    {
+        [self.delegate notesText:self.notesDescLbl.text];
+    }
+    [textView resignFirstResponder];
+}
+
 @end

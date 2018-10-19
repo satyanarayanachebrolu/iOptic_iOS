@@ -7,7 +7,14 @@ target 'iOptic' do
 
   # Pods for iOptic
   
-  pod 'ZXingObjC', '~> 3.2.1'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Core'
+  pod 'FBSDKLoginKit'
+  pod 'GoogleSignIn'
+  pod 'Fabric'
+  pod 'Crashlytics'
+  pod 'IQKeyboardManager'
+
 
 
 end
