@@ -18,7 +18,6 @@
 		08BB9B1A21311B35374674A324D96711 /* ZXUPCEANExtensionSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 66F122D755CABC02AD2877EF9FD5ADD2 /* ZXUPCEANExtensionSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		08D10FE10858E847DFF5D1A73EADAE45 /* ZXQRCodeMaskUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 8427245056773A01710AE0225DC156FA /* ZXQRCodeMaskUtil.m */; };
 		0996468BD03AB681295B5A91BB4B941E /* ZXBitArray.h in Headers */ = {isa = PBXBuildFile; fileRef = A694BCA8665615F2CAA8973D9C24C217 /* ZXBitArray.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0A7EEC4BFE7B951100D4F0BE8CE03C49 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BBBF731853DF0D539DEAFA61783828C /* CoreVideo.framework */; };
 		0AEA91CC2EB03493341D6CD67B3BC42C /* ZXByQuadrantReader.h in Headers */ = {isa = PBXBuildFile; fileRef = 97002186A30AB2F7858F24A077B41D74 /* ZXByQuadrantReader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0B71CD3988E0F48824171F01CEB89B9C /* ZXDataMatrixDataBlock.h in Headers */ = {isa = PBXBuildFile; fileRef = C54B348599F750DCD2ED012E6D3D3DA4 /* ZXDataMatrixDataBlock.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0BAC6B520A5ED86CB1F8E2BEB824ABEF /* ZXModulusPoly.m in Sources */ = {isa = PBXBuildFile; fileRef = A376C8CCAD3D468F04AA1FFE80574922 /* ZXModulusPoly.m */; };
@@ -30,7 +29,6 @@
 		0E84918343AC1EDEC13ACB097785DB0D /* ZXAztecEncoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 333F39EF08DE343D2BE4F35D3B782C8E /* ZXAztecEncoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0E914CC2E3FB65D72307F5D5519ED25F /* ZXAI013x0x1xDecoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 6081B4B94B63A47D8C494FA2F80C6997 /* ZXAI013x0x1xDecoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0FE77A5D920C9FED4E2625D0F0AE674C /* ZXGenericGF.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A648415CAB9F50E27F93A0A0DF0F733 /* ZXGenericGF.m */; };
-		10E76A8E8E40D777F3DD2D0D431023AE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F85C4E42140D619C0753FA162796D2A4 /* CoreGraphics.framework */; };
 		114AC2C128143D5463D3033BE811CBDB /* ZXResultParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 291321F0F6D821061C3B2FE36E80440A /* ZXResultParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		11AEA22767481254FF178918274B2735 /* ZXCode128Reader.h in Headers */ = {isa = PBXBuildFile; fileRef = CABFCFC135CFEB10CAB6CB9EBB81D8B2 /* ZXCode128Reader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		11CF8E46A7E784E159DC72B868167EB6 /* ZXAddressBookAUResultParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 48A2DEE10C81B64A5967275C49D49A11 /* ZXAddressBookAUResultParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -79,10 +77,9 @@
 		28A5735F62D1C2454E572CC5493931AD /* ZXQRCodeFormatInformation.m in Sources */ = {isa = PBXBuildFile; fileRef = 957758511EBFE43CDAAF23EA893927A7 /* ZXQRCodeFormatInformation.m */; };
 		290EA7957E3A7DBDF1E751C26C8F10E0 /* ZXModulusGF.h in Headers */ = {isa = PBXBuildFile; fileRef = 573978C5CFCDEAD9626C296D766CA8D2 /* ZXModulusGF.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		29ACDB9027BC9E6AF86CC09E03100D18 /* ZXDecodeHints.h in Headers */ = {isa = PBXBuildFile; fileRef = 91AE3C894EFFC6CA53613A1A5791E522 /* ZXDecodeHints.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2A13FAA9DF1E65C8FEA13C6E28C495E2 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE6E11617BFACAC5F5D9E2A27EA5D2FD /* AVFoundation.framework */; };
 		2B33F197C3DB5690F43D92037ACBDB65 /* ZXAbstractDoCoMoResultParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 08DE50D01A522FB248DABD23EDDF2361 /* ZXAbstractDoCoMoResultParser.m */; };
 		2B61CAC129ED1FC73FDD715765C9BF25 /* ZXGeoResultParser.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB3774B4B91010F3C404EBC6842ECD9 /* ZXGeoResultParser.m */; };
-		2B910A5F67F16890E273F979749977CB /* Pods-iOptic-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F8903DBD830053480CDA0D91BF3DA902 /* Pods-iOptic-dummy.m */; };
+		2B910A5F67F16890E273F979749977CB /* Pods-iOptic-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A29416CC1961FC4396F3633D349B43A /* Pods-iOptic-dummy.m */; };
 		2B988DEE4166EC0FD036935592231A65 /* ZXBitMatrix.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EA8C8870B2140604DBDD7D9F927428A /* ZXBitMatrix.m */; };
 		2C7E7C8B40EB391A86118D1E9E696E41 /* ZXVINResultParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E345B5D418B3CB40BC32A7E4AEA709F /* ZXVINResultParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2D324A947B6A892EC88C08ED246ACCC1 /* ZXRSSExpandedDecodedInformation.h in Headers */ = {isa = PBXBuildFile; fileRef = 81981AA76B2E20DEB3253C6616B645A6 /* ZXRSSExpandedDecodedInformation.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -140,6 +137,7 @@
 		497A1885AA28B4F2CEB5EAD895EC12B8 /* ZXDataMatrixX12Encoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BCAACBDF9FB94442008DA3E6F39166C /* ZXDataMatrixX12Encoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		49C80F3D0B4F150C2261217CA9B67DAE /* ZXUPCEANReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 51929401097E27BD4E638AFA745E1A46 /* ZXUPCEANReader.m */; };
 		4A1124A85BAEFB50DFC8724A94D243DB /* ZXParsedResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F49A8A1E1B8009853583B5CB1309ADF /* ZXParsedResult.m */; };
+		4A427F8CDE34D1E57AB92C46CCBB95AA /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ECF7228301E70CD3BAFE824E269E44D /* CoreMedia.framework */; };
 		4A6945336B7AA4EB0BCD5ADCCA710702 /* ZXDecoderResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 133314F2D0C25B9E45FCE98606B5926B /* ZXDecoderResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4B343F8393CD0A444B771B7932B74598 /* ZXEAN13Writer.m in Sources */ = {isa = PBXBuildFile; fileRef = D9F0A0F30D97448A20F235611AC861BC /* ZXEAN13Writer.m */; };
 		4B924057F9CC9FD23C911FE190A7A999 /* ZXMaxiCodeBitMatrixParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 6141C9CDEB9069E6354E981FD4218F13 /* ZXMaxiCodeBitMatrixParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -167,7 +165,7 @@
 		53EF10F20A29E6E6B1B4C86EB15214FF /* ZXAztecCode.h in Headers */ = {isa = PBXBuildFile; fileRef = B9830BF4B5C1B137DF8118063AA04958 /* ZXAztecCode.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		541E625C0C74918471D07C4BBDBF63E8 /* ZXOneDReader.h in Headers */ = {isa = PBXBuildFile; fileRef = 709AFC45BBD1AA04385DA6435E9B9FFC /* ZXOneDReader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		54BDEC69B8F0E44B3453C05D3298BE9E /* ZXRSSDataCharacter.h in Headers */ = {isa = PBXBuildFile; fileRef = CB8B37B4D820EDEED576260FA1B27E17 /* ZXRSSDataCharacter.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		55A7CE336C5B4A80CF96FFBC74FEDBB2 /* Pods-iOptic-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F6983AA0C3EAE6565BE0DB884C9CA5F /* Pods-iOptic-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		55A7CE336C5B4A80CF96FFBC74FEDBB2 /* Pods-iOptic-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B958551CE90E0624326AEB2CE040356 /* Pods-iOptic-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		561BED3FABC1AA22A7A8983A94786E6E /* ZXDataMatrixBitMatrixParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AD3A31BF5135C17053644C3BC7C533C /* ZXDataMatrixBitMatrixParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		56D8F536C39BAC7C16A12CF5578CA498 /* ZXWhiteRectangleDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = DEDB4C281334E86D0B428B2758B991D4 /* ZXWhiteRectangleDetector.m */; };
 		56F9138AB496097D373D19FE10C1C5CD /* ZXEAN13Writer.h in Headers */ = {isa = PBXBuildFile; fileRef = 39D116C49184DC54F22488EFED967F77 /* ZXEAN13Writer.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -216,6 +214,7 @@
 		6C701CD12A9523192C3F545EB2F04865 /* ZXEmailDoCoMoResultParser.m in Sources */ = {isa = PBXBuildFile; fileRef = B47A33A4547F9955892AA4C46E82DC70 /* ZXEmailDoCoMoResultParser.m */; };
 		6D0C2C75AC9BA09D84EB3413A2BF2B91 /* ZXRSSExpandedDecodedNumeric.m in Sources */ = {isa = PBXBuildFile; fileRef = 39B7981AC07DAA200B0B3C1CEDEC1F9F /* ZXRSSExpandedDecodedNumeric.m */; };
 		6DEEB89821FF6FA310ABED3A4450108A /* ZXDimension.m in Sources */ = {isa = PBXBuildFile; fileRef = F4DEA4217993E08C493DC93A893F4DC7 /* ZXDimension.m */; };
+		6E536A8125EF5ECCAB309535B654DAA3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CFBBEA8777B52CD7DA723A7FF1634FC /* Foundation.framework */; };
 		6E61F974A2980D9C1E28819B295D92E4 /* ZXBinaryBitmap.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E150650AE2448813C2CA7769B12B58C /* ZXBinaryBitmap.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6F6389F5AA2E8E107A97B86ED4062FCF /* ZXQRCodeDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D3C2B6DAE42D4B532C1384C3080398E /* ZXQRCodeDecoder.m */; };
 		6F7D3788319F48D6AEB03CCA7C5C7035 /* ZXParsedResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 787F2742337B84BE890DAD26F26D1116 /* ZXParsedResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -237,6 +236,8 @@
 		75E358E535C39DBF569F641DB60CC5BE /* ZXQRCode.h in Headers */ = {isa = PBXBuildFile; fileRef = 452CB50E5D6EB37C56AFE354B2E99769 /* ZXQRCode.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		75F40DD0ED5CE0D8C44D0538CFD2605E /* ZXBookmarkDoCoMoResultParser.h in Headers */ = {isa = PBXBuildFile; fileRef = B40CFCC3A5A53C143B08461EF2DC17ED /* ZXBookmarkDoCoMoResultParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		75FBB6658283D9D245756C0B3DF19D03 /* ZXDataMatrixASCIIEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = A98F5CC098AE425A1E94F1E544F6179B /* ZXDataMatrixASCIIEncoder.m */; };
+		7627A2EB9E0EE9E794D534BF34742AB6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56C2C57BBAEA5C4D3C00E52E840D51A2 /* QuartzCore.framework */; };
+		76DDFF83AB4F4932C72412B10122FBE3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EE6690487D3E292DC53D2AB867DA165 /* CoreGraphics.framework */; };
 		76EF4BD931A808289B87C2E7A6F60AE7 /* ZXBookmarkDoCoMoResultParser.m in Sources */ = {isa = PBXBuildFile; fileRef = E0B991DF4E2E6BEB52BAEA66F93A61CC /* ZXBookmarkDoCoMoResultParser.m */; };
 		7735BEE1CF67AC4355D66F69996817E9 /* ZXDataMatrixSymbolInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F9DB49FA62333712C3D0252F161ECBC /* ZXDataMatrixSymbolInfo.m */; };
 		78CC5E9CB83321F93CBE683D0FC50E53 /* ZXRSSExpandedCurrentParsingState.h in Headers */ = {isa = PBXBuildFile; fileRef = E7412B76FC84D697E1A7933630EFFEE2 /* ZXRSSExpandedCurrentParsingState.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -246,7 +247,6 @@
 		7AB68FF96215CED3F875F00D831D7814 /* ZXDataMatrixDataBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 3376297950DFF03D7949AF4B4F102ECE /* ZXDataMatrixDataBlock.m */; };
 		7BFDBD6D803090ED0EDBDCDE113F1050 /* ZXRSSDataCharacter.m in Sources */ = {isa = PBXBuildFile; fileRef = D5616242A30ABFFD11366552A6000CF3 /* ZXRSSDataCharacter.m */; };
 		7C9EF03867DBFBFAD785AE340296C3E9 /* ZXDataMatrixWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = A28B675B40230BCBE25F8260DA5E48F7 /* ZXDataMatrixWriter.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7CE167EB2CA37F7071237303EF6C9B0F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D55A382E3F7F628196C6E8DB8B30DA9E /* QuartzCore.framework */; };
 		7CF04D98790256DEECE49E09C7D4D66B /* ZXEAN8Reader.m in Sources */ = {isa = PBXBuildFile; fileRef = FACC3C89B9EA272711EED97FDA2C1A56 /* ZXEAN8Reader.m */; };
 		7D1BFD9547C25095BCFB5EEF3C4D8604 /* ZXQRCodeFinderPatternFinder.h in Headers */ = {isa = PBXBuildFile; fileRef = D63D23DAD4DADB2BDE96FC2F2ADE9DFA /* ZXQRCodeFinderPatternFinder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7D74C3DE62B2E32CD43CF447C92810BD /* ZXDataMatrixASCIIEncoder.h in Headers */ = {isa = PBXBuildFile; fileRef = C55193F0D66A2C06A83E5A29279A99C3 /* ZXDataMatrixASCIIEncoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -267,6 +267,7 @@
 		8478FA58291EC41E3CBDE9F3A9B2EB31 /* ZXModulusGF.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EA4B118EB8A6B0FF8B85443894F8ACD /* ZXModulusGF.m */; };
 		848E9EECF7D44150BC23B0608A547252 /* ZXMultiFormatUPCEANReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B4E04718A8FD612C6CBAAFE6043B25D /* ZXMultiFormatUPCEANReader.m */; };
 		8500208B1D4BAACEA044EA51A8439B6E /* ZXAI01320xDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EC9A40BDA1123C3447BBDCEEC50A927 /* ZXAI01320xDecoder.m */; };
+		85058EABF46DD01AF8A1409B8AE0050C /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B11DB9186182A9C593D5FB92991A51AD /* ImageIO.framework */; };
 		850DC1CAA39E01941BE1397ECF6320C2 /* ZXQRCodeBitMatrixParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 06A2984A9D22105D9C6F9ACCB29931F0 /* ZXQRCodeBitMatrixParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8555167E7C3B7358F20222454BEF452A /* ZXRSSExpandedPair.m in Sources */ = {isa = PBXBuildFile; fileRef = E0C266F81B7A08AB3E5F466E3B081C02 /* ZXRSSExpandedPair.m */; };
 		860D3A89EC893EE75A4C8D374E449A9F /* ZXEAN13Reader.m in Sources */ = {isa = PBXBuildFile; fileRef = 7859BE0ECFAECF5616C2283DACAF886E /* ZXEAN13Reader.m */; };
@@ -286,7 +287,6 @@
 		8EE01BBB37409D098F1B2C24EAC3D096 /* ZXCodaBarReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ACE93BDBAD509BF0440064058213F16 /* ZXCodaBarReader.m */; };
 		8EF45B5464FA6892CB3EB8A04F6057E8 /* ZXPDF417DetectionResultRowIndicatorColumn.h in Headers */ = {isa = PBXBuildFile; fileRef = 39E0276007DEE0F9721C18F348291B67 /* ZXPDF417DetectionResultRowIndicatorColumn.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8FE0BB58F33D0B1952BC1156118BCEF8 /* ZXRSSExpandedFieldParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 784C1FD494FE73CFCD7B3D389298A517 /* ZXRSSExpandedFieldParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		901E3DC6557089713834CE7FE4DAC750 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D43DB2F268B85D4E28B4EF25A1EE9D6 /* Foundation.framework */; };
 		91A8FE304A744FAA2B71FA7AC2B6C360 /* ZXRSS14Reader.m in Sources */ = {isa = PBXBuildFile; fileRef = 7512C1D1206546B9AA40DCAE4801E8A5 /* ZXRSS14Reader.m */; };
 		9276765D9FB33E5F847777B7A0136A08 /* ZXDataMatrixDefaultPlacement.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D65A380BC9B456A4971B6388E05405C /* ZXDataMatrixDefaultPlacement.m */; };
 		927F74117415CA714FA4C8CBD8A9C419 /* ZXGenericMultipleBarcodeReader.h in Headers */ = {isa = PBXBuildFile; fileRef = B94D34FE0C05496C79BDF06A2A2C31AF /* ZXGenericMultipleBarcodeReader.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -354,6 +354,7 @@
 		B6055070B8799D71A5B66C5F319F06CF /* ZXWifiResultParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 895554378189A1471469F6432F9DEBDB /* ZXWifiResultParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B657407AFA162302CBDDD1B6A2E151B0 /* ZXUPCAReader.h in Headers */ = {isa = PBXBuildFile; fileRef = C62DF89C4794EA747B67B721E1EEEA25 /* ZXUPCAReader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B86CDB42F763C956192D0C7998762D56 /* ZXAnyAIDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E4ED490BEA1815D7CA5BA8630FF443A /* ZXAnyAIDecoder.m */; };
+		BA16F7B5DBD3C1EEEEF9A5DA7F7BCF0E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61102E76A0270E73ED4D5100ED52F5AD /* AVFoundation.framework */; };
 		BA4B2CA23D73D7BC3825C77CD33AA654 /* ZXDataMatrixErrorCorrection.m in Sources */ = {isa = PBXBuildFile; fileRef = 19ED6BC247E9A1FD1B6B2DD6D3F012CE /* ZXDataMatrixErrorCorrection.m */; };
 		BA6A2853F4BF07A394ED3C13DD25BC75 /* ZXQRCodeDecoderMetaData.h in Headers */ = {isa = PBXBuildFile; fileRef = 30C4563F030F3885988AC6030D18A9A8 /* ZXQRCodeDecoderMetaData.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BA760A7A4EDCCA6EDEA39B5B75A2E77D /* ZXDataMatrixErrorCorrection.h in Headers */ = {isa = PBXBuildFile; fileRef = 25E5ECFD81614A97DC6B8B3D4F497E7A /* ZXDataMatrixErrorCorrection.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -370,7 +371,6 @@
 		BE0E1AF3C5EF768728F8609097043000 /* ZXAztecWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = 145DEF088F8B3839CD5D30A66D601631 /* ZXAztecWriter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BEADECA06C99615F3DB7E35AC119C4D9 /* ZXGeoResultParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 3403E279FBF432CAB21972E297905853 /* ZXGeoResultParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BF1472D4E14F1AEA1D85D04EE63E2606 /* ZXQRCodeMaskUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 61D2807DA355AE1A3F232EB8A60637A6 /* ZXQRCodeMaskUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BF9ABB71303841BA711EC47047EFDE3C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D43DB2F268B85D4E28B4EF25A1EE9D6 /* Foundation.framework */; };
 		C07D6A4D0ED2033E2D6C87937A2AB4A6 /* ZXEmailDoCoMoResultParser.h in Headers */ = {isa = PBXBuildFile; fileRef = B9AB13E1EAF454E7627BC9AA0D08B7E8 /* ZXEmailDoCoMoResultParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C2C26A6E0FD92FE5C8321D07021A50A9 /* ZXBarcodeFormat.h in Headers */ = {isa = PBXBuildFile; fileRef = E6D6D63BC487E35D3567C377397FB7AE /* ZXBarcodeFormat.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C332A977A0D3F51B89184BEF0CCC4A67 /* ZXQRCodeAlignmentPatternFinder.m in Sources */ = {isa = PBXBuildFile; fileRef = 63A0CEE811A0F62E4A2681352523062E /* ZXQRCodeAlignmentPatternFinder.m */; };
@@ -384,10 +384,10 @@
 		C68582342AD1E222F9B8ED56A232331D /* ZXRSSExpandedDecodedObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 6014A07383D4C19B156F55A029A4530E /* ZXRSSExpandedDecodedObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C6A867EFF2524E9D8DD2322355C6622D /* ZXQRCodeFormatInformation.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F3ABB1701D12F82BEA4E274B2C88B62 /* ZXQRCodeFormatInformation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C6AB17DC0CAE44AB2C47A9C773C56C30 /* ZXDataMatrixDetector.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E5C0439FFA981DE9D9B1846D32C911C /* ZXDataMatrixDetector.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C7586357A03A3340E32D4BB22DBC524F /* ZXingObjC-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B0B977CB8AD22F098298FA6891BCDF18 /* ZXingObjC-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C78536DA1520CB28A5F14F4C81A8A66E /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3880F8E6209B90BC392C89DE494316C /* CoreMedia.framework */; };
+		C7586357A03A3340E32D4BB22DBC524F /* ZXingObjC-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C617F8B03E62DB9A4D472BE2993EFC40 /* ZXingObjC-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C7CBF1CFEDA4C04ED52122D25FF218F6 /* ZXQRCodeDataMask.m in Sources */ = {isa = PBXBuildFile; fileRef = CD85D9E2293BFFAD1070783C25488A57 /* ZXQRCodeDataMask.m */; };
 		C993654EDAD0C7ED9C6CF90B46072347 /* ZXPDF417BarcodeMatrix.h in Headers */ = {isa = PBXBuildFile; fileRef = F513DDEDB9205C4528551C795CCBF876 /* ZXPDF417BarcodeMatrix.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CA4EFBB43023712082F90308353C580F /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CABA2F3B404D01FCEA1C62DA04D57E8 /* CoreVideo.framework */; };
 		CA7382D30F3B643B099C1954E8E25DFD /* ZXEANManufacturerOrgSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 15F9F409BD8F020273D87AC5AFEA4B67 /* ZXEANManufacturerOrgSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CB490CAB39E9BF29B1E81387DDE1D456 /* ZXCode93Reader.h in Headers */ = {isa = PBXBuildFile; fileRef = 47D92CF296CCB7BCD426AB5885657CF2 /* ZXCode93Reader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CBB1CF0709D14DD958B1E5EC89E466C6 /* ZXEANManufacturerOrgSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F47AAA70F43BA0D7D63FF4F34746A51 /* ZXEANManufacturerOrgSupport.m */; };
@@ -445,10 +445,11 @@
 		E9324894F289A35DE23FDA03B9C2458C /* ZXAztecReader.h in Headers */ = {isa = PBXBuildFile; fileRef = AAE6B8C121153BC9FD7575850A25BC76 /* ZXAztecReader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EA0A4C5182CF3215FB9BA5B569F3D698 /* ZXVINParsedResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AC260BF6853C9AE175EA70B1F24EFA2 /* ZXVINParsedResult.m */; };
 		EACE252AB00BBCBAB322AC0B19DB5DF2 /* ZXPDF417Codeword.h in Headers */ = {isa = PBXBuildFile; fileRef = D523FBCB1EA9F6D6C7A09DAAE02BD52D /* ZXPDF417Codeword.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EDC0CF11F37468E63F033F3FB633B804 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CFBBEA8777B52CD7DA723A7FF1634FC /* Foundation.framework */; };
 		EDFF1803A4913FACC1C1701B200FAEF4 /* ZXBizcardResultParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FE5E551CA6DFB9DB290B36329CB4563 /* ZXBizcardResultParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EF0328983C3B189698E5C4156AEB0865 /* ZXQRCodeBitMatrixParser.m in Sources */ = {isa = PBXBuildFile; fileRef = DACCED385B8E94E6391263F028C87D72 /* ZXQRCodeBitMatrixParser.m */; };
 		EF7CAD54221401CFD1FE17F2DBDD1C8B /* ZXWifiResultParser.m in Sources */ = {isa = PBXBuildFile; fileRef = F8507249F7C146D325CA63105DB8433D /* ZXWifiResultParser.m */; };
-		EFC927DEC0B7CB970BA98F63EA15DB42 /* ZXingObjC-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A109554ABEBBF42C51E9F06B1AA3E26 /* ZXingObjC-dummy.m */; };
+		EFC927DEC0B7CB970BA98F63EA15DB42 /* ZXingObjC-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 48B1F99C85716B8F46B553AF9EFAD53A /* ZXingObjC-dummy.m */; };
 		F0E54E73DC595A4C8E6A441B2AC4245F /* ZXITFWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = E1AB5F3F4C6BCE120FA15D2911C7E67C /* ZXITFWriter.m */; };
 		F1974C48602F5964B0B53840F52B0211 /* ZXQRCodeDecoder.h in Headers */ = {isa = PBXBuildFile; fileRef = CD49BB401A78D8420355B8861ABDD600 /* ZXQRCodeDecoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F2C8D513A312C8F312083C5E3E263B10 /* ZXByQuadrantReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 33CA5CF5F164F64699875138DB85CB72 /* ZXByQuadrantReader.m */; };
@@ -461,7 +462,6 @@
 		F4A6D8BCC9E34F31AC338007CDC88D77 /* ZXURLTOResultParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 4015C9DB54719C492A096D7068592773 /* ZXURLTOResultParser.m */; };
 		F544FE4203BE75BDA0F0CCCACDF8A336 /* ZXDataMatrixDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = F022694BD6DAC9207E3C85F73F1A2CFC /* ZXDataMatrixDecoder.m */; };
 		F5536FA911BE58A771A833719B0A8D62 /* ZXDataMatrixVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D5A679E4F56FE678B0503F4A3FF7186 /* ZXDataMatrixVersion.m */; };
-		F5A2897AB85C9F5E7726EF2EAB97F81C /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 989FE2208FD54175A1B6C1B03B0C942E /* ImageIO.framework */; };
 		F6ECB8B616EDEBF8A0100BB8250E6554 /* ZXEAN8Reader.h in Headers */ = {isa = PBXBuildFile; fileRef = E09CDA2E10D47585BA4EBD86B2751E50 /* ZXEAN8Reader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F7759A7DC6E4890839FCE79FABA7CE10 /* ZXResultMetadataType.h in Headers */ = {isa = PBXBuildFile; fileRef = 82DB1B58990D4CC2A021BA7343BCEA43 /* ZXResultMetadataType.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F7AC6E40F03C6FD0E9600B5B6AED773C /* ZXRSSExpandedCurrentParsingState.m in Sources */ = {isa = PBXBuildFile; fileRef = F9BEC09BF256A5D89A8B9CE7579E030C /* ZXRSSExpandedCurrentParsingState.m */; };
@@ -505,6 +505,7 @@
 		0B9B12CE651C71A183980161E7F63052 /* ZXPDF417BarcodeValue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZXPDF417BarcodeValue.m; path = ZXingObjC/pdf417/decoder/ZXPDF417BarcodeValue.m; sourceTree = "<group>"; };
 		0CB5BAEA09CD91D96CED9925D5D983BA /* ZXISBNParsedResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZXISBNParsedResult.h; path = ZXingObjC/client/result/ZXISBNParsedResult.h; sourceTree = "<group>"; };
 		0CCF893D33F71E501312008E8F270DD0 /* ZXAztecToken.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZXAztecToken.m; path = ZXingObjC/aztec/encoder/ZXAztecToken.m; sourceTree = "<group>"; };
+		0CFBBEA8777B52CD7DA723A7FF1634FC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		0E150650AE2448813C2CA7769B12B58C /* ZXBinaryBitmap.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZXBinaryBitmap.h; path = ZXingObjC/core/ZXBinaryBitmap.h; sourceTree = "<group>"; };
 		0F19048D175008E167BBEFEF37258E8A /* ZXRSSExpandedDecodedChar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZXRSSExpandedDecodedChar.h; path = ZXingObjC/oned/rss/expanded/decoders/ZXRSSExpandedDecodedChar.h; sourceTree = "<group>"; };
 		0F2C1EAD3C466188B78EDEF9EA084BFC /* ZXMaxiCodeReader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZXMaxiCodeReader.m; path = ZXingObjC/maxicode/ZXMaxiCodeReader.m; sourceTree = "<group>"; };
@@ -518,6 +519,7 @@
 		1217A48E9BCBEF7B21CDDE2E48DA99F8 /* ZXPDF417DetectionResult.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZXPDF417DetectionResult.m; path = ZXingObjC/pdf417/decoder/ZXPDF417DetectionResult.m; sourceTree = "<group>"; };
 		12B31DB91FBC8EC524A75F6723CE52E5 /* ZXDataMatrixC40Encoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZXDataMatrixC40Encoder.m; path = ZXingObjC/datamatrix/encoder/ZXDataMatrixC40Encoder.m; sourceTree = "<group>"; };
 		12DA3F5DC19C9DBC774F84E3AAECA919 /* ZXQRCodeAlignmentPattern.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZXQRCodeAlignmentPattern.h; path = ZXingObjC/qrcode/detector/ZXQRCodeAlignmentPattern.h; sourceTree = "<group>"; };
+		12F7432E6AA085A062C477C8E418678A /* Pods-iOptic-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-iOptic-acknowledgements.plist"; sourceTree = "<group>"; };
 		133314F2D0C25B9E45FCE98606B5926B /* ZXDecoderResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZXDecoderResult.h; path = ZXingObjC/common/ZXDecoderResult.h; sourceTree = "<group>"; };
 		13B6DEB7EE08978854E58F10B3EEE9FC /* ZXQRCodeDetector.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZXQRCodeDetector.m; path = ZXingObjC/qrcode/detector/ZXQRCodeDetector.m; sourceTree = "<group>"; };
 		13F8A25524C47C22386A55D5C033BD09 /* ZXGridSampler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZXGridSampler.h; path = ZXingObjC/common/ZXGridSampler.h; sourceTree = "<group>"; };
@@ -538,18 +540,17 @@
 		1C18E2833E8E28A6A15238E7086093BF /* ZXCode39Reader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZXCode39Reader.m; path = ZXingObjC/oned/ZXCode39Reader.m; sourceTree = "<group>"; };
 		1C9A695969A09B7F78F6D88AA75F7171 /* ZXRSSExpandedGeneralAppIdDecoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZXRSSExpandedGeneralAppIdDecoder.m; path = ZXingObjC/oned/rss/expanded/decoders/ZXRSSExpandedGeneralAppIdDecoder.m; sourceTree = "<group>"; };
 		1D0EF585FB9A317544131338A38409F5 /* ZXQRCodeMultiReader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZXQRCodeMultiReader.h; path = ZXingObjC/qrcode/multi/ZXQRCodeMultiReader.h; sourceTree = "<group>"; };
-		1D43DB2F268B85D4E28B4EF25A1EE9D6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		1EA8C8870B2140604DBDD7D9F927428A /* ZXBitMatrix.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZXBitMatrix.m; path = ZXingObjC/common/ZXBitMatrix.m; sourceTree = "<group>"; };
 		2147010FFE29B856D9DDD3C47B598B6A /* ZXMultiFormatWriter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZXMultiFormatWriter.h; path = ZXingObjC/ZXMultiFormatWriter.h; sourceTree = "<group>"; };
 		2149D889A9E654C79F566C010ACD81B4 /* ZXPDF417Common.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZXPDF417Common.h; path = ZXingObjC/pdf417/ZXPDF417Common.h; sourceTree = "<group>"; };
 		21BFB5DDC4E235F0B6EF4FD6AB09F7A6 /* ZXEncodeHints.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZXEncodeHints.m; path = ZXingObjC/core/ZXEncodeHints.m; sourceTree = "<group>"; };
-		24F52BB1F72C2A7B41B27A47F89A615C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		25CC0E34462330648796619B65451DD6 /* ZXMultiFormatOneDReader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZXMultiFormatOneDReader.m; path = ZXingObjC/oned/ZXMultiFormatOneDReader.m; sourceTree = "<group>"; };
 		25E5ECFD81614A97DC6B8B3D4F497E7A /* ZXDataMatrixErrorCorrection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZXDataMatrixErrorCorrection.h; path = ZXingObjC/datamatrix/encoder/ZXDataMatrixErrorCorrection.h; sourceTree = "<group>"; };
 		2679E074D91835E7DD28C2F0060CAFD6 /* ZXReedSolomonEncoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZXReedSolomonEncoder.m; path = ZXingObjC/common/reedsolomon/ZXReedSolomonEncoder.m; sourceTree = "<group>"; };
 		28A0258F96860C44CB1C720B6FA045A1 /* ZXInvertedLuminanceSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZXInvertedLuminanceSource.h; path = ZXingObjC/core/ZXInvertedLuminanceSource.h; sourceTree = "<group>"; };
 		290162367BC50CEC6EEB6D94F0A48584 /* ZXSMSParsedResult.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZXSMSParsedResult.m; path = ZXingObjC/client/result/ZXSMSParsedResult.m; sourceTree = "<group>"; };
 		291321F0F6D821061C3B2FE36E80440A /* ZXResultParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZXResultParser.h; path = ZXingObjC/client/result/ZXResultParser.h; sourceTree = "<group>"; };
+		2A277933F955F3A69C88552841B78017 /* Pods-iOptic.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-iOptic.modulemap"; sourceTree = "<group>"; };
 		2AA6A5DB0B407711C29A58152C3E3627 /* ZXPDF417Writer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZXPDF417Writer.h; path = ZXingObjC/pdf417/ZXPDF417Writer.h; sourceTree = "<group>"; };
 		2BEE9FB8865251F7508D57C1FAFA2D18 /* ZXUPCEANExtensionSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZXUPCEANExtensionSupport.m; path = ZXingObjC/oned/ZXUPCEANExtensionSupport.m; sourceTree = "<group>"; };
 		2CEA455A3FABC13C70DA6360F1E3D0B0 /* ZXCharacterSetECI.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZXCharacterSetECI.m; path = ZXingObjC/common/ZXCharacterSetECI.m; sourceTree = "<group>"; };
@@ -560,6 +561,7 @@
 		2F57C78571F4C0B1A54CD61DC9FC09E7 /* ZXSMTPResultParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZXSMTPResultParser.m; path = ZXingObjC/client/result/ZXSMTPResultParser.m; sourceTree = "<group>"; };
 		302B25EA744F33EC7CC40D6F334FA850 /* ZXMultiFinderPatternFinder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZXMultiFinderPatternFinder.m; path = ZXingObjC/qrcode/multi/detector/ZXMultiFinderPatternFinder.m; sourceTree = "<group>"; };
 		30C4563F030F3885988AC6030D18A9A8 /* ZXQRCodeDecoderMetaData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZXQRCodeDecoderMetaData.h; path = ZXingObjC/qrcode/decoder/ZXQRCodeDecoderMetaData.h; sourceTree = "<group>"; };
+		31C69694417F4A6EFCAD5272E4F3B2CF /* ZXingObjC-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZXingObjC-prefix.pch"; sourceTree = "<group>"; };
 		328DF32BEC43FEEBEBCDA81934A459FB /* ZXAztecState.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZXAztecState.m; path = ZXingObjC/aztec/encoder/ZXAztecState.m; sourceTree = "<group>"; };
 		32A8CDA69923BCCDBA369500B8076349 /* ZXGeoParsedResult.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZXGeoParsedResult.m; path = ZXingObjC/client/result/ZXGeoParsedResult.m; sourceTree = "<group>"; };
 		331785249EA1372DFD33A52BE519B987 /* ZXDefaultGridSampler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZXDefaultGridSampler.m; path = ZXingObjC/common/ZXDefaultGridSampler.m; sourceTree = "<group>"; };
@@ -568,7 +570,6 @@
 		3390E9C4C59AFF8DAD28BE2E4395F8C3 /* ZXReader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZXReader.h; path = ZXingObjC/core/ZXReader.h; sourceTree = "<group>"; };
 		33CA5CF5F164F64699875138DB85CB72 /* ZXByQuadrantReader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZXByQuadrantReader.m; path = ZXingObjC/multi/ZXByQuadrantReader.m; sourceTree = "<group>"; };
 		3403E279FBF432CAB21972E297905853 /* ZXGeoResultParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZXGeoResultParser.h; path = ZXingObjC/client/result/ZXGeoResultParser.h; sourceTree = "<group>"; };
-		3448D5EE4ECBCFEA2661F354FFB3DCC8 /* Pods-iOptic-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-iOptic-resources.sh"; sourceTree = "<group>"; };
 		359A7EC03A42BBCAE1CA27E94525B6DC /* ZXQRCodeMode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZXQRCodeMode.m; path = ZXingObjC/qrcode/decoder/ZXQRCodeMode.m; sourceTree = "<group>"; };
 		35A5929C8F3E4E6576EDB61A3A20E75D /* ZXRSSExpandedFieldParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZXRSSExpandedFieldParser.m; path = ZXingObjC/oned/rss/expanded/decoders/ZXRSSExpandedFieldParser.m; sourceTree = "<group>"; };
 		35B83D3E283C493979DFAA44380B9208 /* ZXQRCodeWriter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZXQRCodeWriter.m; path = ZXingObjC/qrcode/ZXQRCodeWriter.m; sourceTree = "<group>"; };
@@ -602,15 +603,19 @@
 		462224F683B5B84F70E7098790098659 /* ZXMaxiCodeDecoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZXMaxiCodeDecoder.h; path = ZXingObjC/maxicode/decoder/ZXMaxiCodeDecoder.h; sourceTree = "<group>"; };
 		4676B0243A93F304ECADFE383A563A11 /* ZXDataMatrixC40Encoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZXDataMatrixC40Encoder.h; path = ZXingObjC/datamatrix/encoder/ZXDataMatrixC40Encoder.h; sourceTree = "<group>"; };
 		46DABEBEC30F561264FC6A6F16B9BBF2 /* ZXImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZXImage.m; path = ZXingObjC/client/ZXImage.m; sourceTree = "<group>"; };
+		4727DA07CDE240F37D5DD3B496526EA1 /* Pods-iOptic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iOptic.release.xcconfig"; sourceTree = "<group>"; };
 		47D3B427C99E81048E881B9548C029EF /* ZXPDF417ResultMetadata.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZXPDF417ResultMetadata.m; path = ZXingObjC/pdf417/ZXPDF417ResultMetadata.m; sourceTree = "<group>"; };
 		47D92CF296CCB7BCD426AB5885657CF2 /* ZXCode93Reader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZXCode93Reader.h; path = ZXingObjC/oned/ZXCode93Reader.h; sourceTree = "<group>"; };
 		48A2DEE10C81B64A5967275C49D49A11 /* ZXAddressBookAUResultParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZXAddressBookAUResultParser.h; path = ZXingObjC/client/result/ZXAddressBookAUResultParser.h; sourceTree = "<group>"; };
+		48B1F99C85716B8F46B553AF9EFAD53A /* ZXingObjC-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ZXingObjC-dummy.m"; sourceTree = "<group>"; };
 		48CD8ABA49233EAF877E2875A53EB2B5 /* ZXingObjC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ZXingObjC.framework; path = ZXingObjC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4936AE627ACE08C8714E8CDF9C290488 /* ZXVCardResultParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZXVCardResultParser.m; path = ZXingObjC/client/result/ZXVCardResultParser.m; sourceTree = "<group>"; };
 		4A2AA97FFD828A21050F70CFCDC06B50 /* ZXMultiDetector.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZXMultiDetector.m; path = ZXingObjC/qrcode/multi/detector/ZXMultiDetector.m; sourceTree = "<group>"; };
 		4AC260BF6853C9AE175EA70B1F24EFA2 /* ZXVINParsedResult.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZXVINParsedResult.m; path = ZXingObjC/client/result/ZXVINParsedResult.m; sourceTree = "<group>"; };
+		4B958551CE90E0624326AEB2CE040356 /* Pods-iOptic-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-iOptic-umbrella.h"; sourceTree = "<group>"; };
 		4BFB1C00B7DE473726F6E84BB0AF4335 /* ZXVINParsedResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZXVINParsedResult.h; path = ZXingObjC/client/result/ZXVINParsedResult.h; sourceTree = "<group>"; };
 		4C02676387562899E5B16310DA42C064 /* ZXOneDimensionalCodeWriter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZXOneDimensionalCodeWriter.h; path = ZXingObjC/oned/ZXOneDimensionalCodeWriter.h; sourceTree = "<group>"; };
+		4CABA2F3B404D01FCEA1C62DA04D57E8 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreVideo.framework; sourceTree = DEVELOPER_DIR; };
 		4E2E611B0D72E90A1BF8842CEF8F7991 /* ZXMultiFinderPatternFinder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZXMultiFinderPatternFinder.h; path = ZXingObjC/qrcode/multi/detector/ZXMultiFinderPatternFinder.h; sourceTree = "<group>"; };
 		4FF9503C3D37F3F03A3B9C181A2BDD02 /* ZXQRCodeDecodedBitStreamParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZXQRCodeDecodedBitStreamParser.m; path = ZXingObjC/qrcode/decoder/ZXQRCodeDecodedBitStreamParser.m; sourceTree = "<group>"; };
 		508F907800781D6D9DF0EB0A1E756994 /* ZXWriter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZXWriter.h; path = ZXingObjC/core/ZXWriter.h; sourceTree = "<group>"; };
@@ -626,10 +631,12 @@
 		55638ECE0199100382FAE1F841752DCA /* ZXQRCodeReader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZXQRCodeReader.m; path = ZXingObjC/qrcode/ZXQRCodeReader.m; sourceTree = "<group>"; };
 		559E1BAEB3D8CAECB5285D2A8D217610 /* ZXQRCodeMultiReader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZXQRCodeMultiReader.m; path = ZXingObjC/qrcode/multi/ZXQRCodeMultiReader.m; sourceTree = "<group>"; };
 		56701E8D23AC76CB29FCD2D49E018CEA /* ZXBitArrayBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZXBitArrayBuilder.h; path = ZXingObjC/oned/rss/expanded/ZXBitArrayBuilder.h; sourceTree = "<group>"; };
+		56C2C57BBAEA5C4D3C00E52E840D51A2 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		573370BA80ADAADD196FF5BDCC74FD6B /* ZXAI01AndOtherAIs.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZXAI01AndOtherAIs.m; path = ZXingObjC/oned/rss/expanded/decoders/ZXAI01AndOtherAIs.m; sourceTree = "<group>"; };
 		573978C5CFCDEAD9626C296D766CA8D2 /* ZXModulusGF.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZXModulusGF.h; path = ZXingObjC/pdf417/decoder/ec/ZXModulusGF.h; sourceTree = "<group>"; };
 		5755AF4EFCC4482D3C98535E28B2B6FE /* ZXCode39Writer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZXCode39Writer.m; path = ZXingObjC/oned/ZXCode39Writer.m; sourceTree = "<group>"; };
 		58042D66C7F4805111EA244E53132F7A /* ZXRSSExpandedBlockParsedResult.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZXRSSExpandedBlockParsedResult.m; path = ZXingObjC/oned/rss/expanded/decoders/ZXRSSExpandedBlockParsedResult.m; sourceTree = "<group>"; };
+		58C60FD3277610B4E215EFB37554D45F /* ZXingObjC.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ZXingObjC.modulemap; sourceTree = "<group>"; };
 		58C848E3C0CB6B3BBD7EE4C99D69F409 /* ZXPDF417ECErrorCorrection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZXPDF417ECErrorCorrection.h; path = ZXingObjC/pdf417/decoder/ec/ZXPDF417ECErrorCorrection.h; sourceTree = "<group>"; };
 		5934FAFCAD54696932ACD8E5DB2C8E14 /* ZXAztecSimpleToken.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZXAztecSimpleToken.m; path = ZXingObjC/aztec/encoder/ZXAztecSimpleToken.m; sourceTree = "<group>"; };
 		594D3C0F49B887C08D865E36A9DB719E /* ZXURIResultParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZXURIResultParser.m; path = ZXingObjC/client/result/ZXURIResultParser.m; sourceTree = "<group>"; };
@@ -643,8 +650,8 @@
 		5CFC663086346606E9DFBF908B5549D3 /* ZXQRCodeDataMask.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZXQRCodeDataMask.h; path = ZXingObjC/qrcode/decoder/ZXQRCodeDataMask.h; sourceTree = "<group>"; };
 		5D65A380BC9B456A4971B6388E05405C /* ZXDataMatrixDefaultPlacement.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZXDataMatrixDefaultPlacement.m; path = ZXingObjC/datamatrix/encoder/ZXDataMatrixDefaultPlacement.m; sourceTree = "<group>"; };
 		5D77B2C77BF6F1C49DFC61754CE138D1 /* ZXAztecCode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZXAztecCode.m; path = ZXingObjC/aztec/encoder/ZXAztecCode.m; sourceTree = "<group>"; };
+		5DF3CE720414F7D99DEFA123ED3DDDFE /* ZXingObjC.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZXingObjC.xcconfig; sourceTree = "<group>"; };
 		5E1BCBBFB0D7FB8E2C80F11F537C9253 /* ZXEAN8Writer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZXEAN8Writer.h; path = ZXingObjC/oned/ZXEAN8Writer.h; sourceTree = "<group>"; };
-		5E7D3E9551DB12ED74450D79815F00FD /* Pods-iOptic-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-iOptic-acknowledgements.plist"; sourceTree = "<group>"; };
 		5F0AB897C58721F48DDF8D5B13689BE5 /* ZXPlanarYUVLuminanceSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZXPlanarYUVLuminanceSource.h; path = ZXingObjC/core/ZXPlanarYUVLuminanceSource.h; sourceTree = "<group>"; };
 		5FAF1FFA5BFF7120EA286056136D5C5F /* ZXUPCAWriter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZXUPCAWriter.m; path = ZXingObjC/oned/ZXUPCAWriter.m; sourceTree = "<group>"; };
 		5FE27D036CE1A1DBB4103DEDE3085CE3 /* ZXBinarizer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZXBinarizer.h; path = ZXingObjC/core/ZXBinarizer.h; sourceTree = "<group>"; };
@@ -652,8 +659,7 @@
 		6014A07383D4C19B156F55A029A4530E /* ZXRSSExpandedDecodedObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZXRSSExpandedDecodedObject.h; path = ZXingObjC/oned/rss/expanded/decoders/ZXRSSExpandedDecodedObject.h; sourceTree = "<group>"; };
 		603BEEB208C4D4FB5353201D70FACAD9 /* ZXBinaryBitmap.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZXBinaryBitmap.m; path = ZXingObjC/core/ZXBinaryBitmap.m; sourceTree = "<group>"; };
 		6081B4B94B63A47D8C494FA2F80C6997 /* ZXAI013x0x1xDecoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZXAI013x0x1xDecoder.h; path = ZXingObjC/oned/rss/expanded/decoders/ZXAI013x0x1xDecoder.h; sourceTree = "<group>"; };
-		60BBDBE2BF6648A8D0832463D3D312F3 /* Pods-iOptic-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-iOptic-frameworks.sh"; sourceTree = "<group>"; };
-		60FCD82FA962AC09677596E4F2ACC071 /* Pods-iOptic.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-iOptic.modulemap"; sourceTree = "<group>"; };
+		61102E76A0270E73ED4D5100ED52F5AD /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
 		6141C9CDEB9069E6354E981FD4218F13 /* ZXMaxiCodeBitMatrixParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZXMaxiCodeBitMatrixParser.h; path = ZXingObjC/maxicode/decoder/ZXMaxiCodeBitMatrixParser.h; sourceTree = "<group>"; };
 		6154E9418D99A37862E7D51FDC0577E6 /* ZXPDF417DecodedBitStreamParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZXPDF417DecodedBitStreamParser.h; path = ZXingObjC/pdf417/decoder/ZXPDF417DecodedBitStreamParser.h; sourceTree = "<group>"; };
 		61C2951A987F8AA5DA8D05DDB205B234 /* ZXCharacterSetECI.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZXCharacterSetECI.h; path = ZXingObjC/common/ZXCharacterSetECI.h; sourceTree = "<group>"; };
@@ -670,7 +676,6 @@
 		67512EA748ED373CAFCEE28809C0D5AD /* ZXSMTPResultParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZXSMTPResultParser.h; path = ZXingObjC/client/result/ZXSMTPResultParser.h; sourceTree = "<group>"; };
 		67B6EC1AD491FFF541C04740A9491885 /* ZXAbstractRSSReader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZXAbstractRSSReader.m; path = ZXingObjC/oned/rss/ZXAbstractRSSReader.m; sourceTree = "<group>"; };
 		6819DC9CC6E1FA28D3E6A038158EC3E5 /* ZXBoolArray.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZXBoolArray.m; path = ZXingObjC/common/ZXBoolArray.m; sourceTree = "<group>"; };
-		6A109554ABEBBF42C51E9F06B1AA3E26 /* ZXingObjC-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ZXingObjC-dummy.m"; sourceTree = "<group>"; };
 		6A5BD0D842B6DCD052FF61F5D593431D /* ZXDataMatrixHighLevelEncoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZXDataMatrixHighLevelEncoder.h; path = ZXingObjC/datamatrix/encoder/ZXDataMatrixHighLevelEncoder.h; sourceTree = "<group>"; };
 		6A648415CAB9F50E27F93A0A0DF0F733 /* ZXGenericGF.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZXGenericGF.m; path = ZXingObjC/common/reedsolomon/ZXGenericGF.m; sourceTree = "<group>"; };
 		6A7BF3E0DD9EB3CA025030BF35EE969F /* ZXPDF417Reader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZXPDF417Reader.h; path = ZXingObjC/pdf417/ZXPDF417Reader.h; sourceTree = "<group>"; };
@@ -687,6 +692,7 @@
 		6F49A8A1E1B8009853583B5CB1309ADF /* ZXParsedResult.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZXParsedResult.m; path = ZXingObjC/client/result/ZXParsedResult.m; sourceTree = "<group>"; };
 		6FABFD97AC3FB3037EF4D8B169B1058B /* ZXVEventResultParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZXVEventResultParser.h; path = ZXingObjC/client/result/ZXVEventResultParser.h; sourceTree = "<group>"; };
 		6FE5E551CA6DFB9DB290B36329CB4563 /* ZXBizcardResultParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZXBizcardResultParser.h; path = ZXingObjC/client/result/ZXBizcardResultParser.h; sourceTree = "<group>"; };
+		70504366550CB808A13C6633B819B3E5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		709AFC45BBD1AA04385DA6435E9B9FFC /* ZXOneDReader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZXOneDReader.h; path = ZXingObjC/oned/ZXOneDReader.h; sourceTree = "<group>"; };
 		71C038F337CFDC97602E91196DF62A03 /* ZXCaptureDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZXCaptureDelegate.h; path = ZXingObjC/client/ZXCaptureDelegate.h; sourceTree = "<group>"; };
 		726A0DCEEB6C7BA6E28486029D492CC1 /* ZXExpandedProductParsedResult.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZXExpandedProductParsedResult.m; path = ZXingObjC/client/result/ZXExpandedProductParsedResult.m; sourceTree = "<group>"; };
@@ -695,7 +701,6 @@
 		742B84F44E28F7CBA66BA5659D205CFF /* ZXDataMatrixBase256Encoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZXDataMatrixBase256Encoder.m; path = ZXingObjC/datamatrix/encoder/ZXDataMatrixBase256Encoder.m; sourceTree = "<group>"; };
 		749E21A6501A910700D5966DEF3DD263 /* ZXCGImageLuminanceSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZXCGImageLuminanceSource.h; path = ZXingObjC/client/ZXCGImageLuminanceSource.h; sourceTree = "<group>"; };
 		749FD868244867DB7EDB4373E6E26204 /* ZXQRCodeReader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZXQRCodeReader.h; path = ZXingObjC/qrcode/ZXQRCodeReader.h; sourceTree = "<group>"; };
-		74BD17A494815A677F14192913331B18 /* ZXingObjC.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = ZXingObjC.modulemap; sourceTree = "<group>"; };
 		7512C1D1206546B9AA40DCAE4801E8A5 /* ZXRSS14Reader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZXRSS14Reader.m; path = ZXingObjC/oned/rss/ZXRSS14Reader.m; sourceTree = "<group>"; };
 		7621A0CCEC7816A1313BA3C3263D1705 /* ZXDataMatrixEncoderContext.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZXDataMatrixEncoderContext.m; path = ZXingObjC/datamatrix/encoder/ZXDataMatrixEncoderContext.m; sourceTree = "<group>"; };
 		784C1FD494FE73CFCD7B3D389298A517 /* ZXRSSExpandedFieldParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZXRSSExpandedFieldParser.h; path = ZXingObjC/oned/rss/expanded/decoders/ZXRSSExpandedFieldParser.h; sourceTree = "<group>"; };
@@ -714,6 +719,7 @@
 		7C6C11674671BCB2F9EB0B1BAC0B5C77 /* ZXAztecBinaryShiftToken.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZXAztecBinaryShiftToken.h; path = ZXingObjC/aztec/encoder/ZXAztecBinaryShiftToken.h; sourceTree = "<group>"; };
 		7C6F428205ED69584FC7248B01688FC5 /* ZXSMSTOMMSTOResultParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZXSMSTOMMSTOResultParser.h; path = ZXingObjC/client/result/ZXSMSTOMMSTOResultParser.h; sourceTree = "<group>"; };
 		7C703859B917B6F87EDA0BB54444D761 /* ZXQRCodeFinderPatternFinder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZXQRCodeFinderPatternFinder.m; path = ZXingObjC/qrcode/detector/ZXQRCodeFinderPatternFinder.m; sourceTree = "<group>"; };
+		7C74B1E26C3933D4F4AC5B31B66A41F8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7C83E24D6B79FEDC32D12393D65E0E4D /* ZXCode93Reader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZXCode93Reader.m; path = ZXingObjC/oned/ZXCode93Reader.m; sourceTree = "<group>"; };
 		7C895C9DEB62F60DA1A7B4FA8F17B621 /* ZXByteMatrix.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZXByteMatrix.h; path = ZXingObjC/core/ZXByteMatrix.h; sourceTree = "<group>"; };
 		7CDB024C635158594B5EB89C56C4DEFC /* ZXErrors.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZXErrors.m; path = ZXingObjC/core/ZXErrors.m; sourceTree = "<group>"; };
@@ -721,7 +727,7 @@
 		7E92189D758A3BF5AC98A40449687FC4 /* ZXCodaBarWriter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZXCodaBarWriter.h; path = ZXingObjC/oned/ZXCodaBarWriter.h; sourceTree = "<group>"; };
 		7E9386911CFF2C2655E5FDF83AFAB570 /* ZXQRCodeDecoderMetaData.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZXQRCodeDecoderMetaData.m; path = ZXingObjC/qrcode/decoder/ZXQRCodeDecoderMetaData.m; sourceTree = "<group>"; };
 		7E9BA141BF295BA48B1CFEC2F0FA4FD8 /* ZXAztecDetector.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZXAztecDetector.h; path = ZXingObjC/aztec/detector/ZXAztecDetector.h; sourceTree = "<group>"; };
-		7ECB4808EE1AE8C1A2B6E0057A3017F1 /* ZXingObjC-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZXingObjC-prefix.pch"; sourceTree = "<group>"; };
+		7EE6690487D3E292DC53D2AB867DA165 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
 		7F058FA8A0468E01BC474087384DA107 /* ZXBitArrayBuilder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZXBitArrayBuilder.m; path = ZXingObjC/oned/rss/expanded/ZXBitArrayBuilder.m; sourceTree = "<group>"; };
 		7F9E568D90E1FC1E829EEC5150C5CE2D /* ZXPDF417Dimensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZXPDF417Dimensions.h; path = ZXingObjC/pdf417/encoder/ZXPDF417Dimensions.h; sourceTree = "<group>"; };
 		7FAC7C3CB57A51FBFB7658F2F8DA5597 /* ZXPDF417Reader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZXPDF417Reader.m; path = ZXingObjC/pdf417/ZXPDF417Reader.m; sourceTree = "<group>"; };
@@ -738,6 +744,7 @@
 		8874BC52AF1E8FDA275295B924D6F0B2 /* ZXDataMatrixBitMatrixParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZXDataMatrixBitMatrixParser.m; path = ZXingObjC/datamatrix/decoder/ZXDataMatrixBitMatrixParser.m; sourceTree = "<group>"; };
 		89361E803F6886418D14986AE3591FD9 /* ZXQRCodeEncoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZXQRCodeEncoder.h; path = ZXingObjC/qrcode/encoder/ZXQRCodeEncoder.h; sourceTree = "<group>"; };
 		895554378189A1471469F6432F9DEBDB /* ZXWifiResultParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZXWifiResultParser.h; path = ZXingObjC/client/result/ZXWifiResultParser.h; sourceTree = "<group>"; };
+		8A29416CC1961FC4396F3633D349B43A /* Pods-iOptic-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-iOptic-dummy.m"; sourceTree = "<group>"; };
 		8AD3A31BF5135C17053644C3BC7C533C /* ZXDataMatrixBitMatrixParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZXDataMatrixBitMatrixParser.h; path = ZXingObjC/datamatrix/decoder/ZXDataMatrixBitMatrixParser.h; sourceTree = "<group>"; };
 		8BBE416685E77C16EA06F79F539C1A80 /* ZXPDF417BarcodeMetadata.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZXPDF417BarcodeMetadata.h; path = ZXingObjC/pdf417/decoder/ZXPDF417BarcodeMetadata.h; sourceTree = "<group>"; };
 		8BCEA2648D3920DC908D9A63A68C6204 /* ZXIntArray.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZXIntArray.h; path = ZXingObjC/common/ZXIntArray.h; sourceTree = "<group>"; };
@@ -746,6 +753,7 @@
 		8D062DBA7D5D5AC2757DA042FCF2F0E4 /* ZXAztecHighLevelEncoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZXAztecHighLevelEncoder.m; path = ZXingObjC/aztec/encoder/ZXAztecHighLevelEncoder.m; sourceTree = "<group>"; };
 		8D5A679E4F56FE678B0503F4A3FF7186 /* ZXDataMatrixVersion.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZXDataMatrixVersion.m; path = ZXingObjC/datamatrix/decoder/ZXDataMatrixVersion.m; sourceTree = "<group>"; };
 		8EA4B118EB8A6B0FF8B85443894F8ACD /* ZXModulusGF.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZXModulusGF.m; path = ZXingObjC/pdf417/decoder/ec/ZXModulusGF.m; sourceTree = "<group>"; };
+		8ECF7228301E70CD3BAFE824E269E44D /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreMedia.framework; sourceTree = DEVELOPER_DIR; };
 		8F4A22C382FA421935A5B5F9C0E3F3CE /* ZXGenericGF.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZXGenericGF.h; path = ZXingObjC/common/reedsolomon/ZXGenericGF.h; sourceTree = "<group>"; };
 		8F6455954CC7B9963C73F22A2D88C593 /* ZXTelResultParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZXTelResultParser.h; path = ZXingObjC/client/result/ZXTelResultParser.h; sourceTree = "<group>"; };
 		8FD69FAEE28FDACCCB3A0BCC79F576E7 /* ZXMultiDetector.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZXMultiDetector.h; path = ZXingObjC/qrcode/multi/detector/ZXMultiDetector.h; sourceTree = "<group>"; };
@@ -757,17 +765,17 @@
 		93A87B6125437C1490290BB02C2B09BD /* ZXMultiFormatReader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZXMultiFormatReader.h; path = ZXingObjC/ZXMultiFormatReader.h; sourceTree = "<group>"; };
 		93E396316C22B7895DCA621717AEDE4C /* ZXDataMatrixVersion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZXDataMatrixVersion.h; path = ZXingObjC/datamatrix/decoder/ZXDataMatrixVersion.h; sourceTree = "<group>"; };
 		95288DEFBA2B25EFA5E4199C25D41489 /* ZXBizcardResultParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZXBizcardResultParser.m; path = ZXingObjC/client/result/ZXBizcardResultParser.m; sourceTree = "<group>"; };
+		953B6C2F24DC03DA2FFEAA7668E19321 /* Pods-iOptic-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-iOptic-frameworks.sh"; sourceTree = "<group>"; };
 		957758511EBFE43CDAAF23EA893927A7 /* ZXQRCodeFormatInformation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZXQRCodeFormatInformation.m; path = ZXingObjC/qrcode/decoder/ZXQRCodeFormatInformation.m; sourceTree = "<group>"; };
 		96CFF446908758F8CAAD72E5F66FDDBA /* ZXDecoderResult.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZXDecoderResult.m; path = ZXingObjC/common/ZXDecoderResult.m; sourceTree = "<group>"; };
 		97002186A30AB2F7858F24A077B41D74 /* ZXByQuadrantReader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZXByQuadrantReader.h; path = ZXingObjC/multi/ZXByQuadrantReader.h; sourceTree = "<group>"; };
+		975723EF8AA7FE5F143A147D0CEEBC1C /* Pods-iOptic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iOptic.debug.xcconfig"; sourceTree = "<group>"; };
 		97F75507660F13FD898187ABE888CC47 /* ZXAddressBookAUResultParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZXAddressBookAUResultParser.m; path = ZXingObjC/client/result/ZXAddressBookAUResultParser.m; sourceTree = "<group>"; };
 		9832AF350CD688D4E689902516807CA0 /* ZXISBNResultParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZXISBNResultParser.h; path = ZXingObjC/client/result/ZXISBNResultParser.h; sourceTree = "<group>"; };
 		987A0A863A499F10C9ECD6DDE9496A9B /* ZXPDF417ErrorCorrection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZXPDF417ErrorCorrection.m; path = ZXingObjC/pdf417/encoder/ZXPDF417ErrorCorrection.m; sourceTree = "<group>"; };
-		989FE2208FD54175A1B6C1B03B0C942E /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/ImageIO.framework; sourceTree = DEVELOPER_DIR; };
 		991FCC57F3AFEADAB71C490E7E8FBD1F /* ZXMultiFormatOneDReader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZXMultiFormatOneDReader.h; path = ZXingObjC/oned/ZXMultiFormatOneDReader.h; sourceTree = "<group>"; };
 		998E6FDD1F4209F4320F5F3E4128467D /* ZXResult.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZXResult.m; path = ZXingObjC/core/ZXResult.m; sourceTree = "<group>"; };
 		99D423122E20060F57F2BA5AF79AB6CD /* ZXQRCodeVersion.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZXQRCodeVersion.m; path = ZXingObjC/qrcode/decoder/ZXQRCodeVersion.m; sourceTree = "<group>"; };
-		9BBBF731853DF0D539DEAFA61783828C /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreVideo.framework; sourceTree = DEVELOPER_DIR; };
 		9CF3FE818B8D0C1F686FCA4F0C37773A /* ZXQRCodeMatrixUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZXQRCodeMatrixUtil.h; path = ZXingObjC/qrcode/encoder/ZXQRCodeMatrixUtil.h; sourceTree = "<group>"; };
 		9D1EF75008441B85E5010B1FF9069E1E /* ZXVINResultParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZXVINResultParser.m; path = ZXingObjC/client/result/ZXVINResultParser.m; sourceTree = "<group>"; };
 		9D2899E26E2B93DBB99B039C5936E41F /* ZXDetectorResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZXDetectorResult.h; path = ZXingObjC/common/ZXDetectorResult.h; sourceTree = "<group>"; };
@@ -775,7 +783,6 @@
 		9E7CDFEBDC56028E4721E77BF2FA8B52 /* ZXDataMatrixX12Encoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZXDataMatrixX12Encoder.m; path = ZXingObjC/datamatrix/encoder/ZXDataMatrixX12Encoder.m; sourceTree = "<group>"; };
 		9EF4AFAC38E5A299F219912083DE6CC4 /* ZXAI013x0xDecoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZXAI013x0xDecoder.h; path = ZXingObjC/oned/rss/expanded/decoders/ZXAI013x0xDecoder.h; sourceTree = "<group>"; };
 		9F54439377F9D24B2E5A2D7208B6CDC2 /* ZXTextParsedResult.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZXTextParsedResult.m; path = ZXingObjC/client/result/ZXTextParsedResult.m; sourceTree = "<group>"; };
-		9F6983AA0C3EAE6565BE0DB884C9CA5F /* Pods-iOptic-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-iOptic-umbrella.h"; sourceTree = "<group>"; };
 		A00E3FBD03A62DDBE28D6E914B2D4963 /* ZXCode128Writer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZXCode128Writer.h; path = ZXingObjC/oned/ZXCode128Writer.h; sourceTree = "<group>"; };
 		A03A9518EDABF7213B176EFEC6487777 /* ZXQRCodeDataBlock.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZXQRCodeDataBlock.m; path = ZXingObjC/qrcode/decoder/ZXQRCodeDataBlock.m; sourceTree = "<group>"; };
 		A04E108277B5F4B3E0DE978C3FE98FD4 /* ZXRSSExpandedDecodedNumeric.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZXRSSExpandedDecodedNumeric.h; path = ZXingObjC/oned/rss/expanded/decoders/ZXRSSExpandedDecodedNumeric.h; sourceTree = "<group>"; };
@@ -788,12 +795,10 @@
 		A300E228FDB1851E5BE5073E319BB167 /* ZXDataMatrixDecodedBitStreamParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZXDataMatrixDecodedBitStreamParser.h; path = ZXingObjC/datamatrix/decoder/ZXDataMatrixDecodedBitStreamParser.h; sourceTree = "<group>"; };
 		A376C8CCAD3D468F04AA1FFE80574922 /* ZXModulusPoly.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZXModulusPoly.m; path = ZXingObjC/pdf417/decoder/ec/ZXModulusPoly.m; sourceTree = "<group>"; };
 		A4C08164E40211C4A1941971B365581E /* ZXPDF417DetectionResultColumn.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZXPDF417DetectionResultColumn.h; path = ZXingObjC/pdf417/decoder/ZXPDF417DetectionResultColumn.h; sourceTree = "<group>"; };
-		A4E9B55794234B87BDD7ADA87AD661A3 /* ZXingObjC.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZXingObjC.xcconfig; sourceTree = "<group>"; };
 		A579B45A4ADDB85B03833B02D3DACE07 /* ZXQRCodeFinderPatternInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZXQRCodeFinderPatternInfo.m; path = ZXingObjC/qrcode/detector/ZXQRCodeFinderPatternInfo.m; sourceTree = "<group>"; };
 		A5E0C61CACC7E6F93B4C118BD5E4F68B /* ZXAztecDetector.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZXAztecDetector.m; path = ZXingObjC/aztec/detector/ZXAztecDetector.m; sourceTree = "<group>"; };
 		A694BCA8665615F2CAA8973D9C24C217 /* ZXBitArray.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZXBitArray.h; path = ZXingObjC/common/ZXBitArray.h; sourceTree = "<group>"; };
 		A7A4FB8F2D08B715442F531439456BD8 /* ZXingObjCQRCode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZXingObjCQRCode.h; path = ZXingObjC/qrcode/ZXingObjCQRCode.h; sourceTree = "<group>"; };
-		A862D2A5541FDBC6262C075DF422447B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A96F9E8861D2C3BEDBA9438386E6DC72 /* ZXRSS14Reader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZXRSS14Reader.h; path = ZXingObjC/oned/rss/ZXRSS14Reader.h; sourceTree = "<group>"; };
 		A98F5CC098AE425A1E94F1E544F6179B /* ZXDataMatrixASCIIEncoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZXDataMatrixASCIIEncoder.m; path = ZXingObjC/datamatrix/encoder/ZXDataMatrixASCIIEncoder.m; sourceTree = "<group>"; };
 		AADD855CE185824419200808081BA974 /* ZXDataMatrixTextEncoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZXDataMatrixTextEncoder.m; path = ZXingObjC/datamatrix/encoder/ZXDataMatrixTextEncoder.m; sourceTree = "<group>"; };
@@ -812,17 +817,15 @@
 		AE94D29AC7E559FA3DDE0C2012E031E9 /* ZXPDF417BarcodeMatrix.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZXPDF417BarcodeMatrix.m; path = ZXingObjC/pdf417/encoder/ZXPDF417BarcodeMatrix.m; sourceTree = "<group>"; };
 		B02403F947A48132E826372D78ABD6A9 /* ZXMultiFormatUPCEANReader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZXMultiFormatUPCEANReader.h; path = ZXingObjC/oned/ZXMultiFormatUPCEANReader.h; sourceTree = "<group>"; };
 		B08CA80EF0813C4F995AFE96E5E1AD86 /* ZXAztecToken.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZXAztecToken.h; path = ZXingObjC/aztec/encoder/ZXAztecToken.h; sourceTree = "<group>"; };
-		B0B977CB8AD22F098298FA6891BCDF18 /* ZXingObjC-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZXingObjC-umbrella.h"; sourceTree = "<group>"; };
+		B11DB9186182A9C593D5FB92991A51AD /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/ImageIO.framework; sourceTree = DEVELOPER_DIR; };
 		B16A705F54C156AAF18B7C809E3D2803 /* ZXQRCodeFinderPatternInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZXQRCodeFinderPatternInfo.h; path = ZXingObjC/qrcode/detector/ZXQRCodeFinderPatternInfo.h; sourceTree = "<group>"; };
 		B19EE20A56F4F5E7DFB400B4F8C20A12 /* ZXModulusPoly.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZXModulusPoly.h; path = ZXingObjC/pdf417/decoder/ec/ZXModulusPoly.h; sourceTree = "<group>"; };
 		B234820969B5BAA918DE34E58840109E /* ZXParsedResultType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZXParsedResultType.h; path = ZXingObjC/client/result/ZXParsedResultType.h; sourceTree = "<group>"; };
 		B2B7F1A02DC78D5EEAFCB2F666939CDA /* ZXUPCAWriter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZXUPCAWriter.h; path = ZXingObjC/oned/ZXUPCAWriter.h; sourceTree = "<group>"; };
 		B2F5C5158C501359669E629DC992A55A /* ZXUPCEANWriter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZXUPCEANWriter.m; path = ZXingObjC/oned/ZXUPCEANWriter.m; sourceTree = "<group>"; };
 		B3423597F76D884E0BF5448F3AEB4549 /* ZXPDF417DetectorResult.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZXPDF417DetectorResult.m; path = ZXingObjC/pdf417/detector/ZXPDF417DetectorResult.m; sourceTree = "<group>"; };
-		B3880F8E6209B90BC392C89DE494316C /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreMedia.framework; sourceTree = DEVELOPER_DIR; };
 		B40CFCC3A5A53C143B08461EF2DC17ED /* ZXBookmarkDoCoMoResultParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZXBookmarkDoCoMoResultParser.h; path = ZXingObjC/client/result/ZXBookmarkDoCoMoResultParser.h; sourceTree = "<group>"; };
 		B43487A17965D759D6C984EC6E2CC131 /* ZXReedSolomonEncoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZXReedSolomonEncoder.h; path = ZXingObjC/common/reedsolomon/ZXReedSolomonEncoder.h; sourceTree = "<group>"; };
-		B44014C90068A7BDBECB862F8FCBB983 /* Pods-iOptic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iOptic.release.xcconfig"; sourceTree = "<group>"; };
 		B47904D94AA1B47EE034D64C0C48B8EB /* ZXRGBLuminanceSource.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZXRGBLuminanceSource.m; path = ZXingObjC/core/ZXRGBLuminanceSource.m; sourceTree = "<group>"; };
 		B47A33A4547F9955892AA4C46E82DC70 /* ZXEmailDoCoMoResultParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZXEmailDoCoMoResultParser.m; path = ZXingObjC/client/result/ZXEmailDoCoMoResultParser.m; sourceTree = "<group>"; };
 		B4D376A55C16B39679EE1F08BAE63BD9 /* ZXOneDReader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZXOneDReader.m; path = ZXingObjC/oned/ZXOneDReader.m; sourceTree = "<group>"; };
@@ -849,7 +852,6 @@
 		BD6109FD756E8CDB9544A485B4628ACC /* ZXAddressBookDoCoMoResultParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZXAddressBookDoCoMoResultParser.m; path = ZXingObjC/client/result/ZXAddressBookDoCoMoResultParser.m; sourceTree = "<group>"; };
 		BDA1483F48FF83A84B4968DD67047D54 /* ZXPDF417CodewordDecoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZXPDF417CodewordDecoder.m; path = ZXingObjC/pdf417/decoder/ZXPDF417CodewordDecoder.m; sourceTree = "<group>"; };
 		BE3D5C9C1E8EF45509FD1EDA778A92FA /* ZXResultPoint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZXResultPoint.m; path = ZXingObjC/core/ZXResultPoint.m; sourceTree = "<group>"; };
-		BE6E11617BFACAC5F5D9E2A27EA5D2FD /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
 		BEB3774B4B91010F3C404EBC6842ECD9 /* ZXGeoResultParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZXGeoResultParser.m; path = ZXingObjC/client/result/ZXGeoResultParser.m; sourceTree = "<group>"; };
 		BEC19C4F442687AFA4D72FF29AF4BC8F /* ZXHybridBinarizer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZXHybridBinarizer.m; path = ZXingObjC/common/ZXHybridBinarizer.m; sourceTree = "<group>"; };
 		BF56BD0E0F646616204FCCA33A1688BF /* ZXAztecDetectorResult.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZXAztecDetectorResult.m; path = ZXingObjC/aztec/ZXAztecDetectorResult.m; sourceTree = "<group>"; };
@@ -863,9 +865,11 @@
 		C4D31569D7A9EB9286AE2991B80C9C93 /* ZXPDF417ErrorCorrection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZXPDF417ErrorCorrection.h; path = ZXingObjC/pdf417/encoder/ZXPDF417ErrorCorrection.h; sourceTree = "<group>"; };
 		C54B348599F750DCD2ED012E6D3D3DA4 /* ZXDataMatrixDataBlock.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZXDataMatrixDataBlock.h; path = ZXingObjC/datamatrix/decoder/ZXDataMatrixDataBlock.h; sourceTree = "<group>"; };
 		C55193F0D66A2C06A83E5A29279A99C3 /* ZXDataMatrixASCIIEncoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZXDataMatrixASCIIEncoder.h; path = ZXingObjC/datamatrix/encoder/ZXDataMatrixASCIIEncoder.h; sourceTree = "<group>"; };
+		C617F8B03E62DB9A4D472BE2993EFC40 /* ZXingObjC-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZXingObjC-umbrella.h"; sourceTree = "<group>"; };
 		C62DF89C4794EA747B67B721E1EEEA25 /* ZXUPCAReader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZXUPCAReader.h; path = ZXingObjC/oned/ZXUPCAReader.h; sourceTree = "<group>"; };
 		C7C8CCF4CC117ECCC3681C0BA1CDDE32 /* ZXAztecState.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZXAztecState.h; path = ZXingObjC/aztec/encoder/ZXAztecState.h; sourceTree = "<group>"; };
 		C859F66B4ED6E317460F5A4228D5C1CD /* ZXQRCodeEncoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZXQRCodeEncoder.m; path = ZXingObjC/qrcode/encoder/ZXQRCodeEncoder.m; sourceTree = "<group>"; };
+		C85A2B97A8E2FD8AA99267C75B2930F4 /* Pods-iOptic-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-iOptic-resources.sh"; sourceTree = "<group>"; };
 		C86D2958D077FDDE68CF07715854AF24 /* ZXAztecSimpleToken.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZXAztecSimpleToken.h; path = ZXingObjC/aztec/encoder/ZXAztecSimpleToken.h; sourceTree = "<group>"; };
 		CABFCFC135CFEB10CAB6CB9EBB81D8B2 /* ZXCode128Reader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZXCode128Reader.h; path = ZXingObjC/oned/ZXCode128Reader.h; sourceTree = "<group>"; };
 		CB8B37B4D820EDEED576260FA1B27E17 /* ZXRSSDataCharacter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZXRSSDataCharacter.h; path = ZXingObjC/oned/rss/ZXRSSDataCharacter.h; sourceTree = "<group>"; };
@@ -884,7 +888,6 @@
 		D52C006E592AF3F8C2A2899BC494AA96 /* ZXQRCodeFinderPattern.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZXQRCodeFinderPattern.m; path = ZXingObjC/qrcode/detector/ZXQRCodeFinderPattern.m; sourceTree = "<group>"; };
 		D52F0447583DB5C11020F2606E24FDB7 /* ZXURIParsedResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZXURIParsedResult.h; path = ZXingObjC/client/result/ZXURIParsedResult.h; sourceTree = "<group>"; };
 		D54F8C2FD7E6ADC7B6C668B61DC02803 /* ZXPDF417DecodedBitStreamParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZXPDF417DecodedBitStreamParser.m; path = ZXingObjC/pdf417/decoder/ZXPDF417DecodedBitStreamParser.m; sourceTree = "<group>"; };
-		D55A382E3F7F628196C6E8DB8B30DA9E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		D5616242A30ABFFD11366552A6000CF3 /* ZXRSSDataCharacter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZXRSSDataCharacter.m; path = ZXingObjC/oned/rss/ZXRSSDataCharacter.m; sourceTree = "<group>"; };
 		D5F190C53E50CDCC4BEE0D31A3FC4E04 /* ZXQRCodeMode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZXQRCodeMode.h; path = ZXingObjC/qrcode/decoder/ZXQRCodeMode.h; sourceTree = "<group>"; };
 		D63D23DAD4DADB2BDE96FC2F2ADE9DFA /* ZXQRCodeFinderPatternFinder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZXQRCodeFinderPatternFinder.h; path = ZXingObjC/qrcode/detector/ZXQRCodeFinderPatternFinder.h; sourceTree = "<group>"; };
@@ -921,7 +924,6 @@
 		E390E5BDDAF2DCAEB1F3E38736D303AF /* ZXUPCEWriter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZXUPCEWriter.m; path = ZXingObjC/oned/ZXUPCEWriter.m; sourceTree = "<group>"; };
 		E41F851A8B0041D84B394EB82EEF7DF0 /* ZXPerspectiveTransform.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZXPerspectiveTransform.m; path = ZXingObjC/common/ZXPerspectiveTransform.m; sourceTree = "<group>"; };
 		E4D09207FACD2CB9564FEAD474D5BA39 /* ZXAbstractExpandedDecoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZXAbstractExpandedDecoder.m; path = ZXingObjC/oned/rss/expanded/decoders/ZXAbstractExpandedDecoder.m; sourceTree = "<group>"; };
-		E50C5EC29107CD62C9C2252B9D7B5AA6 /* Pods-iOptic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iOptic.debug.xcconfig"; sourceTree = "<group>"; };
 		E555CDDBB001F95C6599C0DE721DCE66 /* ZXRSSUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZXRSSUtils.h; path = ZXingObjC/oned/rss/ZXRSSUtils.h; sourceTree = "<group>"; };
 		E59534A6950615D957F927210F545EAA /* ZXMaxiCodeDecodedBitStreamParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZXMaxiCodeDecodedBitStreamParser.h; path = ZXingObjC/maxicode/decoder/ZXMaxiCodeDecodedBitStreamParser.h; sourceTree = "<group>"; };
 		E5C9C80FD71C9F98EC38A35FF8B41E78 /* ZXByteArray.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZXByteArray.m; path = ZXingObjC/common/ZXByteArray.m; sourceTree = "<group>"; };
@@ -937,6 +939,7 @@
 		EABCF85FF16F8F705497C1DD2BBA5DD4 /* ZXAI01weightDecoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZXAI01weightDecoder.h; path = ZXingObjC/oned/rss/expanded/decoders/ZXAI01weightDecoder.h; sourceTree = "<group>"; };
 		EAFA1E77E3F14D5F1F4697A8DE714D94 /* ZXRSSFinderPattern.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZXRSSFinderPattern.h; path = ZXingObjC/oned/rss/ZXRSSFinderPattern.h; sourceTree = "<group>"; };
 		EAFE022F70693B531AA38C1E3477A755 /* Pods_iOptic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_iOptic.framework; path = "Pods-iOptic.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC5D2C6353E4D432AB2E911E07651E4A /* Pods-iOptic-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-iOptic-acknowledgements.markdown"; sourceTree = "<group>"; };
 		EC9B69226DAA2F441D27D3A68314C116 /* ZXCode128Writer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZXCode128Writer.m; path = ZXingObjC/oned/ZXCode128Writer.m; sourceTree = "<group>"; };
 		EDC5A0F2FCB0DACCE4CBFA733D8D74A8 /* ZXITFWriter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZXITFWriter.h; path = ZXingObjC/oned/ZXITFWriter.h; sourceTree = "<group>"; };
 		F022694BD6DAC9207E3C85F73F1A2CFC /* ZXDataMatrixDecoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZXDataMatrixDecoder.m; path = ZXingObjC/datamatrix/decoder/ZXDataMatrixDecoder.m; sourceTree = "<group>"; };
@@ -945,7 +948,6 @@
 		F1CB91E298776B8785B3A51A555F2C59 /* ZXQRCodeDetector.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZXQRCodeDetector.h; path = ZXingObjC/qrcode/detector/ZXQRCodeDetector.h; sourceTree = "<group>"; };
 		F1D318C0B170D059310D3BA8E9489003 /* ZXErrors.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZXErrors.h; path = ZXingObjC/core/ZXErrors.h; sourceTree = "<group>"; };
 		F1EEF4F4763CF6C1E63A3FB4D585C37D /* ZXReedSolomonDecoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZXReedSolomonDecoder.m; path = ZXingObjC/common/reedsolomon/ZXReedSolomonDecoder.m; sourceTree = "<group>"; };
-		F21E92F98AC26BD26FA34C8C1EA1A378 /* Pods-iOptic-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-iOptic-acknowledgements.markdown"; sourceTree = "<group>"; };
 		F33D7100900958A06B203B5D16E47FE3 /* ZXRSSExpandedRow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZXRSSExpandedRow.h; path = ZXingObjC/oned/rss/expanded/ZXRSSExpandedRow.h; sourceTree = "<group>"; };
 		F36F7EC7F78575C8370C43C5DACAFB3E /* ZXRSSExpandedRow.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZXRSSExpandedRow.m; path = ZXingObjC/oned/rss/expanded/ZXRSSExpandedRow.m; sourceTree = "<group>"; };
 		F3E650CBC81BE9E0CBE80A9E430E7167 /* ZXVEventResultParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZXVEventResultParser.m; path = ZXingObjC/client/result/ZXVEventResultParser.m; sourceTree = "<group>"; };
@@ -956,8 +958,6 @@
 		F5E6E5B646DA70640DC5725AF7C334B2 /* ZXingObjCDataMatrix.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZXingObjCDataMatrix.h; path = ZXingObjC/datamatrix/ZXingObjCDataMatrix.h; sourceTree = "<group>"; };
 		F684CFD8F8C3ADD198E22B90943DD9F3 /* ZXBitSource.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZXBitSource.m; path = ZXingObjC/common/ZXBitSource.m; sourceTree = "<group>"; };
 		F8507249F7C146D325CA63105DB8433D /* ZXWifiResultParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZXWifiResultParser.m; path = ZXingObjC/client/result/ZXWifiResultParser.m; sourceTree = "<group>"; };
-		F85C4E42140D619C0753FA162796D2A4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
-		F8903DBD830053480CDA0D91BF3DA902 /* Pods-iOptic-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-iOptic-dummy.m"; sourceTree = "<group>"; };
 		F8EFF6EFD74F7977D09C7E04C5A79E36 /* ZXPDF417Detector.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZXPDF417Detector.m; path = ZXingObjC/pdf417/detector/ZXPDF417Detector.m; sourceTree = "<group>"; };
 		F8F45DCDF809DCF8AE6B3962672740FC /* ZXAI013x0x1xDecoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZXAI013x0x1xDecoder.m; path = ZXingObjC/oned/rss/expanded/decoders/ZXAI013x0x1xDecoder.m; sourceTree = "<group>"; };
 		F939E441D50110667C3ADD475407B9E2 /* ZXByteMatrix.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZXByteMatrix.m; path = ZXingObjC/core/ZXByteMatrix.m; sourceTree = "<group>"; };
@@ -983,7 +983,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				901E3DC6557089713834CE7FE4DAC750 /* Foundation.framework in Frameworks */,
+				EDC0CF11F37468E63F033F3FB633B804 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -991,55 +991,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A13FAA9DF1E65C8FEA13C6E28C495E2 /* AVFoundation.framework in Frameworks */,
-				10E76A8E8E40D777F3DD2D0D431023AE /* CoreGraphics.framework in Frameworks */,
-				C78536DA1520CB28A5F14F4C81A8A66E /* CoreMedia.framework in Frameworks */,
-				0A7EEC4BFE7B951100D4F0BE8CE03C49 /* CoreVideo.framework in Frameworks */,
-				BF9ABB71303841BA711EC47047EFDE3C /* Foundation.framework in Frameworks */,
-				F5A2897AB85C9F5E7726EF2EAB97F81C /* ImageIO.framework in Frameworks */,
-				7CE167EB2CA37F7071237303EF6C9B0F /* QuartzCore.framework in Frameworks */,
+				BA16F7B5DBD3C1EEEEF9A5DA7F7BCF0E /* AVFoundation.framework in Frameworks */,
+				76DDFF83AB4F4932C72412B10122FBE3 /* CoreGraphics.framework in Frameworks */,
+				4A427F8CDE34D1E57AB92C46CCBB95AA /* CoreMedia.framework in Frameworks */,
+				CA4EFBB43023712082F90308353C580F /* CoreVideo.framework in Frameworks */,
+				6E536A8125EF5ECCAB309535B654DAA3 /* Foundation.framework in Frameworks */,
+				85058EABF46DD01AF8A1409B8AE0050C /* ImageIO.framework in Frameworks */,
+				7627A2EB9E0EE9E794D534BF34742AB6 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2E11F47170D25016E0AFA01EAD316C57 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				24F52BB1F72C2A7B41B27A47F89A615C /* Info.plist */,
-				74BD17A494815A677F14192913331B18 /* ZXingObjC.modulemap */,
-				A4E9B55794234B87BDD7ADA87AD661A3 /* ZXingObjC.xcconfig */,
-				6A109554ABEBBF42C51E9F06B1AA3E26 /* ZXingObjC-dummy.m */,
-				7ECB4808EE1AE8C1A2B6E0057A3017F1 /* ZXingObjC-prefix.pch */,
-				B0B977CB8AD22F098298FA6891BCDF18 /* ZXingObjC-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/ZXingObjC";
-			sourceTree = "<group>";
-		};
-		62DAAFADA9C0177F8A8D08CBA2D31C2A /* Pods-iOptic */ = {
-			isa = PBXGroup;
-			children = (
-				A862D2A5541FDBC6262C075DF422447B /* Info.plist */,
-				60FCD82FA962AC09677596E4F2ACC071 /* Pods-iOptic.modulemap */,
-				F21E92F98AC26BD26FA34C8C1EA1A378 /* Pods-iOptic-acknowledgements.markdown */,
-				5E7D3E9551DB12ED74450D79815F00FD /* Pods-iOptic-acknowledgements.plist */,
-				F8903DBD830053480CDA0D91BF3DA902 /* Pods-iOptic-dummy.m */,
-				60BBDBE2BF6648A8D0832463D3D312F3 /* Pods-iOptic-frameworks.sh */,
-				3448D5EE4ECBCFEA2661F354FFB3DCC8 /* Pods-iOptic-resources.sh */,
-				9F6983AA0C3EAE6565BE0DB884C9CA5F /* Pods-iOptic-umbrella.h */,
-				E50C5EC29107CD62C9C2252B9D7B5AA6 /* Pods-iOptic.debug.xcconfig */,
-				B44014C90068A7BDBECB862F8FCBB983 /* Pods-iOptic.release.xcconfig */,
-			);
-			name = "Pods-iOptic";
-			path = "Target Support Files/Pods-iOptic";
-			sourceTree = "<group>";
-		};
 		7B6CC1A2B98C33082D861FDCE35E6688 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				62DAAFADA9C0177F8A8D08CBA2D31C2A /* Pods-iOptic */,
+				FAF924EEE09F54D2227965B332960CAE /* Pods-iOptic */,
 			);
 			name = "Targets Support Files";
 			sourceTree = "<group>";
@@ -1067,7 +1035,7 @@
 			isa = PBXGroup;
 			children = (
 				A81D055ACE42D76E511F65D9C50D9807 /* All */,
-				2E11F47170D25016E0AFA01EAD316C57 /* Support Files */,
+				D4549C91DE6B45405634D9B1A4979ADE /* Support Files */,
 			);
 			name = ZXingObjC;
 			path = ZXingObjC;
@@ -1548,16 +1516,30 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		EDAA9203D3844B02FEFA70E965E65B7B /* iOS */ = {
+		D4549C91DE6B45405634D9B1A4979ADE /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				BE6E11617BFACAC5F5D9E2A27EA5D2FD /* AVFoundation.framework */,
-				F85C4E42140D619C0753FA162796D2A4 /* CoreGraphics.framework */,
-				B3880F8E6209B90BC392C89DE494316C /* CoreMedia.framework */,
-				9BBBF731853DF0D539DEAFA61783828C /* CoreVideo.framework */,
-				1D43DB2F268B85D4E28B4EF25A1EE9D6 /* Foundation.framework */,
-				989FE2208FD54175A1B6C1B03B0C942E /* ImageIO.framework */,
-				D55A382E3F7F628196C6E8DB8B30DA9E /* QuartzCore.framework */,
+				70504366550CB808A13C6633B819B3E5 /* Info.plist */,
+				58C60FD3277610B4E215EFB37554D45F /* ZXingObjC.modulemap */,
+				5DF3CE720414F7D99DEFA123ED3DDDFE /* ZXingObjC.xcconfig */,
+				48B1F99C85716B8F46B553AF9EFAD53A /* ZXingObjC-dummy.m */,
+				31C69694417F4A6EFCAD5272E4F3B2CF /* ZXingObjC-prefix.pch */,
+				C617F8B03E62DB9A4D472BE2993EFC40 /* ZXingObjC-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ZXingObjC";
+			sourceTree = "<group>";
+		};
+		F37EF1A12771D41A43F953D2FB1EE24C /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				61102E76A0270E73ED4D5100ED52F5AD /* AVFoundation.framework */,
+				7EE6690487D3E292DC53D2AB867DA165 /* CoreGraphics.framework */,
+				8ECF7228301E70CD3BAFE824E269E44D /* CoreMedia.framework */,
+				4CABA2F3B404D01FCEA1C62DA04D57E8 /* CoreVideo.framework */,
+				0CFBBEA8777B52CD7DA723A7FF1634FC /* Foundation.framework */,
+				B11DB9186182A9C593D5FB92991A51AD /* ImageIO.framework */,
+				56C2C57BBAEA5C4D3C00E52E840D51A2 /* QuartzCore.framework */,
 			);
 			name = iOS;
 			sourceTree = "<group>";
@@ -1565,9 +1547,27 @@
 		F4CDA5FA9197A41E0081E84F932906EB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				EDAA9203D3844B02FEFA70E965E65B7B /* iOS */,
+				F37EF1A12771D41A43F953D2FB1EE24C /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FAF924EEE09F54D2227965B332960CAE /* Pods-iOptic */ = {
+			isa = PBXGroup;
+			children = (
+				7C74B1E26C3933D4F4AC5B31B66A41F8 /* Info.plist */,
+				2A277933F955F3A69C88552841B78017 /* Pods-iOptic.modulemap */,
+				EC5D2C6353E4D432AB2E911E07651E4A /* Pods-iOptic-acknowledgements.markdown */,
+				12F7432E6AA085A062C477C8E418678A /* Pods-iOptic-acknowledgements.plist */,
+				8A29416CC1961FC4396F3633D349B43A /* Pods-iOptic-dummy.m */,
+				953B6C2F24DC03DA2FFEAA7668E19321 /* Pods-iOptic-frameworks.sh */,
+				C85A2B97A8E2FD8AA99267C75B2930F4 /* Pods-iOptic-resources.sh */,
+				4B958551CE90E0624326AEB2CE040356 /* Pods-iOptic-umbrella.h */,
+				975723EF8AA7FE5F143A147D0CEEBC1C /* Pods-iOptic.debug.xcconfig */,
+				4727DA07CDE240F37D5DD3B496526EA1 /* Pods-iOptic.release.xcconfig */,
+			);
+			name = "Pods-iOptic";
+			path = "Target Support Files/Pods-iOptic";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1871,8 +1871,8 @@
 		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0700;
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -2142,235 +2142,258 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		166E2CAC58E8608AD59A6F0B71C9C3E0 /* Debug */ = {
+		3394AE70275393F455EE1FF723821123 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DF3CE720414F7D99DEFA123ED3DDDFE /* ZXingObjC.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ZXingObjC/ZXingObjC-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ZXingObjC/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ZXingObjC/ZXingObjC.modulemap";
+				PRODUCT_MODULE_NAME = ZXingObjC;
+				PRODUCT_NAME = ZXingObjC;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3528017E5461DBCF9F6BBF2FE93E120B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 975723EF8AA7FE5F143A147D0CEEBC1C /* Pods-iOptic.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-iOptic/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-iOptic/Pods-iOptic.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		74D7528BA985E252D6E4D899E1D265C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4727DA07CDE240F37D5DD3B496526EA1 /* Pods-iOptic.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-iOptic/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-iOptic/Pods-iOptic.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9B8F987FB135C5C15FCAFFABA99939CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DF3CE720414F7D99DEFA123ED3DDDFE /* ZXingObjC.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ZXingObjC/ZXingObjC-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ZXingObjC/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ZXingObjC/ZXingObjC.modulemap";
+				PRODUCT_MODULE_NAME = ZXingObjC;
+				PRODUCT_NAME = ZXingObjC;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		ABD1862E322BE1205C2505CB8DBFFEC2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
 				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"POD_CONFIGURATION_DEBUG=1",
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		2E991AB999195202E4EBD987793B3B90 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A4E9B55794234B87BDD7ADA87AD661A3 /* ZXingObjC.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/ZXingObjC/ZXingObjC-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ZXingObjC/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ZXingObjC/ZXingObjC.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = ZXingObjC;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		37B3A7BAEFFBA5DDDB01C4EF0F17B876 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A4E9B55794234B87BDD7ADA87AD661A3 /* ZXingObjC.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/ZXingObjC/ZXingObjC-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ZXingObjC/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ZXingObjC/ZXingObjC.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = ZXingObjC;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		889DC5F8D3149C08E22DF64038E250BB /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B44014C90068A7BDBECB862F8FCBB983 /* Pods-iOptic.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-iOptic/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-iOptic/Pods-iOptic.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_iOptic;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		AA0B5BDEB018901CD8F88AAD05F5B893 /* Release */ = {
+		E7A9A9A35645317AC1B1AF6D860B11E9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
 				CODE_SIGNING_REQUIRED = NO;
-				COPY_PHASE_STRIP = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"POD_CONFIGURATION_RELEASE=1",
 					"$(inherited)",
 				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
-		};
-		F46E5982DD9CC38CABDE7A000FC0285B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E50C5EC29107CD62C9C2252B9D7B5AA6 /* Pods-iOptic.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-iOptic/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-iOptic/Pods-iOptic.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_iOptic;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
@@ -2378,8 +2401,8 @@
 		083450BAF8AF6387928551D3ACD08891 /* Build configuration list for PBXNativeTarget "ZXingObjC" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2E991AB999195202E4EBD987793B3B90 /* Debug */,
-				37B3A7BAEFFBA5DDDB01C4EF0F17B876 /* Release */,
+				9B8F987FB135C5C15FCAFFABA99939CA /* Debug */,
+				3394AE70275393F455EE1FF723821123 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2387,8 +2410,8 @@
 		163D8F5BDFC648BB1E86B97CA1E4BBAB /* Build configuration list for PBXNativeTarget "Pods-iOptic" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F46E5982DD9CC38CABDE7A000FC0285B /* Debug */,
-				889DC5F8D3149C08E22DF64038E250BB /* Release */,
+				3528017E5461DBCF9F6BBF2FE93E120B /* Debug */,
+				74D7528BA985E252D6E4D899E1D265C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2396,8 +2419,8 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				166E2CAC58E8608AD59A6F0B71C9C3E0 /* Debug */,
-				AA0B5BDEB018901CD8F88AAD05F5B893 /* Release */,
+				ABD1862E322BE1205C2505CB8DBFFEC2 /* Debug */,
+				E7A9A9A35645317AC1B1AF6D860B11E9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
