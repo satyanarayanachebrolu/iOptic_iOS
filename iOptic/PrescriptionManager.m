@@ -7,9 +7,12 @@
 //
 
 #import "PrescriptionManager.h"
+@import Firebase;
 
 @interface PrescriptionManager()
 @property(nonatomic) NSMutableArray *prescriptionsList;
+@property (strong, nonatomic) FIRDatabaseReference *ref;
+
 @end
 
 @implementation PrescriptionManager
@@ -28,19 +31,41 @@
 {
     self = [super init];
     self.prescriptionsList = [NSMutableArray new];
+    self.ref = [[FIRDatabase database] reference];
+    NSString *uuid = [self getUserUUID];
+
+    if(!uuid)
+    {
+        NSString *uuid = [[NSUUID new] UUIDString];
+        [[NSUserDefaults standardUserDefaults] setObject:uuid forKey:@"userUUID"];
+        NSMutableArray *prescriptions = [[NSUserDefaults standardUserDefaults] objectForKey:@"prescriptions"];
+        if(prescriptions)
+        {
+            [[[self.ref child:@"users"] child:uuid]
+             setValue:@{@"Prescriptions": prescriptions}];
+        }
+    }
+
     return self;
+}
+
+-(NSString*)getUserUUID
+{
+    NSString *userUUID = [[NSUserDefaults standardUserDefaults] objectForKey:@"userUUID"];
+    return userUUID;
 }
 
 -(void)addPrescription:(Prescription *)prescription details:(NSDictionary*)configuration oldName:(NSString*)oldName
 {
-    // Add it to defaults
-    
-//    NSDictionary *prescrptionDict = [NSDictionary dictionaryWithObjectsAndKeys:prescription.name,@"name", prescription.doctorName,@"doctorName",prescription.date,@"date", nil];
     NSDictionary *configurationDetails = [NSDictionary dictionaryWithObjectsAndKeys:configuration,prescription.name, nil];
     NSMutableArray *prescriptionsSaved = [[[NSUserDefaults standardUserDefaults] objectForKey:@"prescriptions"] mutableCopy];
     NSString *name = oldName ? oldName :prescription.name;
+    
+    
+    NSMutableArray *prescriptions;
+
     if (prescriptionsSaved == nil){
-        NSMutableArray *prescriptions = [NSMutableArray arrayWithObject:configurationDetails];
+        prescriptions = [NSMutableArray arrayWithObject:configurationDetails];
         [[NSUserDefaults standardUserDefaults] setObject:prescriptions forKey:@"prescriptions"];
         [[NSUserDefaults standardUserDefaults] synchronize];
     }else{
@@ -59,11 +84,14 @@
         }else{
             [prescriptionsSaved addObject:configurationDetails];
         }
+        prescriptions = prescriptionsSaved;
         [[NSUserDefaults standardUserDefaults] setObject:prescriptionsSaved forKey:@"prescriptions"];
         [[NSUserDefaults standardUserDefaults] synchronize];
-
     }
     
+    NSString *uuid = [self getUserUUID];
+    [[[self.ref child:@"users"] child:uuid]
+     setValue:@{@"Prescriptions": prescriptions}];
 }
 
 -(NSArray<Prescription*>*)prescriptionsList
@@ -80,10 +108,8 @@
             p.date = [personalDetails valueForKey:@"date"];
             [_prescriptionsList addObject:p];
         }
-//        _prescriptionsList = prescriptions;
     }
 
-    
     return _prescriptionsList;
 }
 

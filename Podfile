@@ -9,6 +9,8 @@ target 'iOptic' do
   
   pod 'Firebase/Auth'
   pod 'Firebase/Core'
+  pod 'Firebase/Database'
+  pod 'Firebase/Storage'
   pod 'FBSDKLoginKit'
   pod 'GoogleSignIn'
   pod 'Fabric'
