@@ -7,7 +7,10 @@
 //
 
 #import "PrescriptionManager.h"
+#import <FirebaseFirestore/FIRFirestore.h>
+
 @import Firebase;
+
 
 @interface PrescriptionManager()
 @property(nonatomic) NSMutableArray *prescriptionsList;
@@ -32,31 +35,61 @@
     self = [super init];
     self.prescriptionsList = [NSMutableArray new];
     self.ref = [[FIRDatabase database] reference];
-    NSString *uuid = [self getUserUUID];
+    
+    NSString *userDocumentID = [self getUserDocumentID];
 
-    if(!uuid)
+    if(!userDocumentID)
     {
-        NSString *uuid = [[NSUUID new] UUIDString];
-        [[NSUserDefaults standardUserDefaults] setObject:uuid forKey:@"userUUID"];
-        NSMutableArray *prescriptions = [[NSUserDefaults standardUserDefaults] objectForKey:@"prescriptions"];
-        if(prescriptions)
+        FIRCollectionReference *fireStoreCollection = [[FIRFirestore firestore] collectionWithPath:@"users"];
+        NSMutableDictionary *dict = [NSMutableDictionary new];
+        FIRUser *user = [FIRAuth auth].currentUser;
+
+        dict[@"emailAddress"] = user.email;
+        dict[@"name"] = user.displayName;
+        dict[@"profileUrl"] = user.photoURL;
+        NSMutableDictionary *profileDict = [NSMutableDictionary new];
+        profileDict[@"userProfile"] = dict;
+        FIRDocumentReference *docRef = [fireStoreCollection addDocumentWithData:profileDict];
+        if(docRef)
         {
-            [[[self.ref child:@"users"] child:uuid]
-             setValue:@{@"Prescriptions": prescriptions}];
+            [[NSUserDefaults standardUserDefaults] setObject:docRef.documentID forKey:@"userDocumentID"];
+            NSString *prescriptionsPath = [NSString stringWithFormat:@"/users/%@/Prescriptions", docRef.documentID];
+            FIRCollectionReference *fireStoreCollection = [[FIRFirestore firestore] collectionWithPath:prescriptionsPath];
+
+            NSMutableArray *prescriptions = [[NSUserDefaults standardUserDefaults] objectForKey:@"prescriptions"];
+
+            NSMutableArray *updatedPrescriptions = [NSMutableArray new];
+            for (NSDictionary *dict in prescriptions) {
+                NSMutableDictionary *mutDict = [dict mutableCopy];
+                NSMutableDictionary *prescriptionInfo = mutDict[@"prescriptionInfo"];
+                if(!prescriptionInfo[@"prespId"])
+                {
+                    prescriptionInfo[@"prespId"] = [NSString stringWithFormat:@"%ld", time(NULL)];
+                }
+                mutDict[@"prescriptionInfo"] = prescriptionInfo;
+                FIRDocumentReference *docRef = [fireStoreCollection addDocumentWithData:mutDict];
+                NSLog(@"docRef ID:%@", [docRef documentID]);
+                [updatedPrescriptions addObject:mutDict];
+            }
+            [[NSUserDefaults standardUserDefaults] setObject:updatedPrescriptions forKey:@"prescriptions"];
         }
     }
 
     return self;
 }
 
--(NSString*)getUserUUID
+-(NSString*)getUserDocumentID
 {
-    NSString *userUUID = [[NSUserDefaults standardUserDefaults] objectForKey:@"userUUID"];
-    return userUUID;
+    NSString *userDocumentID = [[NSUserDefaults standardUserDefaults] objectForKey:@"userDocumentID"];
+    return userDocumentID;
 }
 
 -(void)addPrescription:(Prescription *)prescription details:(NSDictionary*)configuration oldName:(NSString*)oldName
 {
+    prescription.prespId = [NSString stringWithFormat:@"%ld", time(NULL)];
+    NSMutableDictionary *prescriptionInfo = configuration[@"prescriptionInfo"];
+    prescriptionInfo[@"prespId"] = prescription.prespId;
+
     NSDictionary *configurationDetails = [NSDictionary dictionaryWithObjectsAndKeys:configuration,prescription.name, nil];
     NSMutableArray *prescriptionsSaved = [[[NSUserDefaults standardUserDefaults] objectForKey:@"prescriptions"] mutableCopy];
     NSString *name = oldName ? oldName :prescription.name;
@@ -89,9 +122,12 @@
         [[NSUserDefaults standardUserDefaults] synchronize];
     }
     
-    NSString *uuid = [self getUserUUID];
-    [[[self.ref child:@"users"] child:uuid]
-     setValue:@{@"Prescriptions": prescriptions}];
+    NSString *userDocumentID = [self getUserDocumentID];
+    NSString *prescriptionsPath = [NSString stringWithFormat:@"/users/%@/Prescriptions", userDocumentID];
+    
+    FIRCollectionReference *fireStoreCollection = [[FIRFirestore firestore] collectionWithPath:prescriptionsPath];
+    FIRDocumentReference *docRef = [fireStoreCollection addDocumentWithData:configurationDetails];
+    NSLog(@"docRef ID:%@", [docRef documentID]);
 }
 
 -(NSArray<Prescription*>*)prescriptionsList
@@ -106,6 +142,7 @@
             p.name = [personalDetails valueForKey:@"name"];
             p.doctorName = [personalDetails valueForKey:@"doctorName"];
             p.date = [personalDetails valueForKey:@"date"];
+            p.prespId = [personalDetails valueForKey:@"prespId"];
             [_prescriptionsList addObject:p];
         }
     }
