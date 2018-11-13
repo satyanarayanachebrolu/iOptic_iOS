@@ -23,7 +23,7 @@
 @property(nonatomic) IBOutlet UITableView *tableView;
 @property(nonatomic) IBOutlet UILabel *staticLabel;
 @property(nonatomic) NSArray <Prescription*> *prescritionsList;
-@property(nonatomic,strong) NSString *selectedPrescriptionName;
+@property(nonatomic,strong) NSString *selectedPrescriptionId;
 @property(nonatomic,strong) NSDictionary *currentPrescription;
 @property(nonatomic,strong) NSString *currentJSON;
 
@@ -69,8 +69,9 @@
     __block NSString *json;
     [prescriptionsSaved enumerateObjectsUsingBlock:^(id item, NSUInteger idx, BOOL *stop)
      {
-         if ([item valueForKey:self.selectedPrescriptionName]){
-             prescription = [item valueForKey:self.selectedPrescriptionName];
+         NSDictionary *dict = [item valueForKey:@"prescriptionInfo"];
+         if ([self.selectedPrescriptionId isEqualToString:dict[@"prespId"]]){
+             prescription = item;
              NSError *error = nil;
              NSData *jsonData = [NSJSONSerialization dataWithJSONObject:prescription                                                                options:NSJSONWritingPrettyPrinted error:&error];
              json = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
@@ -147,7 +148,7 @@
         return;
     }else{
         Prescription * p = [self.prescritionsList objectAtIndex:indexPath.row];
-        self.selectedPrescriptionName = p.name;
+        self.selectedPrescriptionId = p.prespId;
         [self performSegueWithIdentifier:@"showPrescprion" sender:self];
     }
     
@@ -248,7 +249,7 @@
                 
                 
                 CreatePrescriptionViewController *viewcontroller =[storyboard instantiateViewControllerWithIdentifier:@"CreatePrescriptionViewController"];
-                viewcontroller.selectedPrescriptionName = [[json valueForKey:@"prescriptionInfo"] valueForKey:@"name"];
+                viewcontroller.selectedPrescriptionId = [[json valueForKey:@"prescriptionInfo"] valueForKey:@"prespId"];
                 viewcontroller.selectedPrescriptionDetails = json;
                 
                 [navigationController setViewControllers:@[viewcontroller]];

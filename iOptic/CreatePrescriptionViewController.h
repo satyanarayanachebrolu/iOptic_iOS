@@ -10,7 +10,7 @@
 
 @interface CreatePrescriptionViewController : UIViewController
 
-@property(nonatomic,strong) NSString *selectedPrescriptionName;
+@property(nonatomic,strong) NSString *selectedPrescriptionId;
 @property(nonatomic,strong) NSMutableDictionary *selectedPrescriptionDetails;
 
 @end

@@ -154,7 +154,7 @@
 
     
     CreatePrescriptionViewController *viewcontroller =[storyboard instantiateViewControllerWithIdentifier:@"CreatePrescriptionViewController"];
-    viewcontroller.selectedPrescriptionName = self.name;
+    viewcontroller.selectedPrescriptionId = [[self.currentPrescriptionDict valueForKey:@"prescriptionInfo"] valueForKey:@"prespId"];
     viewcontroller.selectedPrescriptionDetails = self.currentPrescriptionDict;
     
     [navigationController setViewControllers:@[viewcontroller]];
@@ -165,7 +165,7 @@
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     CreatePrescriptionViewController *detailVC = segue.destinationViewController;
-    detailVC.selectedPrescriptionName = self.name;
+    detailVC.selectedPrescriptionId = [[self.currentPrescriptionDict valueForKey:@"prescriptionInfo"] valueForKey:@"prespId"];
 
 }
 

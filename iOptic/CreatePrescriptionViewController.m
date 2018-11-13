@@ -138,15 +138,16 @@
     [self registerTableViewCells];
     
     
-    if (self.selectedPrescriptionName.length > 0){
+    if (self.selectedPrescriptionId.length > 0){
         NSMutableArray *prescriptions = [[NSUserDefaults standardUserDefaults] objectForKey:@"prescriptions"];
 
         if (prescriptions != nil && prescriptions.count > 0){
             __block NSUInteger indexOfExistingObj = 0;
             [prescriptions enumerateObjectsUsingBlock:^(id item, NSUInteger idx, BOOL *stop)
              {
-                 if ([item valueForKey:self.selectedPrescriptionName]){
-                     self.editableDetails = [[item valueForKey:self.selectedPrescriptionName] mutableCopy];
+                 NSDictionary *dict = [item valueForKey:@"prescriptionInfo"];
+                 if ([self.selectedPrescriptionId isEqualToString:dict[@"prespId"]]){
+                     self.editableDetails = [item mutableCopy];
                      indexOfExistingObj = idx;
                      *stop = YES;
                  }

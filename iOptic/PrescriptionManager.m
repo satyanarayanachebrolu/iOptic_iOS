@@ -8,6 +8,9 @@
 
 #import "PrescriptionManager.h"
 #import <FirebaseFirestore/FIRFirestore.h>
+#import "iOptic-Swift.h"
+
+@class iOpticEncryption;
 
 @import Firebase;
 
@@ -53,9 +56,6 @@
         if(docRef)
         {
             [[NSUserDefaults standardUserDefaults] setObject:docRef.documentID forKey:@"userDocumentID"];
-            NSString *prescriptionsPath = [NSString stringWithFormat:@"/users/%@/Prescriptions", docRef.documentID];
-            FIRCollectionReference *fireStoreCollection = [[FIRFirestore firestore] collectionWithPath:prescriptionsPath];
-
             NSMutableArray *prescriptions = [[NSUserDefaults standardUserDefaults] objectForKey:@"prescriptions"];
 
             NSMutableArray *updatedPrescriptions = [NSMutableArray new];
@@ -67,8 +67,7 @@
                     prescriptionInfo[@"prespId"] = [NSString stringWithFormat:@"%ld", time(NULL)];
                 }
                 mutDict[@"prescriptionInfo"] = prescriptionInfo;
-                FIRDocumentReference *docRef = [fireStoreCollection addDocumentWithData:mutDict];
-                NSLog(@"docRef ID:%@", [docRef documentID]);
+                [self pushToFireStore:mutDict];
                 [updatedPrescriptions addObject:mutDict];
             }
             [[NSUserDefaults standardUserDefaults] setObject:updatedPrescriptions forKey:@"prescriptions"];
@@ -90,7 +89,7 @@
     NSMutableDictionary *prescriptionInfo = configuration[@"prescriptionInfo"];
     prescriptionInfo[@"prespId"] = prescription.prespId;
 
-    NSDictionary *configurationDetails = [NSDictionary dictionaryWithObjectsAndKeys:configuration,prescription.name, nil];
+    //NSDictionary *configurationDetails = [NSDictionary dictionaryWithObjectsAndKeys:configuration,prescription.name, nil];
     NSMutableArray *prescriptionsSaved = [[[NSUserDefaults standardUserDefaults] objectForKey:@"prescriptions"] mutableCopy];
     NSString *name = oldName ? oldName :prescription.name;
     
@@ -98,7 +97,7 @@
     NSMutableArray *prescriptions;
 
     if (prescriptionsSaved == nil){
-        prescriptions = [NSMutableArray arrayWithObject:configurationDetails];
+        prescriptions = [NSMutableArray arrayWithObject:configuration];
         [[NSUserDefaults standardUserDefaults] setObject:prescriptions forKey:@"prescriptions"];
         [[NSUserDefaults standardUserDefaults] synchronize];
     }else{
@@ -113,21 +112,48 @@
         
         if (indexOfExistingObj != 9999999){
             [prescriptionsSaved removeObjectAtIndex:indexOfExistingObj];
-            [prescriptionsSaved insertObject:configurationDetails atIndex:indexOfExistingObj];
+            [prescriptionsSaved insertObject:configuration atIndex:indexOfExistingObj];
         }else{
-            [prescriptionsSaved addObject:configurationDetails];
+            [prescriptionsSaved addObject:configuration];
         }
         prescriptions = prescriptionsSaved;
         [[NSUserDefaults standardUserDefaults] setObject:prescriptionsSaved forKey:@"prescriptions"];
         [[NSUserDefaults standardUserDefaults] synchronize];
     }
+    [self pushToFireStore:configuration];
     
-    NSString *userDocumentID = [self getUserDocumentID];
-    NSString *prescriptionsPath = [NSString stringWithFormat:@"/users/%@/Prescriptions", userDocumentID];
-    
-    FIRCollectionReference *fireStoreCollection = [[FIRFirestore firestore] collectionWithPath:prescriptionsPath];
-    FIRDocumentReference *docRef = [fireStoreCollection addDocumentWithData:configurationDetails];
-    NSLog(@"docRef ID:%@", [docRef documentID]);
+//    NSString *userDocumentID = [self getUserDocumentID];
+//    NSString *prescriptionsPath = [NSString stringWithFormat:@"/users/%@/Prescriptions", userDocumentID];
+//
+//
+//    NSError *error = nil;
+//    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:configurationDetails
+//                                                       options:NSJSONWritingPrettyPrinted error:&error];
+//    NSString *jsonString = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
+//
+//    char bytes[17];
+//    bytes[16] = '\0';
+//    for(int i = 0; i < 16; i++)
+//    {
+//        bytes[i] = i+1;
+//    }
+//    NSData *ivData = [NSData dataWithBytes:bytes length:16];
+//    NSData *keyData = [iOpticEncryption symetricKeyWithPassword:@"123123" salt:@"kjasdnkjnasdakjsdkjasndk" rounds:1000];
+//
+//    NSDictionary *encryptedDict = [iOpticEncryption aesEncryptWithInput:jsonString iv:ivData key:keyData];
+//
+//    NSMutableDictionary *encryptedPrescriptionDict = [NSMutableDictionary new];
+//    encryptedPrescriptionDict[prescription.prespId] = encryptedDict;
+//
+////    NSData *decryptedData = [iOpticEncryption aesDecryptWithEncrypted:encryptedDict[@"EncryptionData"] iv:ivData key:keyData];
+////
+////    NSString *decryptedString = [NSString stringWithCString:[decryptedData bytes] encoding:NSUTF8StringEncoding];
+////
+////    NSLog(@"decryptedString:%@", decryptedString);
+//
+//    FIRCollectionReference *fireStoreCollection = [[FIRFirestore firestore] collectionWithPath:prescriptionsPath];
+//    FIRDocumentReference *docRef = [fireStoreCollection addDocumentWithData:encryptedPrescriptionDict];
+//    NSLog(@"docRef ID:%@", [docRef documentID]);
 }
 
 -(NSArray<Prescription*>*)prescriptionsList
@@ -136,8 +162,7 @@
     NSMutableArray *prescriptions = [[NSUserDefaults standardUserDefaults] objectForKey:@"prescriptions"];
     if (prescriptions.count > 0){
         for (NSDictionary *prescription in prescriptions){
-            NSDictionary *allValues = [[prescription allValues] objectAtIndex:0];
-            NSDictionary *personalDetails = [allValues valueForKey:@"prescriptionInfo"];
+            NSDictionary *personalDetails = [prescription valueForKey:@"prescriptionInfo"];
             Prescription *p = [[Prescription alloc] init];
             p.name = [personalDetails valueForKey:@"name"];
             p.doctorName = [personalDetails valueForKey:@"doctorName"];
@@ -148,6 +173,40 @@
     }
 
     return _prescriptionsList;
+}
+
+-(BOOL)pushToFireStore:(NSDictionary*)dict
+{
+    NSString *userDocumentID = [self getUserDocumentID];
+    NSString *prescriptionsPath = [NSString stringWithFormat:@"/users/%@/Prescriptions", userDocumentID];
+    
+    NSError *error = nil;
+    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:dict
+                                                       options:NSJSONWritingPrettyPrinted error:&error];
+    NSString *jsonString = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
+    
+    char bytes[17];
+    bytes[16] = '\0';
+    for(int i = 0; i < 16; i++)
+    {
+        bytes[i] = i+1;
+    }
+    NSData *ivData = [NSData dataWithBytes:bytes length:16];
+    NSData *keyData = [iOpticEncryption symetricKeyWithPassword:@"123123" salt:@"kjasdnkjnasdakjsdkjasndk" rounds:1000];
+    
+    NSDictionary *encryptedDict = [iOpticEncryption aesEncryptWithInput:jsonString iv:ivData key:keyData];
+    
+    NSMutableDictionary *encryptedPrescriptionDict = [NSMutableDictionary new];
+    
+    NSMutableDictionary *prescriptionInfo = dict[@"prescriptionInfo"];
+    encryptedPrescriptionDict[prescriptionInfo[@"prespId"]] = encryptedDict[@"EncryptionData"];
+    
+    FIRCollectionReference *fireStoreCollection = [[FIRFirestore firestore] collectionWithPath:prescriptionsPath];
+    FIRDocumentReference *docRef = [fireStoreCollection addDocumentWithData:encryptedPrescriptionDict];
+    NSLog(@"docRef ID:%@", [docRef documentID]);
+
+
+    return YES;
 }
 
 
