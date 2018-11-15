@@ -197,10 +197,9 @@
     NSDictionary *encryptedDict = [iOpticEncryption aesEncryptWithInput:jsonString iv:ivData key:keyData];
     
     NSMutableDictionary *encryptedPrescriptionDict = [NSMutableDictionary new];
-    
+    NSString *encodedString = [encryptedDict[@"EncryptionData"] base64EncodedStringWithOptions:0];
     NSMutableDictionary *prescriptionInfo = dict[@"prescriptionInfo"];
-    encryptedPrescriptionDict[prescriptionInfo[@"prespId"]] = encryptedDict[@"EncryptionData"];
-    
+    encryptedPrescriptionDict[@"encPresppojo"] = encodedString;
     FIRCollectionReference *fireStoreCollection = [[FIRFirestore firestore] collectionWithPath:prescriptionsPath];
     FIRDocumentReference *docRef = [fireStoreCollection addDocumentWithData:encryptedPrescriptionDict];
     NSLog(@"docRef ID:%@", [docRef documentID]);
