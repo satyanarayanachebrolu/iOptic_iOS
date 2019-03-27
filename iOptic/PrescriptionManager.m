@@ -49,7 +49,7 @@
 
         dict[@"emailAddress"] = user.email;
         dict[@"name"] = user.displayName;
-        dict[@"profileUrl"] = user.photoURL;
+        dict[@"profileUrl"] = [user.photoURL absoluteString];
         NSMutableDictionary *profileDict = [NSMutableDictionary new];
         profileDict[@"userProfile"] = dict;
         FIRDocumentReference *docRef = [fireStoreCollection addDocumentWithData:profileDict];

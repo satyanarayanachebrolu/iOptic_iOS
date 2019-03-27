@@ -7,34 +7,34 @@
 	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
 	<string>ca-app-pub-3940256099942544/4411468910</string>
 	<key>CLIENT_ID</key>
-	<string>670397181833-veo1ge5kkes67o2q4ua4r4h3c1v4bajl.apps.googleusercontent.com</string>
+	<string>992211130834-g2lg92ts3ojtgc85uodun733a9n0h114.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.670397181833-veo1ge5kkes67o2q4ua4r4h3c1v4bajl</string>
+	<string>com.googleusercontent.apps.992211130834-g2lg92ts3ojtgc85uodun733a9n0h114</string>
 	<key>API_KEY</key>
-	<string>AIzaSyByKI5-4xot2DfkS6S4PmzO6yDVv3_y-w8</string>
+	<string>AIzaSyD1w1Oz1ili6iGcZqQi0EoQG1F-baOQYPE</string>
 	<key>GCM_SENDER_ID</key>
-	<string>670397181833</string>
+	<string>992211130834</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>com.mycompany.ioptic</string>
 	<key>PROJECT_ID</key>
-	<string>iopticios</string>
+	<string>ioptic-b160f</string>
 	<key>STORAGE_BUCKET</key>
-	<string>iopticios.appspot.com</string>
+	<string>ioptic-b160f.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
-	<true></true>
+	<true/>
 	<key>IS_ANALYTICS_ENABLED</key>
-	<false></false>
+	<false/>
 	<key>IS_APPINVITE_ENABLED</key>
-	<false></false>
+	<false/>
 	<key>IS_GCM_ENABLED</key>
-	<true></true>
+	<true/>
 	<key>IS_SIGNIN_ENABLED</key>
-	<true></true>
+	<true/>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:670397181833:ios:e311e183a8c97884</string>
+	<string>1:992211130834:ios:e311e183a8c97884</string>
 	<key>DATABASE_URL</key>
-	<string>https://iopticios.firebaseio.com</string>
+	<string>https://ioptic-b160f.firebaseio.com</string>
 </dict>
 </plist>
