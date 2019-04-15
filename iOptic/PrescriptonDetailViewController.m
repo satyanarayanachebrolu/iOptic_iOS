@@ -14,6 +14,8 @@
 #import "NotesViewTableViewCell.h"
 #import "QRCodeTableViewCelTableViewCell.h"
 #import "UIImage+MDQRCode.h"
+#import "PrescriptionManager.h"
+
 @import Firebase;
 
 @interface PrescriptonDetailViewController ()
@@ -94,27 +96,14 @@
 }
 
 -(void)deleteThePrescription{
+    [[PrescriptionManager shareInstance] deletePrescriptionForId:[[self.currentPrescriptionDict valueForKey:@"prescriptionInfo"] valueForKey:@"prespId"]];
+    
     [FIRAnalytics logEventWithName:@"BTN_CLICK_DELETE_PRESP"
                         parameters:@{
                                      kFIRParameterItemID:@"BTN_CLICK_DELETE_PRESP",
                                      kFIRParameterItemName:@"Delete Prescription",
                                      kFIRParameterContentType:@"text"
                                      }];
-
-    NSMutableArray *prescriptions = [[NSUserDefaults standardUserDefaults] objectForKey:@"prescriptions"];
-    NSMutableArray *tempArray = [NSMutableArray arrayWithArray:prescriptions];
-    if (prescriptions != nil)
-    {
-        for (NSDictionary *prescription in tempArray){
-            if ([prescription valueForKey:self.name]){
-                [tempArray removeObject:prescription];
-                break;
-            }
-        }
-        [[NSUserDefaults standardUserDefaults] removeObjectForKey:@"prescriptions"];
-        [[NSUserDefaults standardUserDefaults] setObject:tempArray forKey:@"prescriptions"];
-        [[NSUserDefaults standardUserDefaults] synchronize];
-    }
 }
 
 - (IBAction)edit:(id)sender {

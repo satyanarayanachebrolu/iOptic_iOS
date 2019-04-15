@@ -16,6 +16,9 @@
 
 +(instancetype)shareInstance;
 -(void)addPrescription:(Prescription *)prescription details:(NSDictionary*)configuration oldName:(NSString*)oldName;
--(NSArray<Prescription*>*)prescriptionsList;
+-(void)editPrescription:(Prescription *)prescription details:(NSDictionary*)configuration;
 
+-(NSArray<Prescription*>*)prescriptionsList;
+-(NSDictionary*)prescriptionForId:(NSString*)pId;
+-(void)deletePrescriptionForId:(NSString*)pId;
 @end

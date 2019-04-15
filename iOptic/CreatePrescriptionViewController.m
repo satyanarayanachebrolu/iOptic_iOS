@@ -139,72 +139,60 @@
     
     
     if (self.selectedPrescriptionId.length > 0){
-        NSMutableArray *prescriptions = [[NSUserDefaults standardUserDefaults] objectForKey:@"prescriptions"];
-
-        if (prescriptions != nil && prescriptions.count > 0){
-            __block NSUInteger indexOfExistingObj = 0;
-            [prescriptions enumerateObjectsUsingBlock:^(id item, NSUInteger idx, BOOL *stop)
-             {
-                 NSDictionary *dict = [item valueForKey:@"prescriptionInfo"];
-                 if ([self.selectedPrescriptionId isEqualToString:dict[@"prespId"]]){
-                     self.editableDetails = [item mutableCopy];
-                     indexOfExistingObj = idx;
-                     *stop = YES;
-                 }
-             }];
+        self.editableDetails = [[[PrescriptionManager shareInstance] prescriptionForId:self.selectedPrescriptionId] mutableCopy];
+        self.prescription.prespId = self.selectedPrescriptionId;
+        if (self.editableDetails == nil){
+            self.editableDetails = self.selectedPrescriptionDetails;
         }
-            if (self.editableDetails == nil){
-                self.editableDetails = self.selectedPrescriptionDetails;
-            }
-            NSMutableDictionary *personalDetails = [self.editableDetails valueForKey:@"prescriptionInfo"];
-            self.oldName = [personalDetails valueForKey:@"name"];
-            self.personalDetails = [[self.editableDetails valueForKey:@"prescriptionInfo"] mutableCopy];
-            self.pdDetails = [[[self.editableDetails valueForKey:@"prescriptionGlasses"] valueForKey:@"pd"] mutableCopy];
-        
-            if(!self.pdDetails)
-                self.pdDetails = [[NSMutableDictionary alloc] init];
+        NSMutableDictionary *personalDetails = [self.editableDetails valueForKey:@"prescriptionInfo"];
+        self.oldName = [personalDetails valueForKey:@"name"];
+        self.personalDetails = [[self.editableDetails valueForKey:@"prescriptionInfo"] mutableCopy];
+        self.pdDetails = [[[self.editableDetails valueForKey:@"prescriptionGlasses"] valueForKey:@"pd"] mutableCopy];
+    
+        if(!self.pdDetails)
+            self.pdDetails = [[NSMutableDictionary alloc] init];
 
-            self.prescription.name = [personalDetails valueForKey:@"name"];
-            self.doctorName = [personalDetails valueForKey:@"doctorName"];
-            self.neededConfiguration = [self.editableDetails mutableCopy];
-            if ([self.editableDetails valueForKey:@"prescriptionContactLens"]){
-                NSMutableDictionary *contactLensDetails = [NSMutableDictionary dictionaryWithDictionary:[self.editableDetails valueForKey:@"prescriptionContactLens"]];
-                self.contactLensDetails =  contactLensDetails;//[contactLensDetails mutableCopy];
-                [self contactLensTapped:nil];
-                self.isContactLensCategorySelected = YES;
-                [self.neededConfiguration setValue:[NSNumber numberWithBool:true] forKey:@"contactLens"];
-                if ([[[self.editableDetails valueForKey:@"prescriptionContactLens"] valueForKey:@"contactType"] isEqualToString:@"Regular Contacts"]){
-                    self.isRegularContactLensSelected = YES;
-                }else if([[[self.editableDetails valueForKey:@"prescriptionContactLens"] valueForKey:@"contactType"] isEqualToString: @"Bifocal Contacts"]){
-                    self.isBifocalContactLensSelected  = YES;
-                }else if ([[[self.editableDetails valueForKey:@"prescriptionContactLens"] valueForKey:@"contactType"] isEqualToString: @"Astigmatism"]){
-                    self.isAstigmatismSelected = YES;
-                }
-            }
-            if ([self.editableDetails valueForKey:@"prescriptionGlasses"]){
-                NSMutableDictionary *regularLensDetails = [NSMutableDictionary dictionaryWithDictionary:[self.editableDetails valueForKey:@"prescriptionGlasses"]];
-                self.regularLensDetails =  regularLensDetails;//[contactLensDetails mutableCopy];
-                [self regularLensCategoryTapped:nil];
+        self.prescription.name = [personalDetails valueForKey:@"name"];
+        self.doctorName = [personalDetails valueForKey:@"doctorName"];
+        self.neededConfiguration = [self.editableDetails mutableCopy];
+        if ([self.editableDetails valueForKey:@"prescriptionContactLens"]){
+            NSMutableDictionary *contactLensDetails = [NSMutableDictionary dictionaryWithDictionary:[self.editableDetails valueForKey:@"prescriptionContactLens"]];
+            self.contactLensDetails =  contactLensDetails;//[contactLensDetails mutableCopy];
+            [self contactLensTapped:nil];
+            self.isContactLensCategorySelected = YES;
+            [self.neededConfiguration setValue:[NSNumber numberWithBool:true] forKey:@"contactLens"];
+            if ([[[self.editableDetails valueForKey:@"prescriptionContactLens"] valueForKey:@"contactType"] isEqualToString:@"Regular Contacts"]){
                 self.isRegularContactLensSelected = YES;
-                if ([[self.regularLensDetails valueForKey:@"prismValues"] count] > 0){
-                    self.prismSelectionType = YES_SELECTED; // Table loding FIX ME
-                    self.isPrismSelected = YES;
-                    
-                }else if([[self.regularLensDetails valueForKey:@"prismValues"] count] == 0){
-                    self.prismSelectionType = NO_SELECTED;
-                }
-                if ([self.pdDetails valueForKey:@"singlePd"]){
-                    self.isSinglePDSelected = YES;
-                    [self.regularLensDetails setValue:[NSNumber numberWithBool:false] forKey:@"isDualPd"];
-                }else if([self.pdDetails valueForKey:@"dualPd"]){
-                    self.isDualPDSelected = YES;
-                    [self.regularLensDetails setValue:[NSNumber numberWithBool:true] forKey:@"isDualPd"];
-                }
+            }else if([[[self.editableDetails valueForKey:@"prescriptionContactLens"] valueForKey:@"contactType"] isEqualToString: @"Bifocal Contacts"]){
+                self.isBifocalContactLensSelected  = YES;
+            }else if ([[[self.editableDetails valueForKey:@"prescriptionContactLens"] valueForKey:@"contactType"] isEqualToString: @"Astigmatism"]){
+                self.isAstigmatismSelected = YES;
             }
-            else
-            {
-                NSLog(@"No Regular lens yet");
+        }
+        if ([self.editableDetails valueForKey:@"prescriptionGlasses"]){
+            NSMutableDictionary *regularLensDetails = [NSMutableDictionary dictionaryWithDictionary:[self.editableDetails valueForKey:@"prescriptionGlasses"]];
+            self.regularLensDetails =  regularLensDetails;//[contactLensDetails mutableCopy];
+            [self regularLensCategoryTapped:nil];
+            self.isRegularContactLensSelected = YES;
+            if ([[self.regularLensDetails valueForKey:@"prismValues"] count] > 0){
+                self.prismSelectionType = YES_SELECTED; // Table loding FIX ME
+                self.isPrismSelected = YES;
+                
+            }else if([[self.regularLensDetails valueForKey:@"prismValues"] count] == 0){
+                self.prismSelectionType = NO_SELECTED;
             }
+            if ([self.pdDetails valueForKey:@"singlePd"]){
+                self.isSinglePDSelected = YES;
+                [self.regularLensDetails setValue:[NSNumber numberWithBool:false] forKey:@"isDualPd"];
+            }else if([self.pdDetails valueForKey:@"dualPd"]){
+                self.isDualPDSelected = YES;
+                [self.regularLensDetails setValue:[NSNumber numberWithBool:true] forKey:@"isDualPd"];
+            }
+        }
+        else
+        {
+            NSLog(@"No Regular lens yet");
+        }
     }else{
         self.personalDetails = [NSMutableDictionary dictionaryWithCapacity:3];
         self.pdDetails = [[NSMutableDictionary alloc] init];
@@ -2227,21 +2215,19 @@
     NSData *jsonData = [NSJSONSerialization dataWithJSONObject:self.neededConfiguration
                                                        options:NSJSONWritingPrettyPrinted error:&error];
     NSString *jsonString = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
-    NSLog(@"jsonString:%@",jsonString);
     
     NSData* data = [jsonString dataUsingEncoding:NSUTF8StringEncoding];
     NSString *base64String = [data base64EncodedStringWithOptions:0];
     NSData *decodedData = [[NSData alloc] initWithBase64EncodedString:base64String options:0];
     NSString *decodedString = [[NSString alloc] initWithData:decodedData encoding:NSUTF8StringEncoding];
-    NSLog(@"%@", decodedString); // foo
 
     NSDictionary *dictionary = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&error];
 
-    NSLog(@"dictionary:%@",dictionary);
-    [[PrescriptionManager shareInstance] addPrescription:self.prescription details:self.neededConfiguration oldName:self.oldName];
     
     if(self.editableDetails)
     {
+        [[PrescriptionManager shareInstance] editPrescription:self.prescription details:self.neededConfiguration];
+
         [FIRAnalytics logEventWithName:@"BTN_CLICK_UPDATE_PRESP"
                             parameters:@{
                                          kFIRParameterItemID:@"BTN_CLICK_UPDATE_PRESP",
@@ -2252,6 +2238,8 @@
     }
     else
     {
+        [[PrescriptionManager shareInstance] addPrescription:self.prescription details:self.neededConfiguration oldName:self.oldName];
+
         [FIRAnalytics logEventWithName:@"BTN_CLICK_SAVE_PRESP"
                             parameters:@{
                                          kFIRParameterItemID:@"BTN_CLICK_SAVE_PRESP",

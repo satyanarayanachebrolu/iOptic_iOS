@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		68202A5E2199205A003DF440 /* iOpticEncryption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68202A5D2199205A003DF440 /* iOpticEncryption.swift */; };
+		68272A68225E7229008B19E1 /* FBCloudConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 68272A67225E7229008B19E1 /* FBCloudConnection.m */; };
 		7F09FC121F0FF8FB00A6AD47 /* PersonDetailsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F09FC111F0FF8FB00A6AD47 /* PersonDetailsTableViewCell.m */; };
 		7F0A5E511F4347C10067D954 /* QRCodeTableViewCelTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F0A5E4F1F4347C10067D954 /* QRCodeTableViewCelTableViewCell.m */; };
 		7F0A5E521F4347C10067D954 /* QRCodeTableViewCelTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F0A5E501F4347C10067D954 /* QRCodeTableViewCelTableViewCell.xib */; };
@@ -135,6 +136,8 @@
 /* Begin PBXFileReference section */
 		619ACF21552A4D368DF3D8B7 /* Pods-iOptic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOptic.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOptic/Pods-iOptic.debug.xcconfig"; sourceTree = "<group>"; };
 		68202A5D2199205A003DF440 /* iOpticEncryption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iOpticEncryption.swift; sourceTree = "<group>"; };
+		68272A66225E7229008B19E1 /* FBCloudConnection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FBCloudConnection.h; sourceTree = "<group>"; };
+		68272A67225E7229008B19E1 /* FBCloudConnection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FBCloudConnection.m; sourceTree = "<group>"; };
 		7F09FC101F0FF8FB00A6AD47 /* PersonDetailsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonDetailsTableViewCell.h; sourceTree = "<group>"; };
 		7F09FC111F0FF8FB00A6AD47 /* PersonDetailsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonDetailsTableViewCell.m; sourceTree = "<group>"; };
 		7F0A5E4E1F4347C10067D954 /* QRCodeTableViewCelTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCodeTableViewCelTableViewCell.h; sourceTree = "<group>"; };
@@ -584,6 +587,8 @@
 		B140F9351ED3C1B40063D09C = {
 			isa = PBXGroup;
 			children = (
+				68272A66225E7229008B19E1 /* FBCloudConnection.h */,
+				68272A67225E7229008B19E1 /* FBCloudConnection.m */,
 				68202A5C21991FDF003DF440 /* Security */,
 				B1A01C8B1F553B77005E8F87 /* UIViewController+Alerts.h */,
 				B1A01C8C1F553B77005E8F87 /* UIViewController+Alerts.m */,
@@ -942,6 +947,7 @@
 				B140F9431ED3C1B40063D09C /* main.m in Sources */,
 				B106A5241F631A45000D69D6 /* iOpticAboutViewController.m in Sources */,
 				B17919B01ED51304007B1F89 /* PickerViewController.m in Sources */,
+				68272A68225E7229008B19E1 /* FBCloudConnection.m in Sources */,
 				B17919AE1ED51304007B1F89 /* MenuItem.m in Sources */,
 				B17919C51ED5133F007B1F89 /* LGSideMenuView.m in Sources */,
 				7FD036D61F166A420077C417 /* UIView+Toast.m in Sources */,

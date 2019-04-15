@@ -12,5 +12,4 @@
 
 @property(nonatomic,strong) NSString *selectedPrescriptionId;
 @property(nonatomic,strong) NSMutableDictionary *selectedPrescriptionDetails;
-
 @end

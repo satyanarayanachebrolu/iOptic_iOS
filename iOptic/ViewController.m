@@ -64,21 +64,13 @@
 {
     PrescriptonDetailViewController *detailVC = segue.destinationViewController;
     
-    NSMutableArray *prescriptionsSaved = [[[NSUserDefaults standardUserDefaults] objectForKey:@"prescriptions"] mutableCopy];
-    __block NSMutableDictionary * prescription;
-    __block NSString *json;
-    [prescriptionsSaved enumerateObjectsUsingBlock:^(id item, NSUInteger idx, BOOL *stop)
-     {
-         NSDictionary *dict = [item valueForKey:@"prescriptionInfo"];
-         if ([self.selectedPrescriptionId isEqualToString:dict[@"prespId"]]){
-             prescription = item;
-             NSError *error = nil;
-             NSData *jsonData = [NSJSONSerialization dataWithJSONObject:prescription                                                                options:NSJSONWritingPrettyPrinted error:&error];
-             json = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
-             *stop = YES;
-         }
-     }];
-    
+    NSString *json;
+    NSError *error = nil;
+
+    NSMutableDictionary * prescription = [[[PrescriptionManager shareInstance] prescriptionForId:self.selectedPrescriptionId] mutableCopy];
+    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:prescription                                                                options:NSJSONWritingPrettyPrinted error:&error];
+    json = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
+
     if (prescription == nil) {
         detailVC.currentPrescriptionDict = self.currentPrescription;
         detailVC.currentPrescriptionJSON = self.currentJSON;
