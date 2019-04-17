@@ -16,6 +16,7 @@
 #import <Crashlytics/Crashlytics.h>
 #import "UIViewController+Alerts.h"
 #import <IQKeyboardManager/IQKeyboardManager.h>
+#import "PrescriptionManager.h"
 
 @import Firebase;
 @import GoogleSignIn;
@@ -286,6 +287,7 @@ didDisconnectWithUser:(GIDGoogleUser *)user
 
 -(void)goToMainViewController
 {
+    [[PrescriptionManager shareInstance] setupUserProfile];
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     UINavigationController *navigationController = [storyboard instantiateViewControllerWithIdentifier:@"NavigationController"];
     

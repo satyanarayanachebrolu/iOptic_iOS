@@ -34,28 +34,46 @@
 
 @implementation ViewController
 
+-(void)fetchAndUpdatePrescriptions
+{
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
+        [[PrescriptionManager shareInstance] getPrescriptionsListWithCompletion:^(NSArray *prescriptionsList) {
+            dispatch_async(dispatch_get_main_queue(), ^{
+                self.prescritionsList = prescriptionsList;
+                
+                if(self.prescritionsList.count == 0)
+                {
+                    self.staticLabel.hidden = NO;
+                    self.welcomeMessageLbl.hidden = NO;
+                    //        self.tableView.hidden = YES;
+                    [self.tableView reloadData];
+                }
+                else
+                {
+                    self.staticLabel.hidden = YES;
+                    self.welcomeMessageLbl.hidden = YES;
+                    self.tableView.hidden = NO;
+                    [self.tableView reloadData];
+                }
+                
+            });
+        }];
+    });
+
+}
+
+
 -(void)viewWillAppear:(BOOL)animated
 {
-    self.prescritionsList = [[PrescriptionManager shareInstance] prescriptionsList];
-
-    if(self.prescritionsList.count == 0)
-    {
-        self.staticLabel.hidden = NO;
-        self.welcomeMessageLbl.hidden = NO;
-//        self.tableView.hidden = YES;
-        [self.tableView reloadData];
-    }
-    else
-    {
-        self.staticLabel.hidden = YES;
-        self.welcomeMessageLbl.hidden = YES;
-        self.tableView.hidden = NO;
-        [self.tableView reloadData];
-    }
+    [self fetchAndUpdatePrescriptions];
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [[NSNotificationCenter defaultCenter] addObserverForName:@"PrescriptionsListDidChangeNotification" object:nil queue:[NSOperationQueue mainQueue] usingBlock:^(NSNotification * _Nonnull note) {
+        [self fetchAndUpdatePrescriptions];
+    }];
     
 }
 

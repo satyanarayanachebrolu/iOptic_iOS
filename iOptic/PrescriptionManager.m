@@ -39,23 +39,28 @@
     self.prescriptionsList = [NSMutableArray new];
     self.ref = [[FIRDatabase database] reference];
     
-
-    FIRUser *user = [FIRAuth auth].currentUser;
-    NSString *path = [NSString stringWithFormat:@"users"];
-    FIRCollectionReference *fireStoreCollection = [[FIRFirestore firestore] collectionWithPath:path];
-    FIRDocumentReference *docRef = [fireStoreCollection documentWithPath:[user uid]];
-    
-    NSMutableDictionary *dict = [NSMutableDictionary new];
-    dict[@"emailAddress"] = user.email;
-    dict[@"name"] = user.displayName;
-    dict[@"profileUrl"] = [user.photoURL absoluteString];
-    NSMutableDictionary *profileDict = [NSMutableDictionary new];
-    profileDict[@"userProfile"] = dict;
-    [docRef setData:profileDict];
-    
-    [self getDocumentsFromFireStore];
+    [self setupUserProfile];
     
     return self;
+}
+
+-(void)setupUserProfile
+{
+    FIRUser *user = [FIRAuth auth].currentUser;
+    if(user)
+    {
+        NSString *path = [NSString stringWithFormat:@"users"];
+        FIRCollectionReference *fireStoreCollection = [[FIRFirestore firestore] collectionWithPath:path];
+        FIRDocumentReference *docRef = [fireStoreCollection documentWithPath:[user uid]];
+        
+        NSMutableDictionary *dict = [NSMutableDictionary new];
+        dict[@"emailAddress"] = user.email;
+        dict[@"name"] = user.displayName;
+        dict[@"profileUrl"] = [user.photoURL absoluteString];
+        NSMutableDictionary *profileDict = [NSMutableDictionary new];
+        profileDict[@"userProfile"] = dict;
+        [docRef setData:profileDict];
+    }
 }
 
 -(void)addPrescription:(Prescription *)prescription details:(NSDictionary*)configuration oldName:(NSString*)oldName
@@ -94,39 +99,78 @@
 {
     [_prescriptionsList removeAllObjects];
     NSMutableDictionary *prescriptions = [[NSUserDefaults standardUserDefaults] objectForKey:@"prescriptions"];
-    
-    char bytes[17];
-    bytes[16] = '\0';
-    for(int i = 0; i < 16; i++)
-    {
-        bytes[i] = i+1;
-    }
-    NSData *ivData = [NSData dataWithBytes:bytes length:16];
 
-    if (prescriptions.count > 0){
-        for (NSString *prescriptionId in prescriptions){
-            NSDictionary *encryptedDict = [prescriptions valueForKey:prescriptionId];
-            NSString *encodedString = encryptedDict[@"encPresppojo"];
-            NSData *data = [[NSData alloc] initWithBase64EncodedString:encodedString options:NSDataBase64DecodingIgnoreUnknownCharacters];
-            
-            NSData *keyData = [iOpticEncryption symetricKeyWithPassword:@"123123" salt:@"kjasdnkjnasdakjsdkjasndk" rounds:1000];
-            
-            NSData *decryptedData = [iOpticEncryption aesDecryptWithEncrypted:data iv:ivData key:keyData];
-            NSError *error;
-            NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:decryptedData options:0 error:&error];
-            NSLog(@"dict %@", dict);
-            NSDictionary *pDict = dict[@"prescriptionInfo"];
-            Prescription *p = [[Prescription alloc] init];
-            p.name = [pDict valueForKey:@"name"];
-            p.doctorName = [pDict valueForKey:@"doctorName"];
-            p.date = [pDict valueForKey:@"date"];
-            p.prespId = [pDict valueForKey:@"prespId"];
-            [_prescriptionsList addObject:p];
-        }
+    for (NSString *prescriptionId in prescriptions){
+        NSDictionary *dict = [self prescriptionForId:prescriptionId];
+        NSLog(@"dict %@", dict);
+        NSDictionary *pDict = dict[@"prescriptionInfo"];
+        Prescription *p = [[Prescription alloc] init];
+        p.name = [pDict valueForKey:@"name"];
+        p.doctorName = [pDict valueForKey:@"doctorName"];
+        p.date = [pDict valueForKey:@"date"];
+        p.prespId = [pDict valueForKey:@"prespId"];
+        [_prescriptionsList addObject:p];
     }
 
     return _prescriptionsList;
 }
+
+-(void)getPrescriptionsListWithCompletion:(PrescriptionListCompletionBlock)completionHandler
+{
+    NSMutableDictionary *prescriptions = [[NSUserDefaults standardUserDefaults] objectForKey:@"prescriptions"];
+
+    FIRUser *user = [FIRAuth auth].currentUser;
+    if(user)
+    {
+        if(!prescriptions)
+        {
+            FIRUser *user = [FIRAuth auth].currentUser;
+            NSString *path = [NSString stringWithFormat:@"users/%@/Prescriptions",[user uid]];
+            
+            prescriptions = [NSMutableDictionary new];
+            NSMutableDictionary *decryptedPrescriptionsDict = [NSMutableDictionary new];
+            
+            [[[FIRFirestore firestore] collectionWithPath:path]
+             getDocumentsWithCompletion:^(FIRQuerySnapshot *snapshot, NSError *error) {
+                 if (error != nil) {
+                     NSLog(@"Error getting documents: %@", error);
+                 } else {
+                     for (FIRDocumentSnapshot *document in snapshot.documents) {
+                         NSLog(@"%@ => %@", document.documentID, document.data);
+                         NSDictionary *encryptedDict = document.data;
+                         NSString *encodedString = encryptedDict[@"encPresppojo"];
+                         NSDictionary *decryptedDict = [self decryptedPrescriptionFromEncodedString:encodedString];
+                         NSDictionary *pDict = decryptedDict[@"prescriptionInfo"];
+                         decryptedPrescriptionsDict[[pDict valueForKey:@"prespId"]] = decryptedDict;
+                         prescriptions[[pDict valueForKey:@"prespId"]] = encryptedDict;
+                         
+                         Prescription *p = [[Prescription alloc] init];
+                         p.name = [pDict valueForKey:@"name"];
+                         p.doctorName = [pDict valueForKey:@"doctorName"];
+                         p.date = [pDict valueForKey:@"date"];
+                         p.prespId = [pDict valueForKey:@"prespId"];
+                         [_prescriptionsList addObject:p];
+                     }
+                 }
+                 
+                 [[NSUserDefaults standardUserDefaults] setObject:prescriptions forKey:@"prescriptions"];
+                 [[NSUserDefaults standardUserDefaults] synchronize];
+                 completionHandler(_prescriptionsList);
+             }];
+
+        }
+        else
+        {
+            completionHandler([self prescriptionsList]);
+        }
+    }
+    else
+    {
+        completionHandler([self prescriptionsList]);
+    }
+
+}
+
 
 -(void)deletePrescriptionForId:(NSString*)pId
 {
@@ -141,11 +185,8 @@
     [docRef deleteDocument];
 }
 
-
--(NSDictionary*)prescriptionForId:(NSString*)pId
+-(NSDictionary*)decryptedPrescriptionFromEncodedString:(NSString*)encodedString
 {
-    NSMutableDictionary *prescriptions = [[NSUserDefaults standardUserDefaults] objectForKey:@"prescriptions"];
-    
     char bytes[17];
     bytes[16] = '\0';
     for(int i = 0; i < 16; i++)
@@ -153,8 +194,7 @@
         bytes[i] = i+1;
     }
     NSData *ivData = [NSData dataWithBytes:bytes length:16];
-    NSDictionary *encryptedDict = [prescriptions valueForKey:pId];
-    NSString *encodedString = encryptedDict[@"encPresppojo"];
+
     NSData *data = [[NSData alloc] initWithBase64EncodedString:encodedString options:NSDataBase64DecodingIgnoreUnknownCharacters];
     
     NSData *keyData = [iOpticEncryption symetricKeyWithPassword:@"123123" salt:@"kjasdnkjnasdakjsdkjasndk" rounds:1000];
@@ -162,8 +202,16 @@
     NSData *decryptedData = [iOpticEncryption aesDecryptWithEncrypted:data iv:ivData key:keyData];
     NSError *error;
     NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:decryptedData options:0 error:&error];
-    NSLog(@"dict %@", dict);
     return dict;
+}
+
+
+-(NSDictionary*)prescriptionForId:(NSString*)pId
+{
+    NSMutableDictionary *prescriptions = [[NSUserDefaults standardUserDefaults] objectForKey:@"prescriptions"];
+    NSDictionary *encryptedDict = [prescriptions valueForKey:pId];
+    NSString *encodedString = encryptedDict[@"encPresppojo"];
+    return [self decryptedPrescriptionFromEncodedString:encodedString];
 }
 
 -(NSDictionary *)pushToFireStore:(NSDictionary*)dict
@@ -200,23 +248,6 @@
     return encryptedPrescriptionDict;
 }
 
--(void)getDocumentsFromFireStore
-{
-    FIRUser *user = [FIRAuth auth].currentUser;
-    NSString *path = [NSString stringWithFormat:@"users/%@/Prescriptions",[user uid]];
-    
-    [[[FIRFirestore firestore] collectionWithPath:path]
-     getDocumentsWithCompletion:^(FIRQuerySnapshot *snapshot, NSError *error) {
-         if (error != nil) {
-             NSLog(@"Error getting documents: %@", error);
-         } else {
-             for (FIRDocumentSnapshot *document in snapshot.documents) {
-                 NSLog(@"%@ => %@", document.documentID, document.data);
-             }
-         }
-     }];
-    
-}
 
 
 @end

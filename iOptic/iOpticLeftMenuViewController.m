@@ -223,7 +223,9 @@
             FBSDKLoginManager *loginManager = [[FBSDKLoginManager alloc] init];
             [loginManager logOut];
         }
-
+        [[NSUserDefaults standardUserDefaults] setObject:nil forKey:@"prescriptions"];
+        [[NSUserDefaults standardUserDefaults] synchronize];
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"PrescriptionsListDidChangeNotification" object:nil];
         [self reloadMenu];
     }
 }
